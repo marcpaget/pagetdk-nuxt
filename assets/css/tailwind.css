@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .icon {
+        @apply w-6 h-6;
+    }
+
+    .icon--off {
+        @apply group-hover:hidden inline-block;
+    }
+    .icon--on {
+        @apply hidden group-hover:inline-block;
+    }
+}

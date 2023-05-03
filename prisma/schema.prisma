@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model nuxttest {
+  id         BigInt    @id @default(autoincrement())
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+}
+
+model restaurants {
+  id         BigInt    @default(autoincrement())
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  name       String?   @db.VarChar
+  location   String?   @db.VarChar
+  uuid       String    @default(dbgenerated("uuid_generate_v4()")) @db.Uuid
+
+  @@id([id, uuid])
+}
