@@ -9,5 +9,5 @@ declare module '#nuxt-seo-kit/config' {
   export const titleSeparator: "|" | ModuleOptions['titleSeparator']
   export const trailingSlash: false | ModuleOptions['trailingSlash']
   export const language: "en-US" | ModuleOptions['language']
-  export const indexable: false | ModuleOptions['indexable']
+  export const indexable: true | ModuleOptions['indexable']
 }
