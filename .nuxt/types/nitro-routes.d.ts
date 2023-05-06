@@ -4,7 +4,7 @@ declare module 'nitropack' {
   type Awaited<T> = T extends PromiseLike<infer U> ? Awaited<U> : T
   interface InternalApi {
     '/sitemap.xml': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/routes/sitemap.xml').default>>>> | Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-sitemap/dist/runtime/sitemap').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/routes/sitemap.xml').default>>>>
     }
     '/__nuxt_error': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/renderer').default>>>>
@@ -12,23 +12,17 @@ declare module 'nitropack' {
     '/api/_supabase/session': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/server/api/session').default>>>>
     }
-    '/api/__api_party/:endpointId': {
-      'post': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-api-party/dist/runtime/server').default>>>>
-    }
     '/api/session': {
       'patch': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session').default>>>>
       'delete': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session').default>>>>
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session').default>>>>
       'post': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session').default>>>>
     }
-    '/__i18n__/precompile': {
-      'post': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/i18n/dist/runtime/server/precompile').default>>>>
+    '/_ipx/**': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/image-edge/dist/runtime/ipx').default>>>>
     }
     '/robots.txt': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/server/robots-route').default>>>>
-    }
-    '/sitemap.preview.xml': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-sitemap/dist/runtime/sitemap.preview').default>>>>
     }
     '/api/og-image-html': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-og-image/dist/runtime/nitro/routes/html').default>>>>
@@ -54,7 +48,7 @@ declare module 'nitropack' {
     '/api/_content/query': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>
     }
-    '/api/_content/cache.json': {
+    '/api/_content/cache.1683335324581.json': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/cache').default>>>>
     }
     '/api/_content/navigation/:qid/**:params': {

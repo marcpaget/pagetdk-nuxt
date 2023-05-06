@@ -1,0 +1,1 @@
+import{am as s,ag as u,al as t}from"./entry.f00c1bb3.js";/* empty css                   */const l=s(a=>{const e=u();!e.value&&a.path==="/about"?t("/login"):e.value&&a.path==="/"&&t("about")});export{l as default};

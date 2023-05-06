@@ -84,24 +84,6 @@
       "#cookie-control/*": [
         "node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
       ],
-      "vue-i18n": [
-        "node_modules/vue-i18n/dist/vue-i18n"
-      ],
-      "@intlify/shared": [
-        "node_modules/@intlify/shared/index"
-      ],
-      "@intlify/vue-router-bridge": [
-        "node_modules/@intlify/vue-router-bridge/lib/index"
-      ],
-      "@intlify/vue-i18n-bridge": [
-        "node_modules/@intlify/vue-i18n-bridge/lib/index"
-      ],
-      "vue-i18n-routing": [
-        "node_modules/vue-i18n-routing/dist/vue-i18n-routing"
-      ],
-      "#i18n": [
-        "node_modules/@nuxtjs/i18n/dist/runtime/composables"
-      ],
       "#nuxt-seo-kit/config": [
         ".nuxt/modules/config/nuxt-seo-kit"
       ],
@@ -110,9 +92,6 @@
       ],
       "#nuxt-simple-robots/config": [
         ".nuxt/modules/config/nuxt-simple-robots"
-      ],
-      "#nuxt-simple-sitemap/config": [
-        ".nuxt/modules/config/nuxt-simple-sitemap"
       ],
       "#nuxt-og-image/config": [
         ".nuxt/modules/config/nuxt-og-image"

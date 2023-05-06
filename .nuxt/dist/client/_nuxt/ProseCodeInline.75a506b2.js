@@ -1,0 +1,1 @@
+import{a as o,o as r,b as n,r as t}from"./entry.f00c1bb3.js";/* empty css                   */const s={};function c(e,a){return r(),n("code",null,[t(e.$slots,"default")])}const f=o(s,[["render",c]]);export{f as default};

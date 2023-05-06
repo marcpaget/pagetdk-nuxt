@@ -1,0 +1,1 @@
+import{a as o,b as t,o as s,e}from"./entry.f00c1bb3.js";/* empty css                   */const c={},n=e("h1",null,"Pimox",-1),_=e("p",null,"Pimox",-1),r=[n,_];function a(i,l){return s(),t("div",null,r)}const p=o(c,[["render",a]]);export{p as default};

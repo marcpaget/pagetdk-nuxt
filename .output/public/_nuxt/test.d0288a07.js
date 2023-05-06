@@ -1,0 +1,1 @@
+import{a as e,b as t,o as s,e as o}from"./entry.f00c1bb3.js";/* empty css                   */const c={},n=o("h1",null,"testside",-1),r=[n];function a(_,d){return s(),t("div",null,r)}const f=e(c,[["render",a]]);export{f as default};

@@ -1,0 +1,1 @@
+import{a as s,b as a,$ as e,e as c,r,o as _,ao as d,an as l}from"./entry.f00c1bb3.js";/* empty css                   */const p={},i={class:"h-screen w-screen bg-slate-100 dark:bg-zinc-400"};function f(o,m){const n=d,t=l;return _(),a("div",null,[e(n),c("div",i,[r(o.$slots,"default")]),e(t)])}const b=s(p,[["render",f]]);export{b as default};
