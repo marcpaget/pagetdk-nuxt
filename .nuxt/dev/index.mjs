@@ -5,7 +5,7 @@ import { join as join$1 } from 'node:path';
 import { existsSync, promises, mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
 import { provider, isWindows } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, getRequestHeader, setResponseHeader, getRequestHeaders, deleteCookie, parseCookies, setCookie, assertMethod, readBody, getRouterParams, createError, setHeader, getHeaders, getQuery, getCookie, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, getRequestHeader, setResponseHeader, getRequestHeaders, deleteCookie, parseCookies, setCookie, assertMethod, readBody, getRouterParams, createError, setHeader, getHeaders, getQuery as getQuery$1, getCookie, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/h3/dist/index.mjs';
 import { SitemapStream, streamToPromise } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/sitemap/dist/index.js';
 import { createRenderer } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import devalue from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/devalue/dist/devalue.mjs';
@@ -14,7 +14,7 @@ import { hash } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_mo
 import { createFetch as createFetch$1, Headers } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/ofetch/dist/node.mjs';
 import { createCall, createFetch } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/unenv/runtime/fetch/index.mjs';
 import { createHooks } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/hookable/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, withQuery, withoutTrailingSlash, withLeadingSlash, isRelative, withBase } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/ufo/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withoutTrailingSlash, withLeadingSlash, isRelative, withBase } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/ufo/dist/index.mjs';
 import { nanoid } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nanoid/index.js';
 import dayjs from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/dayjs/dayjs.min.js';
 import { createStorage, prefixStorage } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/unstorage/dist/index.mjs';
@@ -56,6 +56,7 @@ import { consola } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node
 import { renderSSRHead } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@unhead/ssr/dist/index.mjs';
 import { defineHeadPlugin, resolveTitleTemplate, hashTag, hashCode, tagDedupeKey, HasElementTags, ValidHeadTags, asArray as asArray$1, TagConfigKeys, TagsWithInnerContent } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@unhead/shared/dist/index.mjs';
 import { toRouteMatcher, createRouter } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/radix3/dist/index.mjs';
+import { klona } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/klona/dist/index.mjs';
 import { html as html$3 } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/satori-html/dist/index.js';
 import twemoji from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/twemoji/dist/twemoji.npm.js';
 import { initialize, svg2png as svg2png$1 } from 'file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/svg2png-wasm/dist/index.mjs';
@@ -69,46 +70,334 @@ const inlineAppConfig = {};
 
 const appConfig = defuFn(inlineAppConfig);
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{"session":{"api":{"isEnabled":true,"methods":["patch","delete","get","post"],"basePath":"/api/session"}},"trailingSlash":false,"titleSeparator":"|","siteName":"Selfhosting.ninja","siteUrl":"https://selfhosting.ninja","siteDescription":"Selfhosting.ninja is a blog about selfhosting your own homelab, Home Assistant, Docker, Kubernetes and much more.","language":"en-US","content":{"locales":[],"defaultLocale":"","integrity":"","experimental":{"stripQueryParameters":false,"clientDB":false,"advancedIgnoresPattern":false},"api":{"baseURL":"/api/_content"},"navigation":{"fields":["layout"]},"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4000/","documentDriven":{"page":true,"navigation":true,"surround":true,"globals":{},"layoutFallbacks":["theme"],"injectPage":true},"host":"","trailingSlash":false,"anchorLinks":{"depth":4,"exclude":[1]}},"supabase":{"url":"","key":"","client":{},"redirect":false,"cookies":{"name":"sb","lifetime":28800,"domain":"","path":"/","sameSite":"lax"}},"apiParty":{"allowClient":false},"umami":{"websiteId":"13c32209-6374-4c1d-a2d6-8fbb41c89e01","scriptUrl":"https://analytics.umami.is/script.js","domains":"selfhosting.ninja","hostUrl":"","doNotTrack":false,"cache":false,"autoTrack":true,"enable":true},"i18n":{"experimental":{"jsTsFormatResource":false},"baseUrl":""},"nuxt-unhead":{"seoOptimise":true,"resolveAliases":false}},"indexable":false,"content":{"cacheVersion":2,"cacheIntegrity":"kc4UzpZUjI","transformers":[],"base":"","api":{"baseURL":"/api/_content"},"watch":{"ws":{"port":{"port":4000,"portRange":[4000,4040]},"hostname":"localhost","showURL":false}},"sources":{},"ignores":[],"locales":[],"defaultLocale":"","highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"anchorLinks":{"depth":4,"exclude":[1]},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":["layout"]},"documentDriven":true,"experimental":{"clientDB":false,"stripQueryParameters":false,"advancedIgnoresPattern":false}},"supabase":{"serviceKey":""},"apiParty":{"endpoints":{"restCountriesApi":{"url":""}},"allowClient":false},"session":{"isEnabled":true,"session":{"expiryInSeconds":600,"idLength":64,"storePrefix":"sessions","cookieSameSite":"lax","cookieSecure":true,"cookieHttpOnly":true,"storageOptions":{"driver":"memory","options":{}},"domain":false,"ipPinning":false,"rolling":false},"api":{"isEnabled":true,"methods":["patch","delete","get","post"],"basePath":"/api/session"}},"i18n":{"precompile":{"strictMessage":true,"escapeHtml":false}}};
+const _inlineRuntimeConfig = {
+  "app": {
+    "baseURL": "/",
+    "buildAssetsDir": "/_nuxt/",
+    "cdnURL": ""
+  },
+  "nitro": {
+    "envPrefix": "NUXT_",
+    "routeRules": {
+      "/__nuxt_error": {
+        "cache": false
+      }
+    }
+  },
+  "public": {
+    "session": {
+      "api": {
+        "isEnabled": true,
+        "methods": [
+          "patch",
+          "delete",
+          "get",
+          "post"
+        ],
+        "basePath": "/api/session"
+      }
+    },
+    "trailingSlash": false,
+    "titleSeparator": "|",
+    "siteName": "Selfhosting.ninja",
+    "siteUrl": "https://selfhosting.ninja",
+    "siteDescription": "Selfhosting.ninja is a blog about selfhosting your own homelab, Home Assistant, Docker, Kubernetes and much more.",
+    "language": "en-US",
+    "SUPABASE_URL": "https://fjhnafrxaecvgxscirhl.supabase.co",
+    "SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZqaG5hZnJ4YWVjdmd4c2NpcmhsIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTI4MjE3NDUsImV4cCI6MTk2ODM5Nzc0NX0.nGnQoy8j92YFtHqlvRgz8Imxpn4oHlgh9kon0RZGU6s",
+    "content": {
+      "locales": [],
+      "defaultLocale": "",
+      "integrity": "",
+      "experimental": {
+        "stripQueryParameters": false,
+        "clientDB": false,
+        "advancedIgnoresPattern": false
+      },
+      "api": {
+        "baseURL": "/api/_content"
+      },
+      "navigation": {
+        "fields": [
+          "layout",
+          "layout"
+        ]
+      },
+      "tags": {
+        "p": "prose-p",
+        "a": "prose-a",
+        "blockquote": "prose-blockquote",
+        "code-inline": "prose-code-inline",
+        "code": "prose-code",
+        "em": "prose-em",
+        "h1": "prose-h1",
+        "h2": "prose-h2",
+        "h3": "prose-h3",
+        "h4": "prose-h4",
+        "h5": "prose-h5",
+        "h6": "prose-h6",
+        "hr": "prose-hr",
+        "img": "prose-img",
+        "ul": "prose-ul",
+        "ol": "prose-ol",
+        "li": "prose-li",
+        "strong": "prose-strong",
+        "table": "prose-table",
+        "thead": "prose-thead",
+        "tbody": "prose-tbody",
+        "td": "prose-td",
+        "th": "prose-th",
+        "tr": "prose-tr"
+      },
+      "highlight": false,
+      "wsUrl": "ws://localhost:4000/",
+      "documentDriven": {
+        "page": true,
+        "navigation": true,
+        "surround": true,
+        "globals": {},
+        "layoutFallbacks": [
+          "theme"
+        ],
+        "injectPage": true
+      },
+      "host": "",
+      "trailingSlash": false,
+      "anchorLinks": {
+        "depth": 4,
+        "exclude": [
+          1
+        ]
+      }
+    },
+    "supabase": {
+      "url": "https://fjhnafrxaecvgxscirhl.supabase.co",
+      "key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZqaG5hZnJ4YWVjdmd4c2NpcmhsIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTI4MjE3NDUsImV4cCI6MTk2ODM5Nzc0NX0.nGnQoy8j92YFtHqlvRgz8Imxpn4oHlgh9kon0RZGU6s",
+      "client": {},
+      "redirect": false,
+      "cookies": {
+        "name": "sb",
+        "lifetime": 28800,
+        "domain": "",
+        "path": "/",
+        "sameSite": "lax"
+      }
+    },
+    "apiParty": {
+      "allowClient": false
+    },
+    "umami": {
+      "websiteId": "13c32209-6374-4c1d-a2d6-8fbb41c89e01",
+      "scriptUrl": "https://analytics.umami.is/script.js",
+      "domains": "selfhosting.ninja",
+      "hostUrl": "",
+      "doNotTrack": false,
+      "cache": false,
+      "autoTrack": true,
+      "enable": true
+    },
+    "i18n": {
+      "experimental": {
+        "jsTsFormatResource": false
+      },
+      "baseUrl": ""
+    },
+    "nuxt-unhead": {
+      "seoOptimise": true,
+      "resolveAliases": false
+    }
+  },
+  "indexable": true,
+  "content": {
+    "cacheVersion": 2,
+    "cacheIntegrity": "kc4UzpZUjI",
+    "transformers": [],
+    "base": "",
+    "api": {
+      "baseURL": "/api/_content"
+    },
+    "watch": {
+      "ws": {
+        "port": {
+          "port": 4000,
+          "portRange": [
+            4000,
+            4040
+          ]
+        },
+        "hostname": "localhost",
+        "showURL": false
+      }
+    },
+    "sources": {},
+    "ignores": [],
+    "locales": [],
+    "defaultLocale": "",
+    "highlight": false,
+    "markdown": {
+      "tags": {
+        "p": "prose-p",
+        "a": "prose-a",
+        "blockquote": "prose-blockquote",
+        "code-inline": "prose-code-inline",
+        "code": "prose-code",
+        "em": "prose-em",
+        "h1": "prose-h1",
+        "h2": "prose-h2",
+        "h3": "prose-h3",
+        "h4": "prose-h4",
+        "h5": "prose-h5",
+        "h6": "prose-h6",
+        "hr": "prose-hr",
+        "img": "prose-img",
+        "ul": "prose-ul",
+        "ol": "prose-ol",
+        "li": "prose-li",
+        "strong": "prose-strong",
+        "table": "prose-table",
+        "thead": "prose-thead",
+        "tbody": "prose-tbody",
+        "td": "prose-td",
+        "th": "prose-th",
+        "tr": "prose-tr"
+      },
+      "anchorLinks": {
+        "depth": 4,
+        "exclude": [
+          1
+        ]
+      },
+      "remarkPlugins": {},
+      "rehypePlugins": {}
+    },
+    "yaml": {},
+    "csv": {
+      "delimeter": ",",
+      "json": true
+    },
+    "navigation": {
+      "fields": [
+        "layout",
+        "layout"
+      ]
+    },
+    "documentDriven": true,
+    "experimental": {
+      "clientDB": false,
+      "stripQueryParameters": false,
+      "advancedIgnoresPattern": false
+    }
+  },
+  "supabase": {
+    "serviceKey": ""
+  },
+  "apiParty": {
+    "endpoints": {
+      "restCountriesApi": {
+        "url": "https://restcountries.com"
+      }
+    },
+    "allowClient": false
+  },
+  "session": {
+    "isEnabled": true,
+    "session": {
+      "expiryInSeconds": 600,
+      "idLength": 64,
+      "storePrefix": "sessions",
+      "cookieSameSite": "lax",
+      "cookieSecure": true,
+      "cookieHttpOnly": true,
+      "storageOptions": {
+        "driver": "memory",
+        "options": {}
+      },
+      "domain": false,
+      "ipPinning": false,
+      "rolling": false
+    },
+    "api": {
+      "isEnabled": true,
+      "methods": [
+        "patch",
+        "delete",
+        "get",
+        "post"
+      ],
+      "basePath": "/api/session"
+    }
+  },
+  "i18n": {
+    "precompile": {
+      "strictMessage": true,
+      "escapeHtml": false
+    }
+  }
+};
 const ENV_PREFIX = "NITRO_";
-const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
-overrideConfig(_runtimeConfig);
-const runtimeConfig = deepFreeze(_runtimeConfig);
-const useRuntimeConfig = () => runtimeConfig;
-deepFreeze(appConfig);
-function getEnv(key) {
+const ENV_PREFIX_ALT = _inlineRuntimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
+const _sharedRuntimeConfig = _deepFreeze(
+  _applyEnv(klona(_inlineRuntimeConfig))
+);
+function useRuntimeConfig(event) {
+  if (!event) {
+    return _sharedRuntimeConfig;
+  }
+  if (event.context.nitro.runtimeConfig) {
+    return event.context.nitro.runtimeConfig;
+  }
+  const runtimeConfig = klona(_inlineRuntimeConfig);
+  _applyEnv(runtimeConfig);
+  event.context.nitro.runtimeConfig = runtimeConfig;
+  return runtimeConfig;
+}
+_deepFreeze(klona(appConfig));
+function _getEnv(key) {
   const envKey = snakeCase(key).toUpperCase();
   return destr(
     process.env[ENV_PREFIX + envKey] ?? process.env[ENV_PREFIX_ALT + envKey]
   );
 }
-function isObject$1(input) {
+function _isObject(input) {
   return typeof input === "object" && !Array.isArray(input);
 }
-function overrideConfig(obj, parentKey = "") {
+function _applyEnv(obj, parentKey = "") {
   for (const key in obj) {
     const subKey = parentKey ? `${parentKey}_${key}` : key;
-    const envValue = getEnv(subKey);
-    if (isObject$1(obj[key])) {
-      if (isObject$1(envValue)) {
+    const envValue = _getEnv(subKey);
+    if (_isObject(obj[key])) {
+      if (_isObject(envValue)) {
         obj[key] = { ...obj[key], ...envValue };
       }
-      overrideConfig(obj[key], subKey);
+      _applyEnv(obj[key], subKey);
     } else {
       obj[key] = envValue ?? obj[key];
     }
   }
+  return obj;
 }
-function deepFreeze(object) {
+function _deepFreeze(object) {
   const propNames = Object.getOwnPropertyNames(object);
   for (const name of propNames) {
     const value = object[name];
     if (value && typeof value === "object") {
-      deepFreeze(value);
+      _deepFreeze(value);
     }
   }
   return Object.freeze(object);
 }
+new Proxy(/* @__PURE__ */ Object.create(null), {
+  get: (_, prop) => {
+    console.warn(
+      "Please use `useRuntimeConfig()` instead of accessing config directly."
+    );
+    const runtimeConfig = useRuntimeConfig();
+    if (prop in runtimeConfig) {
+      return runtimeConfig[prop];
+    }
+    return void 0;
+  }
+});
 
 const serverAssets = [{"baseName":"server","dir":"/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/server/assets"}];
 
@@ -401,6 +690,9 @@ function createRouteRulesHandler() {
           targetPath = withoutBase(targetPath, strpBase);
         }
         target = joinURL(target.slice(0, -3), targetPath);
+      } else if (event.path.includes("?")) {
+        const query = getQuery(event.path);
+        target = withQuery(target, query);
       }
       return proxyRequest(event, target, {
         fetch: $fetch.raw,
@@ -765,19 +1057,13 @@ function isSerializedFormData(obj) {
   return typeof obj === "object" && obj !== null && "__type" in obj && obj.__type === "form-data";
 }
 async function objectToFormData(obj) {
-  let formData;
-  if (typeof FormData === "undefined") {
-    const { FormData: FormDataPonyfill } = await import('file:///Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/formdata-node/lib/index.js');
-    formData = new FormDataPonyfill();
-  } else {
-    formData = new FormData();
-  }
+  const formData = new FormData();
   const entries = Object.entries(obj).filter(([key]) => key !== "__type");
   for (const [key, value] of entries) {
     if (isSerializedBlob(value)) {
       const arrayBuffer = Uint8Array.from(atob(value.data), (c) => c.charCodeAt(0));
       const blob = new Blob([arrayBuffer], { type: value.type });
-      formData.append(key, blob);
+      formData.append(key, blob, value.name);
     } else {
       formData.append(key, value);
     }
@@ -976,17 +1262,18 @@ async function setCacheCode(code, { type, locale, configId }) {
   }
 }
 
+const disallow = [];
 const sitemap = ["https://selfhosting.ninja/sitemap.xml"];
-const indexable = false;
+const indexable = true;
 const robotsDisabledValue = "noindex, nofollow";
 
 const asArray = (v) => Array.isArray(v) ? v : [v];
 const _H3n4Ub = defineEventHandler(async (event) => {
   setHeader(event, "Content-Type", "text/plain");
-  const debug = `# Dev Mode: Generated by nuxt-simple-robots. Indexing is ${"disabled"}
+  const debug = `# Dev Mode: Generated by nuxt-simple-robots. Indexing is ${"enabled" }
 ` ;
   const sitemapLink = (sitemap && indexable ? asArray(sitemap || []) : []).map((path) => `Sitemap: ${path}`).join("\n");
-  const disallowedPaths = (["/"]).map((path) => `Disallow: ${path}`).join("\n");
+  const disallowedPaths = (asArray(disallow || []) ).map((path) => `Disallow: ${path}`).join("\n");
   return `${debug}User-agent: *
 ${disallowedPaths}
 ${sitemapLink}`;
@@ -1119,7 +1406,7 @@ function fetchOptions(e, path) {
   } ;
   return globalThis.$fetch("/api/og-image-options", {
     query: {
-      ...getQuery(e),
+      ...getQuery$1(e),
       path
     },
     ...fetchOptions2
@@ -3909,11 +4196,11 @@ function makeIgnored(ignores, experimental = false) {
 }
 
 const isPreview = (event) => {
-  const previewToken = getQuery(event).previewToken || getCookie(event, "previewToken");
+  const previewToken = getQuery$1(event).previewToken || getCookie(event, "previewToken");
   return !!previewToken;
 };
 const getPreview = (event) => {
-  const key = getQuery(event).previewToken || getCookie(event, "previewToken");
+  const key = getQuery$1(event).previewToken || getCookie(event, "previewToken");
   return { key };
 };
 
@@ -4123,7 +4410,7 @@ const getContentQuery = (event) => {
     return decodeQueryParams(params.replace(/.json$/, ""));
   }
   const qid = event.context.params?.qid?.replace(/.json$/, "");
-  const query = getQuery(event) || {};
+  const query = getQuery$1(event) || {};
   if (qid && query._params) {
     memory[qid] = parseJSONQueryParams(decodeURIComponent(query._params));
     if (memory[qid].where && !Array.isArray(memory[qid].where)) {
@@ -4402,6 +4689,7 @@ function createNitroApp() {
   globalThis.$fetch = $fetch;
   h3App.use(
     eventHandler((event) => {
+      event.context.nitro = event.context.nitro || {};
       const envContext = event.node.req.__unenv__;
       if (envContext) {
         Object.assign(event.context, envContext);
@@ -4567,7 +4855,7 @@ const getSPARenderer = lazyCachedFunction(async () => {
 async function getIslandContext(event) {
   const url = event.node.req.url?.substring("/__nuxt_island".length + 1) || "";
   const [componentName, hashId] = url.split("?")[0].split(":");
-  const context = event.node.req.method === "GET" ? getQuery(event) : await readBody(event);
+  const context = event.node.req.method === "GET" ? getQuery$1(event) : await readBody(event);
   const ctx = {
     url: "/",
     ...context,
@@ -4581,7 +4869,7 @@ const PAYLOAD_URL_RE = /\/_payload(\.[a-zA-Z0-9]+)?.js(\?.*)?$/;
 const ROOT_NODE_REGEX = new RegExp(`^<${appRootTag} id="${appRootId}">([\\s\\S]*)</${appRootTag}>$`);
 const renderer = defineRenderHandler(async (event) => {
   const nitroApp = useNitroApp();
-  const ssrError = event.node.req.url?.startsWith("/__nuxt_error") ? getQuery(event) : null;
+  const ssrError = event.node.req.url?.startsWith("/__nuxt_error") ? getQuery$1(event) : null;
   if (ssrError && ssrError.statusCode) {
     ssrError.statusCode = parseInt(ssrError.statusCode);
   }
@@ -5581,12 +5869,12 @@ function createHeadCore(options = {}) {
 }
 
 const html = defineEventHandler(async (e) => {
-  const path = getQuery(e).path || "/";
-  const scale = getQuery(e).scale;
-  const mode = getQuery(e).mode || "light";
+  const path = getQuery$1(e).path || "/";
+  const scale = getQuery$1(e).scale;
+  const mode = getQuery$1(e).mode || "light";
   let options;
-  if (getQuery(e).options)
-    options = JSON.parse(getQuery(e).options);
+  if (getQuery$1(e).options)
+    options = JSON.parse(getQuery$1(e).options);
   if (!options)
     options = await fetchOptions(e, path);
   if (options.provider === "browser" && !options.component)
@@ -5668,7 +5956,7 @@ const html$1 = /*#__PURE__*/Object.freeze({
 });
 
 const options = defineEventHandler(async (e) => {
-  const query = getQuery(e);
+  const query = getQuery$1(e);
   const path = query.path || "/";
   const fetchOptions = {
     headers: getHeaders(e)
@@ -5707,7 +5995,7 @@ const options$1 = /*#__PURE__*/Object.freeze({
 });
 
 const svg = defineEventHandler(async (e) => {
-  const path = getQuery(e).path || "/";
+  const path = getQuery$1(e).path || "/";
   const options = await fetchOptions(e, path);
   setHeader(e, "Content-Type", "image/svg+xml");
   const provider = await useProvider(options.provider);
@@ -5726,7 +6014,7 @@ const svg$1 = /*#__PURE__*/Object.freeze({
 });
 
 const vnode = defineEventHandler(async (e) => {
-  const path = getQuery(e).path || "/";
+  const path = getQuery$1(e).path || "/";
   const options = await fetchOptions(e, path);
   setHeader(e, "Content-Type", "application/json");
   const provider = await useProvider(options.provider);
@@ -5745,7 +6033,7 @@ const vnode$1 = /*#__PURE__*/Object.freeze({
 });
 
 const font = defineCachedEventHandler(async (e) => {
-  const { name, weight } = getQuery(e);
+  const { name, weight } = getQuery$1(e);
   if (!name || !weight)
     return "Provide a font name and weight";
   const css = await await globalThis.$fetch(`https://fonts.googleapis.com/css2?family=${name}:wght@${weight}`, {
@@ -5760,7 +6048,7 @@ const font = defineCachedEventHandler(async (e) => {
   return resource[1];
 }, {
   getKey: (e) => {
-    const query = getQuery(e);
+    const query = getQuery$1(e);
     return `nuxt-og-image:font-url:${query.name}:${query.weight}`;
   }
 });
