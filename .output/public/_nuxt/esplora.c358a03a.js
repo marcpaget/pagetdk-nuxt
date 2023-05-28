@@ -1,1 +1,0 @@
-import{a as o,b as s,o as t,e}from"./entry.f00c1bb3.js";/* empty css                   */const a={},n=e("h1",null,"Esp +Lora",-1),c=e("p",null,"Questa è la pagina di esplora",-1),r=[n,c];function _(l,i){return t(),s("div",null,r)}const u=o(a,[["render",_]]);export{u as default};

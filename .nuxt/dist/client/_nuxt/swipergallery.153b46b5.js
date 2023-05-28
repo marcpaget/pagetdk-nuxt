@@ -1,1 +1,0 @@
-import{a as e,b as o,o as t,e as s}from"./entry.f00c1bb3.js";/* empty css                   */const c={},n={class:"image-content"},a=s("p",null,"Hello",-1),r=[a];function _(l,i){return t(),o("div",n,r)}const f=e(c,[["render",_]]);export{f as default};

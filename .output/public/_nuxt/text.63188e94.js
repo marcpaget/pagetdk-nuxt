@@ -1,1 +1,0 @@
-import{a as t,b as e,o,e as r}from"./entry.f00c1bb3.js";/* empty css                   */const a={},c=r("h1",{class:"text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"}," Marc ",-1),n=[c];function s(_,l){return o(),e("div",null,n)}const d=t(a,[["render",s]]);export{d as default};

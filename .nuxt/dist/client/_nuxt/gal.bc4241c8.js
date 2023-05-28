@@ -1,1 +1,0 @@
-import a from".prisma/client/index-browser";import{a2 as s,E as o,b as n,o as i}from"./entry.f00c1bb3.js";/* empty css                   */const c=a;var m=c;const w={__name:"gal",async setup(p){let e,r;const t=new m.PrismaClient;return[e,r]=s(()=>t.post.findMany()),e=await e,r(),o(),(_,l)=>(i(),n("div"))}};export{w as default};

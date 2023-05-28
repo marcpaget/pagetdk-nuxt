@@ -1,1 +1,0 @@
-import{a as r,o,b as t,r as a}from"./entry.f00c1bb3.js";/* empty css                   */const s={};function n(e,c){return o(),t("table",null,[a(e.$slots,"default")])}const _=r(s,[["render",n]]);export{_ as default};

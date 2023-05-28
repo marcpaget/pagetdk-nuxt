@@ -1,93 +1,135 @@
+
 <template>
-    <nav
-        class="relative w-full flex flex-wrap items-center justify-between py-3 bg-gray-900 text-gray-200 shadow-lg navbar navbar-expand-lg navbar-light"
-    >
-        <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-            <button
-                class="navbar-toggler text-gray-200 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent1"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="bars"
-                    class="w-6"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                >
-                    <path
-                        fill="currentColor"
-                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-                    />
-                </svg>
-            </button>
-            <div id="navbarSupportedContent1" class="collapse navbar-collapse flex-grow items-center">
-                <nuxt-link class="text-xl text-white pr-2 font-semibold" to="/">MinBlog</nuxt-link>
-                <!-- Left links -->
-                <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
-                    <li class="nav-item p-2">
-                        <nuxt-link class="nav-link text-white" to="/about">About</nuxt-link>
-                    </li>
-                    <li class="nav-item p-2">
-                        <nuxt-link
-                            class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
-                            to="/weather"
-                            >Weather</nuxt-link
-                        >
-                    </li>
-                    <li class="nav-item p-2">
-                        <nuxt-link
-                            class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
-                            to="/gallery"
-                            >Gallery</nuxt-link
-                        >
-                    </li>
-                    <li class="nav-item p-2">
-                        <nuxt-link
-                            class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
-                            to="/form"
-                            >Form</nuxt-link
-                        >
-                    </li>
-                    <li class="nav-item p-2">
-                        <nuxt-link
-                            class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
-                            to="/calculator"
-                            >Calculator</nuxt-link
-                        >
-                    </li>
-                    <li class="nav-item p-2">
-                        <nuxt-link
-                            class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
-                            to="/supabasetest"
-                            >Supabasetest</nuxt-link
-                        >
-                    </li>
-                    <li class="nav-item p-2">
-                        <nuxt-link
-                            class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
-                            to="/storagetest"
-                            >Storagetest</nuxt-link
-                        >
-                    </li>
-                </ul>
-                <!-- Left links -->
-            </div>
-            <!-- Collapsible wrapper -->
-            <!-- Right elements -->
-        </div>
-    </nav>
+    <div class="card relative z-2">
+        <Menubar :model="items" />
+    </div>
 </template>
 
-<script>
-export default {}
-</script>
+<script setup>
+import { ref } from "vue";
 
-<style lang="css" scoped></style>
+const items = ref([
+    {
+        label: 'File',
+        icon: 'pi pi-fw pi-file',
+        items: [
+            {
+                label: 'New',
+                icon: 'pi pi-fw pi-plus',
+                items: [
+                    {
+                        label: 'Bookmark',
+                        icon: 'pi pi-fw pi-bookmark'
+                    },
+                    {
+                        label: 'Video',
+                        icon: 'pi pi-fw pi-video'
+                    }
+                ]
+            },
+            {
+                label: 'Delete',
+                icon: 'pi pi-fw pi-trash'
+            },
+            {
+                separator: true
+            },
+            {
+                label: 'Export',
+                icon: 'pi pi-fw pi-external-link'
+            }
+        ]
+    },
+    {
+        label: 'Edit',
+        icon: 'pi pi-fw pi-pencil',
+        items: [
+            {
+                label: 'Left',
+                icon: 'pi pi-fw pi-align-left'
+            },
+            {
+                label: 'Right',
+                icon: 'pi pi-fw pi-align-right'
+            },
+            {
+                label: 'Center',
+                icon: 'pi pi-fw pi-align-center'
+            },
+            {
+                label: 'Justify',
+                icon: 'pi pi-fw pi-align-justify'
+            }
+        ]
+    },
+    {
+        label: 'Users',
+        icon: 'pi pi-fw pi-user',
+        items: [
+            {
+                label: 'New',
+                icon: 'pi pi-fw pi-user-plus'
+            },
+            {
+                label: 'Delete',
+                icon: 'pi pi-fw pi-user-minus'
+            },
+            {
+                label: 'Search',
+                icon: 'pi pi-fw pi-users',
+                items: [
+                    {
+                        label: 'Filter',
+                        icon: 'pi pi-fw pi-filter',
+                        items: [
+                            {
+                                label: 'Print',
+                                icon: 'pi pi-fw pi-print'
+                            }
+                        ]
+                    },
+                    {
+                        icon: 'pi pi-fw pi-bars',
+                        label: 'List'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        label: 'Events',
+        icon: 'pi pi-fw pi-calendar',
+        items: [
+            {
+                label: 'Edit',
+                icon: 'pi pi-fw pi-pencil',
+                items: [
+                    {
+                        label: 'Save',
+                        icon: 'pi pi-fw pi-calendar-plus'
+                    },
+                    {
+                        label: 'Delete',
+                        icon: 'pi pi-fw pi-calendar-minus'
+                    }
+                ]
+            },
+            {
+                label: 'Archieve',
+                icon: 'pi pi-fw pi-calendar-times',
+                items: [
+                    {
+                        label: 'Remove',
+                        icon: 'pi pi-fw pi-calendar-minus'
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        label: 'Quit',
+        icon: 'pi pi-fw pi-power-off'
+    }
+]);
+
+</script>

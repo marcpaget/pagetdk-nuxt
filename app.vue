@@ -1,11 +1,10 @@
-import { AppFooter } from './.nuxt/components'; import { AppMenuDaisy } from './.nuxt/components';
 
 <template>
     <div class="scrollbar-thumb-blue-700">
         <SeoKit />
         <NuxtLoadingIndicator />
         <OgImageScreenshot />
-        <AppMenuDaisy />
+        <AppMenu />
         <NuxtPage />
         <AppFooter />
     </div>

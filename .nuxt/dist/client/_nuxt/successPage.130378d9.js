@@ -1,1 +1,0 @@
-import{a as t,b as s,o,e}from"./entry.f00c1bb3.js";/* empty css                   */const n={},a=e("div",{class:"font-permanentmarker text-kaldi"},"The Coldest Sunset",-1),c=e("div",{class:"font-permanentmarker text-kaldi"},"The Coldest Sunset",-1),r=[a,c];function d(_,i){return o(),s("div",null,r)}const f=t(n,[["render",d]]);export{f as default};
