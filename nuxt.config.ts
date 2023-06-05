@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         'unplugin-icons/nuxt',
         //'@nuxtjs/partytown',
         //'@inkline/nuxt',
-        'nuxt-umami',
+        //'nuxt-umami',
         '@sidebase/nuxt-session',
         '@pinia/nuxt',
         // '@nuxtjs/vuetify',
@@ -26,6 +26,8 @@ export default defineNuxtConfig({
         // 'nuxt-logrocket',
         // 'nuxt-bugsnag',
         //'@nuxtjs/i18n',
+        '@hypernym/nuxt-anime',
+        '@varlet/nuxt',
     ],
     plugins: [{ src: '~/plugins/vercel.js', mode: 'client' }],
     ssr: false,
@@ -42,18 +44,18 @@ export default defineNuxtConfig({
     headlessui: {
         prefix: 'Headless',
     },
-    umami: {
-        autoTrack: true,
-        doNotTrack: false,
-        cache: false,
-        domains: 'selfhosting.ninja',
-        websiteId: '13c32209-6374-4c1d-a2d6-8fbb41c89e01',
-        scriptUrl: 'https://analytics.umami.is/script.js',
-    },
+    // umami: {
+    //     autoTrack: true,
+    //     doNotTrack: false,
+    //     cache: false,
+    //     domains: 'selfhosting.ninja',
+    //     websiteId: '13c32209-6374-4c1d-a2d6-8fbb41c89e01',
+    //     scriptUrl: 'https://analytics.umami.is/script.js',
+    // },
     image: {
-        domains: ['selfhosting.ninja'],
+        domains: ['paget.dk'],
         cloudinary: {
-            baseURL: 'https://res.cloudinary.com/selfhostingninja/image/upload/v1679713729',
+            baseURL: 'https://res.cloudinary.com/selfhostingninja/image/upload/v1684199117',
         },
     },
     colorMode: {
@@ -62,7 +64,6 @@ export default defineNuxtConfig({
         fallback: 'light',
         componentName: 'ColorScheme',
     },
-
     // tailwindcss: {
     //     cssPath: '~/assets/css/tailwind.css',
     //     configPath: 'tailwind.config.js',

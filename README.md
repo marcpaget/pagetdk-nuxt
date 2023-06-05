@@ -12,6 +12,8 @@
 -   Setup and configure I18n Nuxt module
 -   Setup and configure Nuxt PWA module
 
+- Add TOC [Create a Table of Contents With Active States in Nuxt 3 | Michael Hoffmann - Senior Frontend Developer (Freelancer)](https://mokkapps.de/blog/create-a-table-of-contents-with-active-states-in-nuxt-3/)
+
 # Nuxt3 styled using TailwindCSS, Headless UI, HeroIcons
 
 ## Plug-ins:

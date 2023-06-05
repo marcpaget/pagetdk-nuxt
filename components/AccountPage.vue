@@ -16,14 +16,14 @@
         <div>
             <input
                 type="submit"
-                class="block button primary"
+                class="button primary block"
                 :value="loading ? 'Loading ...' : 'Update'"
                 :disabled="loading"
             />
         </div>
 
         <div>
-            <button class="block button" :disabled="loading" @click="signOut">Sign Out</button>
+            <button class="button block" :disabled="loading" @click="signOut">Sign Out</button>
         </div>
     </form>
 </template>

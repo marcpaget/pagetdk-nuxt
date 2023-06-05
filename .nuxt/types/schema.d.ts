@@ -333,7 +333,15 @@ declare module 'nuxt/schema' {
 
       key: string,
 
-      client: any,
+      client: {
+         auth: {
+            detectSessionInUrl: boolean,
+
+            persistSession: boolean,
+
+            autoRefreshToken: boolean,
+         },
+      },
 
       redirect: boolean,
 

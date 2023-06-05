@@ -15,7 +15,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
+                sans: ['Quicksand', ...defaultTheme.fontFamily.sans],
+                //sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
                 permanentmarker: ['Permanent Marker', 'cursive'],
             },
             colors: {

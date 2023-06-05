@@ -3,7 +3,7 @@
 <template>
     <div>
         <AppMenu />
-        <div class="scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-300">
+        <div class="scrollbar-thin scrollbar-track-blue-300 scrollbar-thumb-blue-700">
             <div class="h-screen w-screen bg-blue-500 dark:bg-orange-400">
                 <slot />
             </div>

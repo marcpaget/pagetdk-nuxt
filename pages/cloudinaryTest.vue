@@ -1,8 +1,22 @@
 <template>
     <div>
-        <nuxt-img src="/IMG_8467_xta87g.jpg" alt="" />
-        <nuxt-img src="/IMG_8472_b4ghw9.jpg" alt="" />
-        <nuxt-img src="/IMG_0765_z31szw.jpg" alt="" />
+        <nuxt-img
+            provider="cloudinary"
+            src="/Marc_portr%C3%A6t_AROS_sqt5xo.jpg"
+            alt=""
+            width="400"
+            height="400"
+            :modifiers="{ roundCorner: 'max' }"
+        />
+        <p>test</p>
+        <nuxt-img
+            provider="cloudinary"
+            src="/Marc_portr%C3%A6t_AROS_sqt5xo.jpg"
+            alt=""
+            width="200"
+            height="200"
+            :modifiers="{ roundCorner: 'max' }"
+        />
     </div>
 </template>
 
