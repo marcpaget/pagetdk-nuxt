@@ -13,6 +13,7 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "types": [
+      "unplugin-icons/types/vue",
       "node",
       "swiper/vue"
     ],
@@ -60,9 +61,6 @@
       "vue-demi": [
         "node_modules/nuxt/dist/app/compat/vue-demi"
       ],
-      "#color-mode-options": [
-        ".nuxt/color-mode-options"
-      ],
       "pinia": [
         "node_modules/pinia/dist/pinia"
       ],
@@ -83,6 +81,15 @@
       ],
       "#cookie-control/*": [
         "node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
+      ],
+      "#color-mode-options": [
+        ".nuxt/color-mode-options"
+      ],
+      "#tailwind-config": [
+        ".nuxt/tailwind.config"
+      ],
+      "#tailwind-config/*": [
+        ".nuxt/tailwind.config/*"
       ],
       "#nuxt-seo-kit/config": [
         ".nuxt/modules/config/nuxt-seo-kit"

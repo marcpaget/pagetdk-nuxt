@@ -3,12 +3,12 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
     modules: [
         '@nuxt/content',
-        '@nuxtjs/tailwindcss',
+        //'@nuxtjs/tailwindcss',
         '@formkit/nuxt',
         // '@nuxtjs/prismic',
         '@vueuse/nuxt',
         '@nuxtjs/supabase',
-        '@nuxtjs/color-mode',
+        //'@nuxtjs/color-mode',
         'nuxt-icon',
         'unplugin-icons/nuxt',
         //'@nuxtjs/partytown',
@@ -28,6 +28,9 @@ export default defineNuxtConfig({
         //'@nuxtjs/i18n',
         '@hypernym/nuxt-anime',
         '@varlet/nuxt',
+        'nuxt-purgecss',
+        '@nuxthq/ui',
+        '@nuxtjs/strapi',
     ],
     plugins: [{ src: '~/plugins/vercel.js', mode: 'client' }],
     ssr: false,
@@ -35,15 +38,20 @@ export default defineNuxtConfig({
     content: {
         documentDriven: true,
     },
+
     devServerHandlers: [],
+
     typescript: {
         strict: true,
         shim: false,
     },
+
     extends: ['nuxt-seo-kit'],
+
     headlessui: {
         prefix: 'Headless',
     },
+
     // umami: {
     //     autoTrack: true,
     //     doNotTrack: false,
@@ -58,12 +66,14 @@ export default defineNuxtConfig({
             baseURL: 'https://res.cloudinary.com/selfhostingninja/image/upload/v1684199117',
         },
     },
+
     colorMode: {
         classSuffix: '',
         // preference: 'system',
         fallback: 'light',
         componentName: 'ColorScheme',
     },
+
     // tailwindcss: {
     //     cssPath: '~/assets/css/tailwind.css',
     //     configPath: 'tailwind.config.js',
@@ -81,17 +91,21 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
+
     css: [
         'primevue/resources/themes/lara-light-blue/theme.css',
         'primevue/resources/primevue.css',
         'primeicons/primeicons.css',
+        'primeflex/primeflex.css',
     ],
+
     build: {
         transpile:
             process.env.NODE_ENV === 'production'
                 ? ['naive-ui', 'vueuc', '@css-render/vue3-ssr', '@juggle/resize-observer', 'vuetify', 'primevue']
                 : ['@juggle/resize-observer', 'vuetify', 'primevue'],
     },
+
     vite: {
         logLevel: 'info',
         optimizeDeps: {
@@ -107,4 +121,6 @@ export default defineNuxtConfig({
             ],
         },
     },
+
+    devtools: true,
 })
