@@ -10,7 +10,7 @@ declare module '#app/nuxt' {
 }
 
 type PublicFiles = (string & Record<never, never>)
-type AssetFiles = '~/images/IMG_0765.jpeg' | '~/images/IMG_8467.jpeg' | '~/images/IMG_8472.jpeg' | '~/css/main.css' | '~/css/tailwind.css' | (string & Record<never, never>)
+type AssetFiles = '~/css/main.css' | '~/css/tailwind.css' | '~/images/IMG_0765.jpeg' | '~/images/IMG_8467.jpeg' | '~/images/IMG_8472.jpeg' | (string & Record<never, never>)
 
 declare module '@nuxt/schema' {
   interface HeadAugmentations {
