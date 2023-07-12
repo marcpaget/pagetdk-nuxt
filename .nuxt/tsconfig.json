@@ -9,6 +9,7 @@
     "skipLibCheck": true,
     "strict": true,
     "allowJs": true,
+    "baseUrl": "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt",
     "noEmit": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
@@ -17,115 +18,115 @@
       "node",
       "swiper/vue"
     ],
-    "baseUrl": "..",
     "paths": {
       "~": [
-        "."
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt"
       ],
       "~/*": [
-        "./*"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*"
       ],
       "@": [
-        "."
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt"
       ],
       "@/*": [
-        "./*"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*"
       ],
       "~~": [
-        "."
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt"
       ],
       "~~/*": [
-        "./*"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*"
       ],
       "@@": [
-        "."
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt"
       ],
       "@@/*": [
-        "./*"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*"
       ],
       "assets": [
-        "assets"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/assets"
       ],
       "assets/*": [
-        "assets/*"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/assets/*"
       ],
       "public": [
-        "public"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/public"
       ],
       "#app": [
-        "node_modules/nuxt/dist/app"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "node_modules/nuxt/dist/app/*"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "node_modules/nuxt/dist/app/compat/vue-demi"
-      ],
-      "pinia": [
-        "node_modules/pinia/dist/pinia"
-      ],
-      "#viewport-options": [
-        ".nuxt/viewport-options"
-      ],
-      "#image": [
-        "node_modules/@nuxt/image-edge/dist/runtime"
-      ],
-      "#image/*": [
-        "node_modules/@nuxt/image-edge/dist/runtime/*"
-      ],
-      "#cookie-control/set-vars": [
-        "node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/set-vars/native"
-      ],
-      "#cookie-control": [
-        "node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime"
-      ],
-      "#cookie-control/*": [
-        "node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#color-mode-options": [
-        ".nuxt/color-mode-options"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/color-mode-options"
+      ],
+      "pinia": [
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/pinia/dist/pinia"
+      ],
+      "#viewport-options": [
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/viewport-options"
+      ],
+      "#image": [
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/image-edge/dist/runtime"
+      ],
+      "#image/*": [
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/image-edge/dist/runtime/*"
+      ],
+      "#cookie-control/set-vars": [
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/set-vars/native"
+      ],
+      "#cookie-control": [
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime"
+      ],
+      "#cookie-control/*": [
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
       ],
       "#tailwind-config": [
-        ".nuxt/tailwind.config"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/tailwind.config"
       ],
       "#tailwind-config/*": [
-        ".nuxt/tailwind.config/*"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/tailwind.config/*"
       ],
       "#nuxt-seo-kit/config": [
-        ".nuxt/modules/config/nuxt-seo-kit"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-seo-kit"
       ],
       "#nuxt-schema-org/config": [
-        ".nuxt/nuxt-schema-org-config"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/nuxt-schema-org-config"
       ],
       "#nuxt-simple-robots/config": [
-        ".nuxt/modules/config/nuxt-simple-robots"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-simple-robots"
       ],
       "#nuxt-simple-sitemap/config": [
-        ".nuxt/modules/config/nuxt-simple-sitemap"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-simple-sitemap"
       ],
       "#nuxt-og-image/config": [
-        ".nuxt/modules/config/nuxt-og-image"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-og-image"
       ],
       "#vue-router": [
-        ".nuxt/vue-router"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/vue-router"
       ],
       "#imports": [
-        ".nuxt/imports"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/imports"
       ],
       "#build": [
-        ".nuxt"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt"
       ],
       "#build/*": [
-        ".nuxt/*"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/*"
       ],
       "#components": [
-        ".nuxt/components"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/components"
       ]
     }
   },
   "include": [
     "./nuxt.d.ts",
-    "../**/*"
+    "../**/*",
+    "../node_modules/nuxt-seo-kit/**/*"
   ],
   "exclude": [
     "../dist",
