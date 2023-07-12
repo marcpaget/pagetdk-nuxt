@@ -8,7 +8,7 @@ const toggleMode = () =>
     <button
         aria-label="Color Mode"
         :title="`Enable ${colorMode.value === 'dark' ? 'Light' : 'Dark'} Mode`"
-        class="group link inline-block p-2 hover:text-gray-200 dark:hover:text-gray-300"
+        class="p-1 sm:p-2 link inline-block hover:text-gray-700 dark:hover:text-gray-300 group"
         @click.prevent="toggleMode"
     >
         <div class="icon">

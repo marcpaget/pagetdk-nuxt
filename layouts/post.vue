@@ -8,7 +8,7 @@ defineOgImageScreenshot({
 <template>
     <DocsPageLayout>
         <SchemaOrgArticle />
-        <div class="flex items-center mb-3">
+        <div class="mb-3 flex items-center">
             <TopBreadcrumbs v-if="post.breadcrumbs !== false" class="mb-0" />
             <TagList :tags="post.tags" />
         </div>

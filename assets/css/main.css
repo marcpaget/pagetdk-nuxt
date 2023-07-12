@@ -58,3 +58,13 @@
     opacity: 0;
     filter: blur(1rem);
 }
+.icon {
+    @apply md:(w-8 h-8) w-6 h-6;
+  }
+  
+  .icon--off {
+    @apply group-hover:hidden inline-block;
+  }
+  .icon--on {
+    @apply hidden group-hover:inline-block;
+  }

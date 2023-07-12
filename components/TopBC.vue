@@ -1,5 +1,5 @@
 <template>
-    <Breadcrumbs class="unprose no-prose flex space-x-4 text-sm opacity-50 list-none !mt-0 mb-2">
+    <Breadcrumbs class="unprose no-prose !mt-0 mb-2 flex list-none space-x-4 text-sm opacity-50">
         <template #breadcrumb="{ to, title, last }">
             <span><!-- empty --></span>
             <NuxtLink v-if="!last" :to="to" class="inline !border-none">

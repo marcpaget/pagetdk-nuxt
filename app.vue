@@ -1,4 +1,3 @@
-
 <template>
     <div class="scrollbar-thumb-blue-700">
         <SeoKit />
