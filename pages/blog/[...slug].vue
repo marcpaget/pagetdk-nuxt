@@ -1,6 +1,6 @@
 <template>
     <main>
-        <article class="prose p-16 max-w-3xl m-auto">
+        <article class="prose m-auto max-w-3xl p-16">
             <ContentDoc />
         </article>
     </main>

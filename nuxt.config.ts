@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         // '@nuxtjs/prismic',
         '@vueuse/nuxt',
         '@nuxtjs/supabase',
-        //'@nuxtjs/color-mode',
+        '@nuxtjs/color-mode',
         'nuxt-icon',
         'unplugin-icons/nuxt',
         //'@nuxtjs/partytown',
@@ -31,10 +31,35 @@ export default defineNuxtConfig({
         'nuxt-purgecss',
         '@nuxthq/ui',
         '@nuxtjs/strapi',
+        '@tresjs/nuxt',
+        '@nuxtjs/eslint-module',
+        'nuxt-vuefire',
     ],
+    vuefire: {
+        config: {
+            // there could be other properties depending on the project
+            apiKey: 'AIzaSyCVW5oqUcCHhheg3cTkaOZeTYB0yEonURE',
+            authDomain: 'nuxt3-esp32.firebaseapp.com',
+            projectId: 'nuxt3-esp32',
+            storageBucket: 'nuxt3-esp32.appspot.com',
+            messagingSenderId: '519703147494',
+            appId: '1:519703147494:web:4ff64ace33395546a15c27',
+            measurementId: 'G-9DQ9LHNHZ0',
+        },
+    },
+    eslint: {
+        /* module options */
+    },
     plugins: [{ src: '~/plugins/vercel.js', mode: 'client' }],
     ssr: false,
     components: true,
+    strapi: {
+        // Options
+    },
+    purgecss: {
+        enabled: true, // Always enable purgecss
+        //  safelist: ['my-class'], // Add my-class token to the safelist (e.g. .my-class)
+    },
     content: {
         documentDriven: true,
     },
@@ -122,5 +147,7 @@ export default defineNuxtConfig({
         },
     },
 
-    devtools: true,
+    devtools: {
+        enabled: true,
+    },
 })

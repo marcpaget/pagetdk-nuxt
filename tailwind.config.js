@@ -15,7 +15,9 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Quicksand', ...defaultTheme.fontFamily.sans],
+                sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
+                //header: ['Nunito Sans'],
+                //sans: ['Quicksand', ...defaultTheme.fontFamily.sans],
                 //sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
                 permanentmarker: ['Permanent Marker', 'cursive'],
             },

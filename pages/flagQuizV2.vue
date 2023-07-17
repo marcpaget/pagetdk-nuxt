@@ -58,11 +58,11 @@ export default {
 
 <template>
     <div class="flex flex-col">
-        <div class="bg-blue-300 mt-10 justify-center self-center">
+        <div class="mt-10 justify-center self-center bg-blue-300">
             <p class="text-4xl">Score: {{ score }}</p>
 
             <div>
-                <img class="rounded-sm w-48 icon" :src="currentFlag.flag" />
+                <img class="icon w-48 rounded-sm" :src="currentFlag.flag" />
 
                 // eslint-disable-next-line vue/require-v-for-key
                 <div v-for="choice in choices">

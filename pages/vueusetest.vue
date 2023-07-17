@@ -117,10 +117,10 @@ let distancekm = computed(() => {
                                 <div class="stat-desc" />
                             </div>
                             <div class="stat-actions">
-                                <button class="btn btn-sm btn-success" @click="resume">Start watch</button>
+                                <button class="btn-success btn-sm btn" @click="resume">Start watch</button>
                             </div>
                             <div class="stat-actions">
-                                <button class="btn btn-sm" @click="pause">Pause watch</button>
+                                <button class="btn-sm btn" @click="pause">Pause watch</button>
                             </div>
                         </div>
                     </div>

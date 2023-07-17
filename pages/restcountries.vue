@@ -21,22 +21,22 @@ const { data: country, error } = useAsyncData(
 </script>
 
 <template>
-    <div class="h-screen relative overflow-hidden">
-        <div class="absolute w-full h-full top-0 overlay" />
-        <div class="absolute w-full h-full top-0 p-48">
+    <div class="relative h-screen overflow-hidden">
+        <div class="overlay absolute top-0 h-full w-full" />
+        <div class="absolute top-0 h-full w-full p-48">
             <div class="flex justify-around">
                 <div>
-                    <img :src="country[0].flags.png" class="w-56 icon" />
+                    <img :src="country[0].flags.png" class="icon w-56" />
                     <div>
-                        <p class="text-2xl text-white font-extralight">
+                        <p class="text-2xl font-extralight text-white">
                             {{ country[0].region }}
                         </p>
                         <div>
-                            <p class="text-2xl text-white font-extralight">
+                            <p class="text-2xl font-extralight text-white">
                                 {{ country[0].name.official }}
                             </p>
                             <div>
-                                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Tryk</button>
+                                <button class="btn-xs btn sm:btn-sm md:btn-md lg:btn-lg">Tryk</button>
                             </div>
                         </div>
                     </div>

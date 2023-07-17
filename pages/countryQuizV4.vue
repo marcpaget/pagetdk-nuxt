@@ -1,31 +1,32 @@
 <template>
     <div class="flex flex-col">
-        <span class="text-4xl text-sky-600 text-center mb-4 mt-4">Guess the capital</span>
+        <span class="mb-4 mt-4 text-center text-4xl text-sky-600">Guess the capital</span>
 
         <div
-            class="bg-slate-300 dark:bg-slate-100 mt-8 rounded-md justify-center self-center shadow-md shadow-slate-500 dark:shadow-slate-50 outline outline-1 box-border p-8 border-8"
+            class="mt-8 box-border justify-center self-center rounded-md border-8 bg-slate-300 p-8 shadow-md shadow-slate-500 outline outline-1 dark:bg-slate-100 dark:shadow-slate-50"
         >
             <section v-if="totalQuestions < 10">
                 <div class="min-w-max max-w-lg">
                     <progress
-                        class="mt-8 place-content-center progress progress-primary w-56"
+                        class="progress progress-primary mt-8 w-56 place-content-center"
                         :value="totalQuestions"
                         :max="10"
                     />
-                    <span class="text-2xl text-gray-600 text-left mb-4">Question {{ totalQuestions }} / 10</span>
+                    <span class="mb-4 text-left text-2xl text-gray-600">Question {{ totalQuestions }} / 10</span>
 
-                    <span class="text-2xl text-gray-600 text-right mb-4">Score {{ score }} / {{ totalQuestions }}</span>
+                    <span class="mb-4 text-right text-2xl text-gray-600">Score {{ score }} / {{ totalQuestions }}</span>
                 </div>
                 <!-- ! FIX: Add optional timer -->
                 <div class="justify-center self-center">
-                    <p class="text-4xl text-sky-600 text-center">{{ currentCountry }}</p>
+                    <p class="text-center text-4xl text-sky-600">{{ currentCountry }}</p>
+                    <p class="font-">What is the capital of {{ currentCountry }}?</p>
                 </div>
-                <div class="min-w-max max-w-lg flex flex-col rounded-md shadow-sm mt-4">
+                <div class="mt-4 flex min-w-max max-w-lg flex-col rounded-md shadow-sm">
                     <!--   ! FIX: Add a button to start the quiz  -->
                     <button
                         v-for="(option, index) in options"
                         :key="index"
-                        class="py-3 px-4 mt-2 justify-center items-center gap-2 border text-white bg-slate-500 align-middle hover:bg-gray-50 transition-all text-xl dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400"
+                        class="mt-2 items-center justify-center gap-2 border bg-slate-500 px-4 py-3 align-middle text-xl text-white transition-all hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-slate-800"
                         @click="checkAnswer(option)"
                     >
                         {{ option }}
@@ -42,10 +43,10 @@
             </section>
             <section v-else>
                 <div class="min-w-max max-w-lg">
-                    <span class="text-4xl text-sky-600 text-center mb-4">Score</span>
+                    <span class="mb-4 text-center text-4xl text-sky-600">Score</span>
 
-                    <p class="text-2xl text-green-600 text-center mb-4">Correct: {{ score }}</p>
-                    <p class="text-2xl text-red-600 text-center mb-4">Wrong: {{ wrong }}</p>
+                    <p class="mb-4 text-center text-2xl text-green-600">Correct: {{ score }}</p>
+                    <p class="mb-4 text-center text-2xl text-red-600">Wrong: {{ wrong }}</p>
                     <button @click="totalQuestions = 0">Play Again</button>
                 </div>
             </section>
