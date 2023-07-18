@@ -86,10 +86,7 @@
         "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
       ],
       "#tailwind-config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/tailwind.config"
-      ],
-      "#tailwind-config/*": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/tailwind.config/*"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/tailwind"
       ],
       "#nuxt-seo-kit/config": [
         "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-seo-kit"
@@ -126,7 +123,16 @@
   "include": [
     "./nuxt.d.ts",
     "../**/*",
-    "../node_modules/nuxt-seo-kit/**/*"
+    "../**/*",
+    "../node_modules/nuxt-seo-kit/**/*",
+    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt",
+    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*",
+    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt",
+    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*",
+    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt",
+    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*",
+    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt",
+    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*"
   ],
   "exclude": [
     "../dist",

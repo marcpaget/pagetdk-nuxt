@@ -28,6 +28,27 @@ declare const inlineConfig = {
       "kaldi",
       "primary"
     ]
+  },
+  "firebaseConfig": {
+    "apiKey": "AIzaSyCVW5oqUcCHhheg3cTkaOZeTYB0yEonURE",
+    "authDomain": "nuxt3-esp32.firebaseapp.com",
+    "projectId": "nuxt3-esp32",
+    "storageBucket": "nuxt3-esp32.appspot.com",
+    "messagingSenderId": "519703147494",
+    "appId": "1:519703147494:web:4ff64ace33395546a15c27",
+    "measurementId": "G-9DQ9LHNHZ0"
+  },
+  "vuefireOptions": {
+    "optionsApiPlugin": false,
+    "config": {
+      "apiKey": "AIzaSyCVW5oqUcCHhheg3cTkaOZeTYB0yEonURE",
+      "authDomain": "nuxt3-esp32.firebaseapp.com",
+      "projectId": "nuxt3-esp32",
+      "storageBucket": "nuxt3-esp32.appspot.com",
+      "messagingSenderId": "519703147494",
+      "appId": "1:519703147494:web:4ff64ace33395546a15c27",
+      "measurementId": "G-9DQ9LHNHZ0"
+    }
   }
 }
 type ResolvedAppConfig = Defu<typeof inlineConfig, [typeof cfg0]>

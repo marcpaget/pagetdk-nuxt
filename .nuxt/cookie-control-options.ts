@@ -38,6 +38,9 @@ export default {
   "cookieExpiryOffsetMs": 31536000000,
   "cookieNameIsConsentGiven": "ncc_c",
   "cookieNameCookiesEnabledIds": "ncc_e",
+  "cookieOptions": {
+    "path": "/"
+  },
   "isAcceptNecessaryButtonEnabled": true,
   "isControlButtonEnabled": true,
   "isCookieIdVisible": false,
@@ -46,7 +49,6 @@ export default {
   "isDashInDescriptionEnabled": true,
   "isIframeBlocked": false,
   "isModalForced": false,
-  "domain": "",
   "locales": [
     "en"
   ],

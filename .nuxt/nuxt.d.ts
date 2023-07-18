@@ -21,6 +21,7 @@
 /// <reference types="@nuxtjs/strapi" />
 /// <reference types="@tresjs/nuxt" />
 /// <reference types="@nuxtjs/eslint-module" />
+/// <reference types="nuxt-vuefire" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="nuxt-seo-kit" />
 /// <reference types="nuxt-schema-org" />

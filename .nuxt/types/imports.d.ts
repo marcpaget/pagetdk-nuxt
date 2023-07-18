@@ -8,29 +8,29 @@ declare global {
   const Picker: typeof import('@varlet/ui')['Picker']
   const Snackbar: typeof import('@varlet/ui')['Snackbar']
   const StyleProvider: typeof import('@varlet/ui')['StyleProvider']
-  const SwiperA11y: typeof import('swiper')['A11y']
-  const SwiperAutoplay: typeof import('swiper')['Autoplay']
-  const SwiperController: typeof import('swiper')['Controller']
-  const SwiperEffectCards: typeof import('swiper')['EffectCards']
-  const SwiperEffectCoverflow: typeof import('swiper')['EffectCoverflow']
-  const SwiperEffectCreative: typeof import('swiper')['EffectCreative']
-  const SwiperEffectCube: typeof import('swiper')['EffectCube']
-  const SwiperEffectFade: typeof import('swiper')['EffectFade']
-  const SwiperEffectFlip: typeof import('swiper')['EffectFlip']
-  const SwiperFreeMode: typeof import('swiper')['FreeMode']
-  const SwiperGrid: typeof import('swiper')['Grid']
-  const SwiperHashNavigation: typeof import('swiper')['HashNavigation']
-  const SwiperHistory: typeof import('swiper')['History']
-  const SwiperKeyboard: typeof import('swiper')['Keyboard']
-  const SwiperManipulation: typeof import('swiper')['Manipulation']
-  const SwiperMousewheel: typeof import('swiper')['Mousewheel']
-  const SwiperNavigation: typeof import('swiper')['Navigation']
-  const SwiperPagination: typeof import('swiper')['Pagination']
-  const SwiperParallax: typeof import('swiper')['Parallax']
-  const SwiperScrollbar: typeof import('swiper')['Scrollbar']
-  const SwiperThumbs: typeof import('swiper')['Thumbs']
-  const SwiperVirtual: typeof import('swiper')['Virtual']
-  const SwiperZoom: typeof import('swiper')['Zoom']
+  const SwiperA11y: typeof import('swiper/modules')['A11y']
+  const SwiperAutoplay: typeof import('swiper/modules')['Autoplay']
+  const SwiperController: typeof import('swiper/modules')['Controller']
+  const SwiperEffectCards: typeof import('swiper/modules')['EffectCards']
+  const SwiperEffectCoverflow: typeof import('swiper/modules')['EffectCoverflow']
+  const SwiperEffectCreative: typeof import('swiper/modules')['EffectCreative']
+  const SwiperEffectCube: typeof import('swiper/modules')['EffectCube']
+  const SwiperEffectFade: typeof import('swiper/modules')['EffectFade']
+  const SwiperEffectFlip: typeof import('swiper/modules')['EffectFlip']
+  const SwiperFreeMode: typeof import('swiper/modules')['FreeMode']
+  const SwiperGrid: typeof import('swiper/modules')['Grid']
+  const SwiperHashNavigation: typeof import('swiper/modules')['HashNavigation']
+  const SwiperHistory: typeof import('swiper/modules')['History']
+  const SwiperKeyboard: typeof import('swiper/modules')['Keyboard']
+  const SwiperManipulation: typeof import('swiper/modules')['Manipulation']
+  const SwiperMousewheel: typeof import('swiper/modules')['Mousewheel']
+  const SwiperNavigation: typeof import('swiper/modules')['Navigation']
+  const SwiperPagination: typeof import('swiper/modules')['Pagination']
+  const SwiperParallax: typeof import('swiper/modules')['Parallax']
+  const SwiperScrollbar: typeof import('swiper/modules')['Scrollbar']
+  const SwiperThumbs: typeof import('swiper/modules')['Thumbs']
+  const SwiperVirtual: typeof import('swiper/modules')['Virtual']
+  const SwiperZoom: typeof import('swiper/modules')['Zoom']
   const _useShortcuts: typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useShortcuts')['_useShortcuts']
   const abortNavigation: typeof import('../../node_modules/nuxt/dist/app')['abortNavigation']
   const addRouteMiddleware: typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']
@@ -256,6 +256,7 @@ declare global {
   const useClamp: typeof import('@vueuse/math')['useClamp']
   const useClipboard: typeof import('@vueuse/core')['useClipboard']
   const useCloned: typeof import('@vueuse/core')['useCloned']
+  const useCollection: typeof import('vuefire')['useCollection']
   const useColorMode: typeof import('../../node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']
   const useConfirmDialog: typeof import('@vueuse/core')['useConfirmDialog']
   const useContent: typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/content')['useContent']
@@ -273,6 +274,9 @@ declare global {
   const useCurrentElement: typeof import('@vueuse/core')['useCurrentElement']
   const useCycleList: typeof import('@vueuse/core')['useCycleList']
   const useDark: typeof import('@vueuse/core')['useDark']
+  const useDatabase: typeof import('vuefire')['useDatabase']
+  const useDatabaseList: typeof import('vuefire')['useDatabaseList']
+  const useDatabaseObject: typeof import('vuefire')['useDatabaseObject']
   const useDateFormat: typeof import('@vueuse/core')['useDateFormat']
   const useDebounce: typeof import('@vueuse/core')['useDebounce']
   const useDebounceFn: typeof import('@vueuse/core')['useDebounceFn']
@@ -282,6 +286,7 @@ declare global {
   const useDevicePixelRatio: typeof import('@vueuse/core')['useDevicePixelRatio']
   const useDevicesList: typeof import('@vueuse/core')['useDevicesList']
   const useDisplayMedia: typeof import('@vueuse/core')['useDisplayMedia']
+  const useDocument: typeof import('vuefire')['useDocument']
   const useDocumentVisibility: typeof import('@vueuse/core')['useDocumentVisibility']
   const useDraggable: typeof import('@vueuse/core')['useDraggable']
   const useDropZone: typeof import('@vueuse/core')['useDropZone']
@@ -300,6 +305,8 @@ declare global {
   const useFetchCountries: typeof import('../../composables/useFetchCountries')['default']
   const useFileDialog: typeof import('@vueuse/core')['useFileDialog']
   const useFileSystemAccess: typeof import('@vueuse/core')['useFileSystemAccess']
+  const useFirebaseApp: typeof import('../../node_modules/nuxt-vuefire/dist/runtime/app/composables')['useFirebaseApp']
+  const useFirestore: typeof import('vuefire')['useFirestore']
   const useFloor: typeof import('@vueuse/math')['useFloor']
   const useFocus: typeof import('@vueuse/core')['useFocus']
   const useFocusWithin: typeof import('@vueuse/core')['useFocusWithin']
@@ -503,29 +510,29 @@ declare module 'vue' {
     readonly Picker: UnwrapRef<typeof import('@varlet/ui')['Picker']>
     readonly Snackbar: UnwrapRef<typeof import('@varlet/ui')['Snackbar']>
     readonly StyleProvider: UnwrapRef<typeof import('@varlet/ui')['StyleProvider']>
-    readonly SwiperA11y: UnwrapRef<typeof import('swiper')['A11y']>
-    readonly SwiperAutoplay: UnwrapRef<typeof import('swiper')['Autoplay']>
-    readonly SwiperController: UnwrapRef<typeof import('swiper')['Controller']>
-    readonly SwiperEffectCards: UnwrapRef<typeof import('swiper')['EffectCards']>
-    readonly SwiperEffectCoverflow: UnwrapRef<typeof import('swiper')['EffectCoverflow']>
-    readonly SwiperEffectCreative: UnwrapRef<typeof import('swiper')['EffectCreative']>
-    readonly SwiperEffectCube: UnwrapRef<typeof import('swiper')['EffectCube']>
-    readonly SwiperEffectFade: UnwrapRef<typeof import('swiper')['EffectFade']>
-    readonly SwiperEffectFlip: UnwrapRef<typeof import('swiper')['EffectFlip']>
-    readonly SwiperFreeMode: UnwrapRef<typeof import('swiper')['FreeMode']>
-    readonly SwiperGrid: UnwrapRef<typeof import('swiper')['Grid']>
-    readonly SwiperHashNavigation: UnwrapRef<typeof import('swiper')['HashNavigation']>
-    readonly SwiperHistory: UnwrapRef<typeof import('swiper')['History']>
-    readonly SwiperKeyboard: UnwrapRef<typeof import('swiper')['Keyboard']>
-    readonly SwiperManipulation: UnwrapRef<typeof import('swiper')['Manipulation']>
-    readonly SwiperMousewheel: UnwrapRef<typeof import('swiper')['Mousewheel']>
-    readonly SwiperNavigation: UnwrapRef<typeof import('swiper')['Navigation']>
-    readonly SwiperPagination: UnwrapRef<typeof import('swiper')['Pagination']>
-    readonly SwiperParallax: UnwrapRef<typeof import('swiper')['Parallax']>
-    readonly SwiperScrollbar: UnwrapRef<typeof import('swiper')['Scrollbar']>
-    readonly SwiperThumbs: UnwrapRef<typeof import('swiper')['Thumbs']>
-    readonly SwiperVirtual: UnwrapRef<typeof import('swiper')['Virtual']>
-    readonly SwiperZoom: UnwrapRef<typeof import('swiper')['Zoom']>
+    readonly SwiperA11y: UnwrapRef<typeof import('swiper/modules')['A11y']>
+    readonly SwiperAutoplay: UnwrapRef<typeof import('swiper/modules')['Autoplay']>
+    readonly SwiperController: UnwrapRef<typeof import('swiper/modules')['Controller']>
+    readonly SwiperEffectCards: UnwrapRef<typeof import('swiper/modules')['EffectCards']>
+    readonly SwiperEffectCoverflow: UnwrapRef<typeof import('swiper/modules')['EffectCoverflow']>
+    readonly SwiperEffectCreative: UnwrapRef<typeof import('swiper/modules')['EffectCreative']>
+    readonly SwiperEffectCube: UnwrapRef<typeof import('swiper/modules')['EffectCube']>
+    readonly SwiperEffectFade: UnwrapRef<typeof import('swiper/modules')['EffectFade']>
+    readonly SwiperEffectFlip: UnwrapRef<typeof import('swiper/modules')['EffectFlip']>
+    readonly SwiperFreeMode: UnwrapRef<typeof import('swiper/modules')['FreeMode']>
+    readonly SwiperGrid: UnwrapRef<typeof import('swiper/modules')['Grid']>
+    readonly SwiperHashNavigation: UnwrapRef<typeof import('swiper/modules')['HashNavigation']>
+    readonly SwiperHistory: UnwrapRef<typeof import('swiper/modules')['History']>
+    readonly SwiperKeyboard: UnwrapRef<typeof import('swiper/modules')['Keyboard']>
+    readonly SwiperManipulation: UnwrapRef<typeof import('swiper/modules')['Manipulation']>
+    readonly SwiperMousewheel: UnwrapRef<typeof import('swiper/modules')['Mousewheel']>
+    readonly SwiperNavigation: UnwrapRef<typeof import('swiper/modules')['Navigation']>
+    readonly SwiperPagination: UnwrapRef<typeof import('swiper/modules')['Pagination']>
+    readonly SwiperParallax: UnwrapRef<typeof import('swiper/modules')['Parallax']>
+    readonly SwiperScrollbar: UnwrapRef<typeof import('swiper/modules')['Scrollbar']>
+    readonly SwiperThumbs: UnwrapRef<typeof import('swiper/modules')['Thumbs']>
+    readonly SwiperVirtual: UnwrapRef<typeof import('swiper/modules')['Virtual']>
+    readonly SwiperZoom: UnwrapRef<typeof import('swiper/modules')['Zoom']>
     readonly _useShortcuts: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useShortcuts')['_useShortcuts']>
     readonly abortNavigation: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['abortNavigation']>
     readonly addRouteMiddleware: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']>
@@ -751,6 +758,7 @@ declare module 'vue' {
     readonly useClamp: UnwrapRef<typeof import('@vueuse/math')['useClamp']>
     readonly useClipboard: UnwrapRef<typeof import('@vueuse/core')['useClipboard']>
     readonly useCloned: UnwrapRef<typeof import('@vueuse/core')['useCloned']>
+    readonly useCollection: UnwrapRef<typeof import('vuefire')['useCollection']>
     readonly useColorMode: UnwrapRef<typeof import('../../node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']>
     readonly useConfirmDialog: UnwrapRef<typeof import('@vueuse/core')['useConfirmDialog']>
     readonly useContent: UnwrapRef<typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/content')['useContent']>
@@ -768,6 +776,9 @@ declare module 'vue' {
     readonly useCurrentElement: UnwrapRef<typeof import('@vueuse/core')['useCurrentElement']>
     readonly useCycleList: UnwrapRef<typeof import('@vueuse/core')['useCycleList']>
     readonly useDark: UnwrapRef<typeof import('@vueuse/core')['useDark']>
+    readonly useDatabase: UnwrapRef<typeof import('vuefire')['useDatabase']>
+    readonly useDatabaseList: UnwrapRef<typeof import('vuefire')['useDatabaseList']>
+    readonly useDatabaseObject: UnwrapRef<typeof import('vuefire')['useDatabaseObject']>
     readonly useDateFormat: UnwrapRef<typeof import('@vueuse/core')['useDateFormat']>
     readonly useDebounce: UnwrapRef<typeof import('@vueuse/core')['useDebounce']>
     readonly useDebounceFn: UnwrapRef<typeof import('@vueuse/core')['useDebounceFn']>
@@ -777,6 +788,7 @@ declare module 'vue' {
     readonly useDevicePixelRatio: UnwrapRef<typeof import('@vueuse/core')['useDevicePixelRatio']>
     readonly useDevicesList: UnwrapRef<typeof import('@vueuse/core')['useDevicesList']>
     readonly useDisplayMedia: UnwrapRef<typeof import('@vueuse/core')['useDisplayMedia']>
+    readonly useDocument: UnwrapRef<typeof import('vuefire')['useDocument']>
     readonly useDocumentVisibility: UnwrapRef<typeof import('@vueuse/core')['useDocumentVisibility']>
     readonly useDraggable: UnwrapRef<typeof import('@vueuse/core')['useDraggable']>
     readonly useDropZone: UnwrapRef<typeof import('@vueuse/core')['useDropZone']>
@@ -795,6 +807,8 @@ declare module 'vue' {
     readonly useFetchCountries: UnwrapRef<typeof import('../../composables/useFetchCountries')['default']>
     readonly useFileDialog: UnwrapRef<typeof import('@vueuse/core')['useFileDialog']>
     readonly useFileSystemAccess: UnwrapRef<typeof import('@vueuse/core')['useFileSystemAccess']>
+    readonly useFirebaseApp: UnwrapRef<typeof import('../../node_modules/nuxt-vuefire/dist/runtime/app/composables')['useFirebaseApp']>
+    readonly useFirestore: UnwrapRef<typeof import('vuefire')['useFirestore']>
     readonly useFloor: UnwrapRef<typeof import('@vueuse/math')['useFloor']>
     readonly useFocus: UnwrapRef<typeof import('@vueuse/core')['useFocus']>
     readonly useFocusWithin: UnwrapRef<typeof import('@vueuse/core')['useFocusWithin']>
@@ -990,29 +1004,29 @@ declare module '@vue/runtime-core' {
     readonly Picker: UnwrapRef<typeof import('@varlet/ui')['Picker']>
     readonly Snackbar: UnwrapRef<typeof import('@varlet/ui')['Snackbar']>
     readonly StyleProvider: UnwrapRef<typeof import('@varlet/ui')['StyleProvider']>
-    readonly SwiperA11y: UnwrapRef<typeof import('swiper')['A11y']>
-    readonly SwiperAutoplay: UnwrapRef<typeof import('swiper')['Autoplay']>
-    readonly SwiperController: UnwrapRef<typeof import('swiper')['Controller']>
-    readonly SwiperEffectCards: UnwrapRef<typeof import('swiper')['EffectCards']>
-    readonly SwiperEffectCoverflow: UnwrapRef<typeof import('swiper')['EffectCoverflow']>
-    readonly SwiperEffectCreative: UnwrapRef<typeof import('swiper')['EffectCreative']>
-    readonly SwiperEffectCube: UnwrapRef<typeof import('swiper')['EffectCube']>
-    readonly SwiperEffectFade: UnwrapRef<typeof import('swiper')['EffectFade']>
-    readonly SwiperEffectFlip: UnwrapRef<typeof import('swiper')['EffectFlip']>
-    readonly SwiperFreeMode: UnwrapRef<typeof import('swiper')['FreeMode']>
-    readonly SwiperGrid: UnwrapRef<typeof import('swiper')['Grid']>
-    readonly SwiperHashNavigation: UnwrapRef<typeof import('swiper')['HashNavigation']>
-    readonly SwiperHistory: UnwrapRef<typeof import('swiper')['History']>
-    readonly SwiperKeyboard: UnwrapRef<typeof import('swiper')['Keyboard']>
-    readonly SwiperManipulation: UnwrapRef<typeof import('swiper')['Manipulation']>
-    readonly SwiperMousewheel: UnwrapRef<typeof import('swiper')['Mousewheel']>
-    readonly SwiperNavigation: UnwrapRef<typeof import('swiper')['Navigation']>
-    readonly SwiperPagination: UnwrapRef<typeof import('swiper')['Pagination']>
-    readonly SwiperParallax: UnwrapRef<typeof import('swiper')['Parallax']>
-    readonly SwiperScrollbar: UnwrapRef<typeof import('swiper')['Scrollbar']>
-    readonly SwiperThumbs: UnwrapRef<typeof import('swiper')['Thumbs']>
-    readonly SwiperVirtual: UnwrapRef<typeof import('swiper')['Virtual']>
-    readonly SwiperZoom: UnwrapRef<typeof import('swiper')['Zoom']>
+    readonly SwiperA11y: UnwrapRef<typeof import('swiper/modules')['A11y']>
+    readonly SwiperAutoplay: UnwrapRef<typeof import('swiper/modules')['Autoplay']>
+    readonly SwiperController: UnwrapRef<typeof import('swiper/modules')['Controller']>
+    readonly SwiperEffectCards: UnwrapRef<typeof import('swiper/modules')['EffectCards']>
+    readonly SwiperEffectCoverflow: UnwrapRef<typeof import('swiper/modules')['EffectCoverflow']>
+    readonly SwiperEffectCreative: UnwrapRef<typeof import('swiper/modules')['EffectCreative']>
+    readonly SwiperEffectCube: UnwrapRef<typeof import('swiper/modules')['EffectCube']>
+    readonly SwiperEffectFade: UnwrapRef<typeof import('swiper/modules')['EffectFade']>
+    readonly SwiperEffectFlip: UnwrapRef<typeof import('swiper/modules')['EffectFlip']>
+    readonly SwiperFreeMode: UnwrapRef<typeof import('swiper/modules')['FreeMode']>
+    readonly SwiperGrid: UnwrapRef<typeof import('swiper/modules')['Grid']>
+    readonly SwiperHashNavigation: UnwrapRef<typeof import('swiper/modules')['HashNavigation']>
+    readonly SwiperHistory: UnwrapRef<typeof import('swiper/modules')['History']>
+    readonly SwiperKeyboard: UnwrapRef<typeof import('swiper/modules')['Keyboard']>
+    readonly SwiperManipulation: UnwrapRef<typeof import('swiper/modules')['Manipulation']>
+    readonly SwiperMousewheel: UnwrapRef<typeof import('swiper/modules')['Mousewheel']>
+    readonly SwiperNavigation: UnwrapRef<typeof import('swiper/modules')['Navigation']>
+    readonly SwiperPagination: UnwrapRef<typeof import('swiper/modules')['Pagination']>
+    readonly SwiperParallax: UnwrapRef<typeof import('swiper/modules')['Parallax']>
+    readonly SwiperScrollbar: UnwrapRef<typeof import('swiper/modules')['Scrollbar']>
+    readonly SwiperThumbs: UnwrapRef<typeof import('swiper/modules')['Thumbs']>
+    readonly SwiperVirtual: UnwrapRef<typeof import('swiper/modules')['Virtual']>
+    readonly SwiperZoom: UnwrapRef<typeof import('swiper/modules')['Zoom']>
     readonly _useShortcuts: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useShortcuts')['_useShortcuts']>
     readonly abortNavigation: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['abortNavigation']>
     readonly addRouteMiddleware: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']>
@@ -1238,6 +1252,7 @@ declare module '@vue/runtime-core' {
     readonly useClamp: UnwrapRef<typeof import('@vueuse/math')['useClamp']>
     readonly useClipboard: UnwrapRef<typeof import('@vueuse/core')['useClipboard']>
     readonly useCloned: UnwrapRef<typeof import('@vueuse/core')['useCloned']>
+    readonly useCollection: UnwrapRef<typeof import('vuefire')['useCollection']>
     readonly useColorMode: UnwrapRef<typeof import('../../node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']>
     readonly useConfirmDialog: UnwrapRef<typeof import('@vueuse/core')['useConfirmDialog']>
     readonly useContent: UnwrapRef<typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/content')['useContent']>
@@ -1255,6 +1270,9 @@ declare module '@vue/runtime-core' {
     readonly useCurrentElement: UnwrapRef<typeof import('@vueuse/core')['useCurrentElement']>
     readonly useCycleList: UnwrapRef<typeof import('@vueuse/core')['useCycleList']>
     readonly useDark: UnwrapRef<typeof import('@vueuse/core')['useDark']>
+    readonly useDatabase: UnwrapRef<typeof import('vuefire')['useDatabase']>
+    readonly useDatabaseList: UnwrapRef<typeof import('vuefire')['useDatabaseList']>
+    readonly useDatabaseObject: UnwrapRef<typeof import('vuefire')['useDatabaseObject']>
     readonly useDateFormat: UnwrapRef<typeof import('@vueuse/core')['useDateFormat']>
     readonly useDebounce: UnwrapRef<typeof import('@vueuse/core')['useDebounce']>
     readonly useDebounceFn: UnwrapRef<typeof import('@vueuse/core')['useDebounceFn']>
@@ -1264,6 +1282,7 @@ declare module '@vue/runtime-core' {
     readonly useDevicePixelRatio: UnwrapRef<typeof import('@vueuse/core')['useDevicePixelRatio']>
     readonly useDevicesList: UnwrapRef<typeof import('@vueuse/core')['useDevicesList']>
     readonly useDisplayMedia: UnwrapRef<typeof import('@vueuse/core')['useDisplayMedia']>
+    readonly useDocument: UnwrapRef<typeof import('vuefire')['useDocument']>
     readonly useDocumentVisibility: UnwrapRef<typeof import('@vueuse/core')['useDocumentVisibility']>
     readonly useDraggable: UnwrapRef<typeof import('@vueuse/core')['useDraggable']>
     readonly useDropZone: UnwrapRef<typeof import('@vueuse/core')['useDropZone']>
@@ -1282,6 +1301,8 @@ declare module '@vue/runtime-core' {
     readonly useFetchCountries: UnwrapRef<typeof import('../../composables/useFetchCountries')['default']>
     readonly useFileDialog: UnwrapRef<typeof import('@vueuse/core')['useFileDialog']>
     readonly useFileSystemAccess: UnwrapRef<typeof import('@vueuse/core')['useFileSystemAccess']>
+    readonly useFirebaseApp: UnwrapRef<typeof import('../../node_modules/nuxt-vuefire/dist/runtime/app/composables')['useFirebaseApp']>
+    readonly useFirestore: UnwrapRef<typeof import('vuefire')['useFirestore']>
     readonly useFloor: UnwrapRef<typeof import('@vueuse/math')['useFloor']>
     readonly useFocus: UnwrapRef<typeof import('@vueuse/core')['useFocus']>
     readonly useFocusWithin: UnwrapRef<typeof import('@vueuse/core')['useFocusWithin']>

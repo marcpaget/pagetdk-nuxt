@@ -14,6 +14,9 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client").default> &
   InjectionType<typeof import("../../node_modules/nuxt-unhead/dist/runtime/plugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt-schema-org/dist/runtime/plugin").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-vuefire/dist/runtime/app/plugin.server").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-vuefire/dist/runtime/app/plugin.client").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-vuefire/dist/runtime/payload-plugin").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/strapi/dist/runtime/strapi.plugin").default> &
   InjectionType<typeof import("../../node_modules/@nuxthq/ui/dist/runtime/plugins/colors").default> &
   InjectionType<typeof import("../../node_modules/@hypernym/nuxt-anime/dist/runtime/plugin").default> &
