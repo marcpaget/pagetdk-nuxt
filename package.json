@@ -94,7 +94,6 @@
         "@nuxtjs/cloudinary": "^2.1.5",
         "@pinia/nuxt": "^0.4.11",
         "@prisma/client": "5.0.0",
-        "@prismicio/slice-simulator-vue": "^0.2.3",
         "@sidebase/nuxt-session": "^0.2.7",
         "@splidejs/vue-splide": "^0.6.12",
         "@storyblok/nuxt": "^5.5.2",
