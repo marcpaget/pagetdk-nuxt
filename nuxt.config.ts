@@ -34,7 +34,16 @@ export default defineNuxtConfig({
         '@tresjs/nuxt',
         '@nuxtjs/eslint-module',
         'nuxt-vuefire',
+        'vue3-carousel-nuxt',
     ],
+    runtimeConfig: {
+        public: {
+            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://paget.dk',
+            siteName: 'Paget.dk',
+            siteDescription: 'Velkommen til Paget.dk!',
+            language: 'da-DK', // prefer more explicit language codes like `en-AU` over `en`
+        },
+    },
     vuefire: {
         config: {
             // there could be other properties depending on the project

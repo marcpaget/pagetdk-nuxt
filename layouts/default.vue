@@ -3,12 +3,19 @@
 <template>
     <div>
         <AppMenu />
-        <div class="scrollbar-thin scrollbar-track-blue-300 scrollbar-thumb-blue-700">
-            <div class="h-screen w-screen bg-blue-500 dark:bg-orange-400">
-                <slot />
-            </div>
-            <AppFooter />
-        </div>
+        <Breadcrumbs>
+            <template #breadcrumb="{ to, title }">
+                <NuxtLink :to="to">
+                    {{ title }}
+                </NuxtLink>
+                <div class="scrollbar-thin scrollbar-track-blue-300 scrollbar-thumb-blue-700">
+                    <div class="h-screen w-screen bg-blue-500 dark:bg-orange-400">
+                        <slot />
+                    </div>
+                    <AppFooter />
+                </div>
+            </template>
+        </Breadcrumbs>
     </div>
 </template>
 
