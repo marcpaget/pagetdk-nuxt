@@ -62,13 +62,13 @@
         "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#color-mode-options": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/color-mode-options"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/color-mode-options.mjs"
       ],
       "pinia": [
         "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/pinia/dist/pinia"
       ],
       "#viewport-options": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/viewport-options"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/viewport-options.mjs"
       ],
       "#image": [
         "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/image-edge/dist/runtime"
@@ -86,22 +86,25 @@
         "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
       ],
       "#tailwind-config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/tailwind"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/tailwind.config"
+      ],
+      "#tailwind-config/*": [
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/tailwind.config/*"
       ],
       "#nuxt-seo-kit/config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-seo-kit"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-seo-kit.mjs"
       ],
       "#nuxt-schema-org/config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/nuxt-schema-org-config"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/nuxt-schema-org-config.mjs"
       ],
       "#nuxt-simple-robots/config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-simple-robots"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-simple-robots.mjs"
       ],
       "#nuxt-simple-sitemap/config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-simple-sitemap"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-simple-sitemap.mjs"
       ],
       "#nuxt-og-image/config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-og-image"
+        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-og-image.mjs"
       ],
       "#vue-router": [
         "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/vue-router"

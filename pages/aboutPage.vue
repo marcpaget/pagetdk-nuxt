@@ -1,7 +1,22 @@
 <template>
-    <div>
+    <div class="grid">
         <!-- This page correctly has only one single root element -->
-        <div class="font-permanentmarker text-kaldi">The Coldest Sunset</div>
+        <div class="font-permanentmarker text-kaldi py-4 text-4xl">The Coldest Sunset</div>
+        <p class="text-xl text-gray-400 pt-2 pb-6 leading-7 tracking-tight">
+            Irure deserunt reprehenderit non ad nostrud commodo adipisicing enim adipisicing laborum elit ipsum. Eu id
+            laborum enim ea. Pariatur fugiat exercitation amet. Non proident commodo exercitation aute adipisicing eu
+            ipsum. Tempor occaecat sunt exercitation ea. Aute eu labore duis duis anim esse proident eiusmod aute
+            officia ut minim ea ad. Irure deserunt reprehenderit non ad nostrud commodo adipisicing enim adipisicing
+            laborum elit ipsum. Eu id laborum enim ea. Pariatur fugiat exercitation amet. Non proident commodo
+            exercitation aute adipisicing eu ipsum. Tempor occaecat sunt exercitation ea. Aute eu labore duis duis anim
+            esse proident eiusmod aute officia ut minim ea ad. Irure deserunt reprehenderit non ad nostrud commodo
+            adipisicing enim adipisicing laborum elit ipsum. Eu id laborum enim ea. Pariatur fugiat exercitation amet.
+            Non proident commodo exercitation aute adipisicing eu ipsum. Tempor occaecat sunt exercitation ea. Aute eu
+            labore duis duis anim esse proident eiusmod aute officia ut minim ea ad. Irure deserunt reprehenderit non ad
+            nostrud commodo adipisicing enim adipisicing laborum elit ipsum. Eu id laborum enim ea. Pariatur fugiat
+            exercitation amet. Non proident commodo exercitation aute adipisicing eu ipsum. Tempor occaecat sunt
+            exercitation ea. Aute eu labore duis duis anim esse proident eiusmod aute officia ut minim ea ad.
+        </p>
         <!-- <h1>Color mode: {{ $colorMode.value }}</h1>
         <select v-model="$colorMode.preference">
             <option value="system">System</option>
@@ -9,24 +24,55 @@
             <option value="dark">Dark</option>
             <option value="sepia">Sepia</option>
         </select> -->
-        <h1>
+        <h1 ref="anim" class="text-4xl pb-8 text-kaldi font-permanentmarker">Irure deserunt reprehenderit</h1>
+        <p class="tracking-tight text-xl">
             Irure deserunt reprehenderit non ad nostrud commodo adipisicing enim adipisicing laborum elit ipsum. Eu id
             laborum enim ea. Pariatur fugiat exercitation amet. Non proident commodo exercitation aute adipisicing eu
             ipsum. Tempor occaecat sunt exercitation ea. Aute eu labore duis duis anim esse proident eiusmod aute
-            officia ut minim ea ad.
-        </h1>
-        <h1>
-            Irure deserunt reprehenderit non ad nostrud commodo adipisicing enim adipisicing laborum elit ipsum. Eu id
-            laborum enim ea. Pariatur fugiat exercitation amet. Non proident commodo exercitation aute adipisicing eu
-            ipsum. Tempor occaecat sunt exercitation ea. Aute eu labore duis duis anim esse proident eiusmod aute
-            officia ut minim ea ad.
-        </h1>
-        <h2>
-            Irure deserunt reprehenderit non ad nostrud commodo adipisicing enim adipisicing laborum elit ipsum. Eu id
-            laborum enim ea. Pariatur fugiat exercitation amet. Non proident commodo exercitation aute adipisicing eu
-            ipsum. Tempor occaecat sunt exercitation ea. Aute eu labore duis duis anim esse proident eiusmod aute
-            officia ut minim ea ad.
+            officia ut minim ea ad. Irure deserunt reprehenderit non ad nostrud commodo adipisicing enim adipisicing
+            laborum elit ipsum. Eu id laborum enim ea. Pariatur fugiat exercitation amet. Non proident commodo
+            exercitation aute adipisicing eu ipsum. Tempor occaecat sunt exercitation ea. Aute eu labore duis duis anim
+            esse proident eiusmod aute officia ut minim ea ad.
+        </p>
+        <transition-fade appear>
+            <div v-if="isVisible">...</div>
+
+            <h2 class="text-4xl font-permanentmarker text-kaldi pt-14 pb-7">
+                adipisicing enim adipisicing laborum elit ipsum. Eu id laborum enim ea.
+            </h2>
+            <p class="text-xl pt-5 pb-6">
+                Non proident commodo exercitation aute adipisicing eu ipsum. Tempor occaecat sunt exercitation ea. Aute
+                eu labore duis duis anim esse proident eiusmod aute officia ut minim ea ad. Irure deserunt reprehenderit
+                non ad nostrud commodo adipisicing enim adipisicing laborum elit ipsum. Eu id laborum enim ea. Pariatur
+                fugiat exercitation amet. Non proident commodo exercitation aute adipisicing eu ipsum. Tempor occaecat
+                sunt exercitation ea. Aute eu labore duis duis anim esse proident eiusmod aute officia ut minim ea ad.
+                Irure deserunt reprehenderit non ad nostrud commodo adipisicing enim adipisicing laborum elit ipsum. Eu
+                id laborum enim ea. Pariatur fugiat exercitation amet. Non proident commodo exercitation aute
+                adipisicing eu ipsum. Tempor occaecat sunt exercitation ea. Aute eu labore duis duis anim esse proident
+                eiusmod aute officia ut minim ea ad.
+            </p>
+        </transition-fade>
+        <h2 class="text-4xl font-permanentmarker text-kaldi pt-14 pb-7">
+            adipisicing enim adipisicing laborum elit ipsum. Eu id laborum enim ea.
         </h2>
+        <p ref="anim2" class="text-xl pt-5 pb-6">
+            Non proident commodo exercitation aute adipisicing eu ipsum. Tempor occaecat sunt exercitation ea. Aute eu
+            labore duis duis anim esse proident eiusmod aute officia ut minim ea ad. Irure deserunt reprehenderit non ad
+            nostrud commodo adipisicing enim adipisicing laborum elit ipsum. Eu id laborum enim ea. Pariatur fugiat
+            exercitation amet. Non proident commodo exercitation aute adipisicing eu ipsum. Tempor occaecat sunt
+            exercitation ea. Aute eu labore duis duis anim esse proident eiusmod aute officia ut minim ea ad. Irure
+            deserunt reprehenderit non ad nostrud commodo adipisicing enim adipisicing laborum elit ipsum. Eu id laborum
+            enim ea. Pariatur fugiat exercitation amet. Non proident commodo exercitation aute adipisicing eu ipsum.
+            Tempor occaecat sunt exercitation ea. Aute eu labore duis duis anim esse proident eiusmod aute officia ut
+            minim ea ad.
+        </p>
+
+        <div ref="root">
+            <p>Scroll me down!</p>
+            <div v-intersection-observer="[onIntersectionObserver, { root }]">
+                <p>Hello world!</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -34,3 +80,16 @@
 const colorMode = useColorMode()
 console.log(colorMode.preference)
 </script> -->
+
+<script setup lang="ts">
+import { ref } from 'vue'
+import { vIntersectionObserver } from '@vueuse/components'
+
+const root = ref(null)
+
+const isVisible = ref(false)
+
+function onIntersectionObserver([{ isIntersecting }]) {
+    isVisible.value = isIntersecting
+}
+</script>

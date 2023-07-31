@@ -1,10 +1,10 @@
 {
     "eslint.alwaysShowStatus": true,
-    "eslint.packageManager": "yarn",
     "eslint.trace.server": "off",
     "editor.quickSuggestions": {
         "strings": true
     },
+    "editor.inlineSuggest.enabled": true,
     "prettier.endOfLine": "auto",
     "prettier.useTabs": true,
     "prettier.vueIndentScriptAndStyle": true,
@@ -12,12 +12,13 @@
         "plaintext": "html"
     },
     "tailwindCSS.suggestions": true,
-    "tailwindCSS.classAttributes": ["class", "className"],
+    "tailwindCSS.classAttributes": ["class"],
     "files.associations": {
         "*.css": "tailwindcss"
     },
     "tailwindCSS.files.exclude": ["**/.git/**", "**/node_modules/**", "**/.hg/**", "**/.svn/**", "**/.nuxt/**"],
     "tailwindCSS.validate": false,
+    "css.validate": false,
     "vetur.format.defaultFormatter.html": "none",
     // Set the default
     // Enable per-language
@@ -82,11 +83,12 @@
     ],
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "tailwindCSS.experimental.configFile": ".nuxt/tailwind.config.cjs",
+    "tailwindCSS.codeActions": true,
     "editor.formatOnSave": false,
     "prettier.bracketSameLine": true,
     "terminal.integrated.enableMultiLinePasteWarning": false,
-    "editor.autoClosingDelete": "auto",
-    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "editor.autoClosingDelete": "never",
+    "eslint.validate": ["javascript","javascriptreact", "typescript", "typescriptreact"],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },

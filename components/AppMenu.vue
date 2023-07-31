@@ -161,7 +161,7 @@
                         </ul>
                     </details>
                 </li>
-                <li><a>Item 3</a></li>
+                <li><nuxt-link to="/aboutPage">About me</nuxt-link></li>
             </ul>
         </div>
         <div class="navbar-end">

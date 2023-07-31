@@ -35,13 +35,25 @@ export default defineNuxtConfig({
         '@nuxtjs/eslint-module',
         'nuxt-vuefire',
         'vue3-carousel-nuxt',
+        'nuxt-api-party',
+        '@morev/vue-transitions/nuxt',
     ],
+
     runtimeConfig: {
         public: {
             siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://paget.dk',
             siteName: 'Paget.dk',
             siteDescription: 'Velkommen til Paget.dk!',
             language: 'da-DK', // prefer more explicit language codes like `en-AU` over `en`
+        },
+    },
+
+    apiParty: {
+        endpoints: {
+            gsmarena: {
+                url: process.env.GSMARENA_API_BASE_URL!,
+                // Global headers sent with each request
+            },
         },
     },
     vuefire: {
@@ -108,30 +120,30 @@ export default defineNuxtConfig({
         componentName: 'ColorScheme',
     },
 
-    // tailwindcss: {
-    //     cssPath: '~/assets/css/tailwind.css',
-    //     configPath: 'tailwind.config.js',
-    //     exposeConfig: false,
-    //     //    config: {},
-    //     injectPosition: 0,
-    //     viewer: true,
-    // },
-    // css: ['~/assets/css/main.css', 'vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css'],
-    postcss: {
-        plugins: {
-            'postcss-import': {},
-            'tailwindcss/nesting': 'postcss-nesting',
-            tailwindcss: {},
-            autoprefixer: {},
-        },
+    tailwindcss: {
+        cssPath: '~/assets/css/tailwind.css',
+        configPath: 'tailwind.config.cjs',
+        exposeConfig: false,
+        //    config: {},
+        injectPosition: 0,
+        viewer: true,
     },
+    // css: ['~/assets/css/main.css', 'vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css'],
+    // postcss: {
+    //     plugins: {
+    //         'postcss-import': {},
+    //         'tailwindcss/nesting': 'postcss-nesting',
+    //         tailwindcss: {},
+    //         autoprefixer: {},
+    //     },
+    // },
 
-    css: [
-        'primevue/resources/themes/lara-light-blue/theme.css',
-        'primevue/resources/primevue.css',
-        'primeicons/primeicons.css',
-        'primeflex/primeflex.css',
-    ],
+    // css: [
+    //     'primevue/resources/themes/lara-light-blue/theme.css',
+    //     'primevue/resources/primevue.css',
+    //     'primeicons/primeicons.css',
+    //     'primeflex/primeflex.css',
+    // ],
 
     build: {
         transpile:

@@ -25,7 +25,6 @@ declare const inlineConfig = {
       "fuchsia",
       "pink",
       "rose",
-      "kaldi",
       "primary"
     ]
   },
@@ -40,6 +39,7 @@ declare const inlineConfig = {
   },
   "vuefireOptions": {
     "optionsApiPlugin": false,
+    "emulators": true,
     "config": {
       "apiKey": "AIzaSyCVW5oqUcCHhheg3cTkaOZeTYB0yEonURE",
       "authDomain": "nuxt3-esp32.firebaseapp.com",

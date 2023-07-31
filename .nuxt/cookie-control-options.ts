@@ -1,4 +1,4 @@
-import { ModuleOptions } from '../../src/runtime/types'
+import { ModuleOptions } from '#cookie-control/types'
 
 export default {
   "barPosition": "bottom-full",
