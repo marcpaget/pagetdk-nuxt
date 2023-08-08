@@ -1,33 +1,9 @@
 
 import type { CustomAppConfig } from 'nuxt/schema'
 import type { Defu } from 'defu'
-import cfg0 from "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxthq/ui/dist/runtime/app.config"
+import cfg0 from "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/app.config"
 
 declare const inlineConfig = {
-  "ui": {
-    "primary": "green",
-    "gray": "cool",
-    "colors": [
-      "red",
-      "orange",
-      "amber",
-      "yellow",
-      "lime",
-      "green",
-      "emerald",
-      "teal",
-      "cyan",
-      "sky",
-      "blue",
-      "indigo",
-      "violet",
-      "purple",
-      "fuchsia",
-      "pink",
-      "rose",
-      "primary"
-    ]
-  },
   "firebaseConfig": {
     "apiKey": "AIzaSyCVW5oqUcCHhheg3cTkaOZeTYB0yEonURE",
     "authDomain": "nuxt3-esp32.firebaseapp.com",
@@ -39,7 +15,9 @@ declare const inlineConfig = {
   },
   "vuefireOptions": {
     "optionsApiPlugin": false,
-    "emulators": true,
+    "emulators": {
+      "enabled": true
+    },
     "config": {
       "apiKey": "AIzaSyCVW5oqUcCHhheg3cTkaOZeTYB0yEonURE",
       "authDomain": "nuxt3-esp32.firebaseapp.com",

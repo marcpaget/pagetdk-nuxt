@@ -1,5 +1,5 @@
 {
-    "eslint.alwaysShowStatus": true,
+    "eslint.alwaysShowStatus": false,
     "eslint.trace.server": "off",
     "editor.quickSuggestions": {
         "strings": true
@@ -12,12 +12,15 @@
         "plaintext": "html"
     },
     "tailwindCSS.suggestions": true,
-    "tailwindCSS.classAttributes": ["class"],
+    "tailwindCSS.classAttributes": [
+        "class",
+        "className"
+    ],
     "files.associations": {
         "*.css": "tailwindcss"
     },
     "tailwindCSS.files.exclude": ["**/.git/**", "**/node_modules/**", "**/.hg/**", "**/.svn/**", "**/.nuxt/**"],
-    "tailwindCSS.validate": false,
+    "tailwindCSS.validate": true,
     "css.validate": false,
     "vetur.format.defaultFormatter.html": "none",
     // Set the default
@@ -82,7 +85,7 @@
         }
     ],
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "tailwindCSS.experimental.configFile": ".nuxt/tailwind.config.cjs",
+    "tailwindCSS.experimental.configFile": "tailwind.config.js",
     "tailwindCSS.codeActions": true,
     "editor.formatOnSave": false,
     "prettier.bracketSameLine": true,
@@ -120,9 +123,16 @@
         "java": true,
         "c": true
     },
+    
+        "tailwindCSS.experimental.classRegex": [
+          ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
+          ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
+        ],
+      
     "github.copilot.inlineSuggest.enable": true,
     "indentRainbow.excludedLanguages": [
         
         "plaintext"
-    ]
+    ],
+    "tailwindCSS.emmetCompletions": true
 }

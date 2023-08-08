@@ -15,20 +15,13 @@ const toggleMode = () =>
             <ColorScheme placeholder="">
                 <template v-if="colorMode.value === 'dark'">
                     <Icon name="line-md:sunny-outline" class="icon icon--off" />
-                    <Icon name="line-md:sunny-outline-loop" class="icon icon--on" />
+                    <!-- <Icon name="line-md:sunny-outline-loop" class="icon icon--on" /> -->
                 </template>
                 <template v-else>
                     <Icon name="line-md:moon" class="icon icon--off" />
-                    <Icon name="line-md:moon-twotone" class="icon icon--on" />
+                    <!-- <Icon name="line-md:moon-twotone" class="icon icon--on" /> -->
                 </template>
             </ColorScheme>
         </div>
     </button>
 </template>
-
-<style>
-nav .icon {
-    width: 1rem;
-    height: 1rem;
-}
-</style>

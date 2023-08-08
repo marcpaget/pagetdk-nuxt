@@ -5,7 +5,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
+
 @layer components {
     .icon {
         @apply w-6 h-6;
@@ -17,4 +17,24 @@
     .icon--on {
         @apply hidden group-hover:inline-block;
     }
-} */
+}
+
+@layer base{
+    .html {
+        min-height: 100%;
+        min-width: 100%;
+    }
+        .body {
+          height: 100%;
+          width: 100%;
+      
+          margin: 0;
+        }
+          .div#__nuxt {
+            height: 100%;
+            width: 100%;
+      
+            display: flex;
+          
+        }
+      }

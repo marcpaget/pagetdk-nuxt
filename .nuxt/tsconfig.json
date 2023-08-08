@@ -7,137 +7,125 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "skipLibCheck": true,
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
     "strict": true,
     "allowJs": true,
-    "baseUrl": "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt",
     "noEmit": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "types": [
-      "unplugin-icons/types/vue",
-      "node",
-      "swiper/vue"
-    ],
     "paths": {
       "~": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt"
+        ".."
       ],
       "~/*": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*"
+        "../*"
       ],
       "@": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt"
+        ".."
       ],
       "@/*": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*"
+        "../*"
       ],
       "~~": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt"
+        ".."
       ],
       "~~/*": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*"
+        "../*"
       ],
       "@@": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt"
+        ".."
       ],
       "@@/*": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*"
+        "../*"
       ],
       "assets": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/assets"
+        "../assets"
       ],
       "assets/*": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/assets/*"
+        "../assets/*"
       ],
       "public": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/public"
+        "../public"
       ],
       "#app": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt/dist/app"
+        "../node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt/dist/app/*"
+        "../node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt/dist/app/compat/vue-demi"
+        "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#color-mode-options": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/color-mode-options.mjs"
+        "./color-mode-options.mjs"
       ],
       "pinia": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/pinia/dist/pinia"
+        "../node_modules/pinia/dist/pinia"
       ],
       "#viewport-options": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/viewport-options.mjs"
+        "./viewport-options.mjs"
       ],
       "#image": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/image-edge/dist/runtime"
+        "../node_modules/@nuxt/image-edge/dist/runtime"
       ],
       "#image/*": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/image-edge/dist/runtime/*"
+        "../node_modules/@nuxt/image-edge/dist/runtime/*"
       ],
       "#cookie-control/set-vars": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/set-vars/native"
+        "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/set-vars/native"
       ],
       "#cookie-control": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime"
+        "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime"
       ],
       "#cookie-control/*": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
-      ],
-      "#tailwind-config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/tailwind.config"
-      ],
-      "#tailwind-config/*": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/tailwind.config/*"
+        "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
       ],
       "#nuxt-seo-kit/config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-seo-kit.mjs"
+        "./modules/config/nuxt-seo-kit.mjs"
       ],
       "#nuxt-schema-org/config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/nuxt-schema-org-config.mjs"
+        "./nuxt-schema-org-config.mjs"
       ],
       "#nuxt-simple-robots/config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-simple-robots.mjs"
+        "./modules/config/nuxt-simple-robots.mjs"
       ],
       "#nuxt-simple-sitemap/config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-simple-sitemap.mjs"
+        "./modules/config/nuxt-simple-sitemap.mjs"
       ],
       "#nuxt-og-image/config": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/modules/config/nuxt-og-image.mjs"
+        "./modules/config/nuxt-og-image.mjs"
       ],
       "#vue-router": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/vue-router"
+        "./vue-router"
       ],
       "#imports": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/imports"
+        "./imports"
       ],
       "#build": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt"
+        "."
       ],
       "#build/*": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/*"
+        "./*"
       ],
       "#components": [
-        "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/.nuxt/components"
+        "./components"
       ]
-    }
+    },
+    "types": [
+      "unplugin-icons/types/vue",
+      "swiper/vue"
+    ]
   },
   "include": [
     "./nuxt.d.ts",
     "../**/*",
-    "../**/*",
     "../node_modules/nuxt-seo-kit/**/*",
-    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt",
-    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*",
-    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt",
-    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*",
-    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt",
-    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*",
-    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt",
-    "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/*"
+    ".."
   ],
   "exclude": [
+    "../node_modules",
+    "../node_modules/nuxt/node_modules",
     "../dist",
     "../.output"
   ]

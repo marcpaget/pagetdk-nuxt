@@ -161,13 +161,19 @@
                         </ul>
                     </details>
                 </li>
-                <li><nuxt-link to="/aboutPage">About me</nuxt-link></li>
+                <li>
+                    <nuxt-link
+                        class="hover:animate-jump animate-once animate-ease-in-out animate-normal animate-fill-forwards"
+                        to="/aboutPage"
+                        >About me</nuxt-link
+                    >
+                </li>
             </ul>
         </div>
         <div class="navbar-end">
+            <ColorModeSwitch />
             <span v-if="user"> Logged in as: {{ user.email }} </span>
             <ul>
-                <ColorModeSwitch />
                 <button v-if="user" class="btn" @click="doSignOut">Log out</button>
                 <button v-else class="btn">
                     <nuxt-link to="/login">Log in</nuxt-link>

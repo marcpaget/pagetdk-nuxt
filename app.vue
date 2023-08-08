@@ -5,6 +5,7 @@
         <OgImageScreenshot />
         <AppMenu />
         <NuxtPage />
+        <ScrollTop />
         <AppFooter />
     </div>
 </template>

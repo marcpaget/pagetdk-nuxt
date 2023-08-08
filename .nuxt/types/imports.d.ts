@@ -32,7 +32,6 @@ declare global {
   const SwiperThumbs: typeof import('swiper/modules')['Thumbs']
   const SwiperVirtual: typeof import('swiper/modules')['Virtual']
   const SwiperZoom: typeof import('swiper/modules')['Zoom']
-  const _useShortcuts: typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useShortcuts')['_useShortcuts']
   const abortNavigation: typeof import('../../node_modules/nuxt/dist/app')['abortNavigation']
   const addRouteMiddleware: typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
@@ -53,7 +52,6 @@ declare global {
   const createGlobalState: typeof import('@vueuse/core')['createGlobalState']
   const createInjectionState: typeof import('@vueuse/core')['createInjectionState']
   const createInternalLinkResolver: typeof import('../../node_modules/nuxt-seo-kit/composables/internalLinks')['createInternalLinkResolver']
-  const createPopper: typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/usePopper')['createPopper']
   const createProjection: typeof import('@vueuse/math')['createProjection']
   const createReactiveFn: typeof import('@vueuse/core')['createReactiveFn']
   const createReusableTemplate: typeof import('@vueuse/core')['createReusableTemplate']
@@ -109,7 +107,6 @@ declare global {
   const defineReview: typeof import('@unhead/schema-org-vue')['defineReview']
   const defineRobotMeta: typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/composables/defineRobotMeta')['defineRobotMeta']
   const defineSearchAction: typeof import('@unhead/schema-org-vue')['defineSearchAction']
-  const defineShortcuts: typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/defineShortcuts')['defineShortcuts']
   const defineSlots: typeof import('vue')['defineSlots']
   const defineSoftwareApp: typeof import('@unhead/schema-org-vue')['defineSoftwareApp']
   const defineVideo: typeof import('@unhead/schema-org-vue')['defineVideo']
@@ -225,6 +222,7 @@ declare global {
   const updateAppConfig: typeof import('../../node_modules/nuxt/dist/app')['updateAppConfig']
   const useAbs: typeof import('@vueuse/math')['useAbs']
   const useActiveElement: typeof import('@vueuse/core')['useActiveElement']
+  const useAnchorScroll: typeof import('../../node_modules/nuxt-anchorscroll/dist/runtime/composables/anchorscroll')['useAnchorScroll']
   const useAnimate: typeof import('@vueuse/core')['useAnimate']
   const useAppConfig: typeof import('../../node_modules/nuxt/dist/app')['useAppConfig']
   const useArrayDifference: typeof import('@vueuse/core')['useArrayDifference']
@@ -267,7 +265,6 @@ declare global {
   const useContentState: typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/content')['useContentState']
   const useCookie: typeof import('../../node_modules/nuxt/dist/app')['useCookie']
   const useCookieControl: typeof import('../../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/composables')['useCookieControl']
-  const useCopyToClipboard: typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useCopyToClipboard')['useCopyToClipboard']
   const useCounter: typeof import('@vueuse/core')['useCounter']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVar: typeof import('@vueuse/core')['useCssVar']
@@ -365,7 +362,6 @@ declare global {
   const usePointerEventHandler: typeof import('@tresjs/core')['usePointerEventHandler']
   const usePointerLock: typeof import('@vueuse/core')['usePointerLock']
   const usePointerSwipe: typeof import('@vueuse/core')['usePointerSwipe']
-  const usePopper: typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/usePopper')['usePopper']
   const usePrecision: typeof import('@vueuse/math')['usePrecision']
   const usePreferredColorScheme: typeof import('@vueuse/core')['usePreferredColorScheme']
   const usePreferredContrast: typeof import('@vueuse/core')['usePreferredContrast']
@@ -403,7 +399,6 @@ declare global {
   const useSessionD: typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/composables/useSession.d')['default']
   const useSessionStorage: typeof import('@vueuse/core')['useSessionStorage']
   const useShare: typeof import('@vueuse/core')['useShare']
-  const useShortcuts: typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useShortcuts')['useShortcuts']
   const useSlots: typeof import('vue')['useSlots']
   const useSorted: typeof import('@vueuse/core')['useSorted']
   const useSpeechRecognition: typeof import('@vueuse/core')['useSpeechRecognition']
@@ -423,9 +418,7 @@ declare global {
   const useStrapiVersion: typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiVersion')['useStrapiVersion']
   const useStyleTag: typeof import('@vueuse/core')['useStyleTag']
   const useSum: typeof import('@vueuse/math')['useSum']
-  const useSupabaseAuthClient: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseAuthClient')['useSupabaseAuthClient']
   const useSupabaseClient: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseClient')['useSupabaseClient']
-  const useSupabaseToken: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseToken')['useSupabaseToken']
   const useSupabaseUser: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser')['useSupabaseUser']
   const useSupported: typeof import('@vueuse/core')['useSupported']
   const useSwipe: typeof import('@vueuse/core')['useSwipe']
@@ -443,11 +436,9 @@ declare global {
   const useTimeout: typeof import('@vueuse/core')['useTimeout']
   const useTimeoutFn: typeof import('@vueuse/core')['useTimeoutFn']
   const useTimeoutPoll: typeof import('@vueuse/core')['useTimeoutPoll']
-  const useTimer: typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useTimer')['useTimer']
   const useTimestamp: typeof import('@vueuse/core')['useTimestamp']
   const useToNumber: typeof import('@vueuse/core')['useToNumber']
   const useToString: typeof import('@vueuse/core')['useToString']
-  const useToast: typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useToast')['useToast']
   const useToggle: typeof import('@vueuse/core')['useToggle']
   const useTransition: typeof import('@vueuse/core')['useTransition']
   const useTransitionState: typeof import('vue')['useTransitionState']
@@ -471,6 +462,7 @@ declare global {
   const useWindowFocus: typeof import('@vueuse/core')['useWindowFocus']
   const useWindowScroll: typeof import('@vueuse/core')['useWindowScroll']
   const useWindowSize: typeof import('@vueuse/core')['useWindowSize']
+  const vercelTrack: typeof import('@vercel/analytics')['track']
   const watch: typeof import('vue')['watch']
   const watchArray: typeof import('@vueuse/core')['watchArray']
   const watchAtMost: typeof import('@vueuse/core')['watchAtMost']
@@ -537,7 +529,6 @@ declare module 'vue' {
     readonly SwiperThumbs: UnwrapRef<typeof import('swiper/modules')['Thumbs']>
     readonly SwiperVirtual: UnwrapRef<typeof import('swiper/modules')['Virtual']>
     readonly SwiperZoom: UnwrapRef<typeof import('swiper/modules')['Zoom']>
-    readonly _useShortcuts: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useShortcuts')['_useShortcuts']>
     readonly abortNavigation: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['abortNavigation']>
     readonly addRouteMiddleware: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
@@ -558,7 +549,6 @@ declare module 'vue' {
     readonly createGlobalState: UnwrapRef<typeof import('@vueuse/core')['createGlobalState']>
     readonly createInjectionState: UnwrapRef<typeof import('@vueuse/core')['createInjectionState']>
     readonly createInternalLinkResolver: UnwrapRef<typeof import('../../node_modules/nuxt-seo-kit/composables/internalLinks')['createInternalLinkResolver']>
-    readonly createPopper: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/usePopper')['createPopper']>
     readonly createProjection: UnwrapRef<typeof import('@vueuse/math')['createProjection']>
     readonly createReactiveFn: UnwrapRef<typeof import('@vueuse/core')['createReactiveFn']>
     readonly createReusableTemplate: UnwrapRef<typeof import('@vueuse/core')['createReusableTemplate']>
@@ -614,7 +604,6 @@ declare module 'vue' {
     readonly defineReview: UnwrapRef<typeof import('@unhead/schema-org-vue')['defineReview']>
     readonly defineRobotMeta: UnwrapRef<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/composables/defineRobotMeta')['defineRobotMeta']>
     readonly defineSearchAction: UnwrapRef<typeof import('@unhead/schema-org-vue')['defineSearchAction']>
-    readonly defineShortcuts: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/defineShortcuts')['defineShortcuts']>
     readonly defineSlots: UnwrapRef<typeof import('vue')['defineSlots']>
     readonly defineSoftwareApp: UnwrapRef<typeof import('@unhead/schema-org-vue')['defineSoftwareApp']>
     readonly defineVideo: UnwrapRef<typeof import('@unhead/schema-org-vue')['defineVideo']>
@@ -730,6 +719,7 @@ declare module 'vue' {
     readonly updateAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['updateAppConfig']>
     readonly useAbs: UnwrapRef<typeof import('@vueuse/math')['useAbs']>
     readonly useActiveElement: UnwrapRef<typeof import('@vueuse/core')['useActiveElement']>
+    readonly useAnchorScroll: UnwrapRef<typeof import('../../node_modules/nuxt-anchorscroll/dist/runtime/composables/anchorscroll')['useAnchorScroll']>
     readonly useAnimate: UnwrapRef<typeof import('@vueuse/core')['useAnimate']>
     readonly useAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useAppConfig']>
     readonly useArrayDifference: UnwrapRef<typeof import('@vueuse/core')['useArrayDifference']>
@@ -772,7 +762,6 @@ declare module 'vue' {
     readonly useContentState: UnwrapRef<typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/content')['useContentState']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useCookie']>
     readonly useCookieControl: UnwrapRef<typeof import('../../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/composables')['useCookieControl']>
-    readonly useCopyToClipboard: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useCopyToClipboard')['useCopyToClipboard']>
     readonly useCounter: UnwrapRef<typeof import('@vueuse/core')['useCounter']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVar: UnwrapRef<typeof import('@vueuse/core')['useCssVar']>
@@ -870,7 +859,6 @@ declare module 'vue' {
     readonly usePointerEventHandler: UnwrapRef<typeof import('@tresjs/core')['usePointerEventHandler']>
     readonly usePointerLock: UnwrapRef<typeof import('@vueuse/core')['usePointerLock']>
     readonly usePointerSwipe: UnwrapRef<typeof import('@vueuse/core')['usePointerSwipe']>
-    readonly usePopper: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/usePopper')['usePopper']>
     readonly usePrecision: UnwrapRef<typeof import('@vueuse/math')['usePrecision']>
     readonly usePreferredColorScheme: UnwrapRef<typeof import('@vueuse/core')['usePreferredColorScheme']>
     readonly usePreferredContrast: UnwrapRef<typeof import('@vueuse/core')['usePreferredContrast']>
@@ -908,7 +896,6 @@ declare module 'vue' {
     readonly useSessionD: UnwrapRef<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/composables/useSession.d')['default']>
     readonly useSessionStorage: UnwrapRef<typeof import('@vueuse/core')['useSessionStorage']>
     readonly useShare: UnwrapRef<typeof import('@vueuse/core')['useShare']>
-    readonly useShortcuts: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useShortcuts')['useShortcuts']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useSorted: UnwrapRef<typeof import('@vueuse/core')['useSorted']>
     readonly useSpeechRecognition: UnwrapRef<typeof import('@vueuse/core')['useSpeechRecognition']>
@@ -928,9 +915,7 @@ declare module 'vue' {
     readonly useStrapiVersion: UnwrapRef<typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiVersion')['useStrapiVersion']>
     readonly useStyleTag: UnwrapRef<typeof import('@vueuse/core')['useStyleTag']>
     readonly useSum: UnwrapRef<typeof import('@vueuse/math')['useSum']>
-    readonly useSupabaseAuthClient: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseAuthClient')['useSupabaseAuthClient']>
     readonly useSupabaseClient: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseClient')['useSupabaseClient']>
-    readonly useSupabaseToken: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseToken')['useSupabaseToken']>
     readonly useSupabaseUser: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser')['useSupabaseUser']>
     readonly useSupported: UnwrapRef<typeof import('@vueuse/core')['useSupported']>
     readonly useSwipe: UnwrapRef<typeof import('@vueuse/core')['useSwipe']>
@@ -948,11 +933,9 @@ declare module 'vue' {
     readonly useTimeout: UnwrapRef<typeof import('@vueuse/core')['useTimeout']>
     readonly useTimeoutFn: UnwrapRef<typeof import('@vueuse/core')['useTimeoutFn']>
     readonly useTimeoutPoll: UnwrapRef<typeof import('@vueuse/core')['useTimeoutPoll']>
-    readonly useTimer: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useTimer')['useTimer']>
     readonly useTimestamp: UnwrapRef<typeof import('@vueuse/core')['useTimestamp']>
     readonly useToNumber: UnwrapRef<typeof import('@vueuse/core')['useToNumber']>
     readonly useToString: UnwrapRef<typeof import('@vueuse/core')['useToString']>
-    readonly useToast: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useToast')['useToast']>
     readonly useToggle: UnwrapRef<typeof import('@vueuse/core')['useToggle']>
     readonly useTransition: UnwrapRef<typeof import('@vueuse/core')['useTransition']>
     readonly useTransitionState: UnwrapRef<typeof import('vue')['useTransitionState']>
@@ -976,6 +959,7 @@ declare module 'vue' {
     readonly useWindowFocus: UnwrapRef<typeof import('@vueuse/core')['useWindowFocus']>
     readonly useWindowScroll: UnwrapRef<typeof import('@vueuse/core')['useWindowScroll']>
     readonly useWindowSize: UnwrapRef<typeof import('@vueuse/core')['useWindowSize']>
+    readonly vercelTrack: UnwrapRef<typeof import('@vercel/analytics')['track']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchArray: UnwrapRef<typeof import('@vueuse/core')['watchArray']>
     readonly watchAtMost: UnwrapRef<typeof import('@vueuse/core')['watchAtMost']>
@@ -1034,7 +1018,6 @@ declare module '@vue/runtime-core' {
     readonly SwiperThumbs: UnwrapRef<typeof import('swiper/modules')['Thumbs']>
     readonly SwiperVirtual: UnwrapRef<typeof import('swiper/modules')['Virtual']>
     readonly SwiperZoom: UnwrapRef<typeof import('swiper/modules')['Zoom']>
-    readonly _useShortcuts: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useShortcuts')['_useShortcuts']>
     readonly abortNavigation: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['abortNavigation']>
     readonly addRouteMiddleware: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
@@ -1055,7 +1038,6 @@ declare module '@vue/runtime-core' {
     readonly createGlobalState: UnwrapRef<typeof import('@vueuse/core')['createGlobalState']>
     readonly createInjectionState: UnwrapRef<typeof import('@vueuse/core')['createInjectionState']>
     readonly createInternalLinkResolver: UnwrapRef<typeof import('../../node_modules/nuxt-seo-kit/composables/internalLinks')['createInternalLinkResolver']>
-    readonly createPopper: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/usePopper')['createPopper']>
     readonly createProjection: UnwrapRef<typeof import('@vueuse/math')['createProjection']>
     readonly createReactiveFn: UnwrapRef<typeof import('@vueuse/core')['createReactiveFn']>
     readonly createReusableTemplate: UnwrapRef<typeof import('@vueuse/core')['createReusableTemplate']>
@@ -1111,7 +1093,6 @@ declare module '@vue/runtime-core' {
     readonly defineReview: UnwrapRef<typeof import('@unhead/schema-org-vue')['defineReview']>
     readonly defineRobotMeta: UnwrapRef<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/composables/defineRobotMeta')['defineRobotMeta']>
     readonly defineSearchAction: UnwrapRef<typeof import('@unhead/schema-org-vue')['defineSearchAction']>
-    readonly defineShortcuts: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/defineShortcuts')['defineShortcuts']>
     readonly defineSlots: UnwrapRef<typeof import('vue')['defineSlots']>
     readonly defineSoftwareApp: UnwrapRef<typeof import('@unhead/schema-org-vue')['defineSoftwareApp']>
     readonly defineVideo: UnwrapRef<typeof import('@unhead/schema-org-vue')['defineVideo']>
@@ -1227,6 +1208,7 @@ declare module '@vue/runtime-core' {
     readonly updateAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['updateAppConfig']>
     readonly useAbs: UnwrapRef<typeof import('@vueuse/math')['useAbs']>
     readonly useActiveElement: UnwrapRef<typeof import('@vueuse/core')['useActiveElement']>
+    readonly useAnchorScroll: UnwrapRef<typeof import('../../node_modules/nuxt-anchorscroll/dist/runtime/composables/anchorscroll')['useAnchorScroll']>
     readonly useAnimate: UnwrapRef<typeof import('@vueuse/core')['useAnimate']>
     readonly useAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useAppConfig']>
     readonly useArrayDifference: UnwrapRef<typeof import('@vueuse/core')['useArrayDifference']>
@@ -1269,7 +1251,6 @@ declare module '@vue/runtime-core' {
     readonly useContentState: UnwrapRef<typeof import('../../node_modules/@nuxt/content/dist/runtime/composables/content')['useContentState']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useCookie']>
     readonly useCookieControl: UnwrapRef<typeof import('../../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/composables')['useCookieControl']>
-    readonly useCopyToClipboard: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useCopyToClipboard')['useCopyToClipboard']>
     readonly useCounter: UnwrapRef<typeof import('@vueuse/core')['useCounter']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVar: UnwrapRef<typeof import('@vueuse/core')['useCssVar']>
@@ -1367,7 +1348,6 @@ declare module '@vue/runtime-core' {
     readonly usePointerEventHandler: UnwrapRef<typeof import('@tresjs/core')['usePointerEventHandler']>
     readonly usePointerLock: UnwrapRef<typeof import('@vueuse/core')['usePointerLock']>
     readonly usePointerSwipe: UnwrapRef<typeof import('@vueuse/core')['usePointerSwipe']>
-    readonly usePopper: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/usePopper')['usePopper']>
     readonly usePrecision: UnwrapRef<typeof import('@vueuse/math')['usePrecision']>
     readonly usePreferredColorScheme: UnwrapRef<typeof import('@vueuse/core')['usePreferredColorScheme']>
     readonly usePreferredContrast: UnwrapRef<typeof import('@vueuse/core')['usePreferredContrast']>
@@ -1405,7 +1385,6 @@ declare module '@vue/runtime-core' {
     readonly useSessionD: UnwrapRef<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/composables/useSession.d')['default']>
     readonly useSessionStorage: UnwrapRef<typeof import('@vueuse/core')['useSessionStorage']>
     readonly useShare: UnwrapRef<typeof import('@vueuse/core')['useShare']>
-    readonly useShortcuts: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useShortcuts')['useShortcuts']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useSorted: UnwrapRef<typeof import('@vueuse/core')['useSorted']>
     readonly useSpeechRecognition: UnwrapRef<typeof import('@vueuse/core')['useSpeechRecognition']>
@@ -1425,9 +1404,7 @@ declare module '@vue/runtime-core' {
     readonly useStrapiVersion: UnwrapRef<typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiVersion')['useStrapiVersion']>
     readonly useStyleTag: UnwrapRef<typeof import('@vueuse/core')['useStyleTag']>
     readonly useSum: UnwrapRef<typeof import('@vueuse/math')['useSum']>
-    readonly useSupabaseAuthClient: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseAuthClient')['useSupabaseAuthClient']>
     readonly useSupabaseClient: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseClient')['useSupabaseClient']>
-    readonly useSupabaseToken: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseToken')['useSupabaseToken']>
     readonly useSupabaseUser: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser')['useSupabaseUser']>
     readonly useSupported: UnwrapRef<typeof import('@vueuse/core')['useSupported']>
     readonly useSwipe: UnwrapRef<typeof import('@vueuse/core')['useSwipe']>
@@ -1445,11 +1422,9 @@ declare module '@vue/runtime-core' {
     readonly useTimeout: UnwrapRef<typeof import('@vueuse/core')['useTimeout']>
     readonly useTimeoutFn: UnwrapRef<typeof import('@vueuse/core')['useTimeoutFn']>
     readonly useTimeoutPoll: UnwrapRef<typeof import('@vueuse/core')['useTimeoutPoll']>
-    readonly useTimer: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useTimer')['useTimer']>
     readonly useTimestamp: UnwrapRef<typeof import('@vueuse/core')['useTimestamp']>
     readonly useToNumber: UnwrapRef<typeof import('@vueuse/core')['useToNumber']>
     readonly useToString: UnwrapRef<typeof import('@vueuse/core')['useToString']>
-    readonly useToast: UnwrapRef<typeof import('../../node_modules/@nuxthq/ui/dist/runtime/composables/useToast')['useToast']>
     readonly useToggle: UnwrapRef<typeof import('@vueuse/core')['useToggle']>
     readonly useTransition: UnwrapRef<typeof import('@vueuse/core')['useTransition']>
     readonly useTransitionState: UnwrapRef<typeof import('vue')['useTransitionState']>
@@ -1473,6 +1448,7 @@ declare module '@vue/runtime-core' {
     readonly useWindowFocus: UnwrapRef<typeof import('@vueuse/core')['useWindowFocus']>
     readonly useWindowScroll: UnwrapRef<typeof import('@vueuse/core')['useWindowScroll']>
     readonly useWindowSize: UnwrapRef<typeof import('@vueuse/core')['useWindowSize']>
+    readonly vercelTrack: UnwrapRef<typeof import('@vercel/analytics')['track']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchArray: UnwrapRef<typeof import('@vueuse/core')['watchArray']>
     readonly watchAtMost: UnwrapRef<typeof import('@vueuse/core')['watchAtMost']>
