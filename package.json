@@ -54,6 +54,7 @@
         "nuxt": "^3.6.5",
         "nuxt-anchorscroll": "^1.0.2",
         "nuxt-api-party": "^0.13.0",
+        "nuxt-gtag": "^0.5.7",
         "nuxt-icon": "^0.5.0",
         "nuxt-mapbox": "^1.4.2",
         "nuxt-meilisearch": "^0.1.9",

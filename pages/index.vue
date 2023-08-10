@@ -39,7 +39,6 @@ onMounted(() => {
 // }
 //const { locale } = useI18n()
 definePageMeta({
-    middleware: ['auth'],
     layout: 'default',
 })
 </script>

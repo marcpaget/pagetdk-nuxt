@@ -14,6 +14,7 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client").default> &
   InjectionType<typeof import("../../node_modules/nuxt-unhead/dist/runtime/plugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt-schema-org/dist/runtime/plugin").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-gtag/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/nuxt-anchorscroll/dist/runtime/anchorscroll-plugin").default> &
   InjectionType<typeof import("../gsapPlugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt-vercel-analytics/dist/runtime/plugin.client").default> &

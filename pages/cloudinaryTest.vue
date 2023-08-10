@@ -20,4 +20,8 @@
     </div>
 </template>
 
-<script></script>
+<script setup>
+definePageMeta({
+    middleware: ['auth'],
+})
+</script>

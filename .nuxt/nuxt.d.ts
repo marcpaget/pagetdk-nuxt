@@ -27,6 +27,7 @@
 /// <reference types="nuxt-vercel-analytics" />
 /// <reference types="@hypernym/nuxt-gsap" />
 /// <reference types="nuxt-anchorscroll" />
+/// <reference types="nuxt-gtag" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="nuxt-seo-kit" />
 /// <reference types="nuxt-schema-org" />

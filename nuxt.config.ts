@@ -40,15 +40,21 @@ export default defineNuxtConfig({
         'nuxt-vercel-analytics',
         '@hypernym/nuxt-gsap',
         'nuxt-anchorscroll',
+        'nuxt-gtag',
     ],
 
     runtimeConfig: {
         public: {
+            SUPABASE_URL: process.env.SUPABASE_URL,
+            SUPABASE_KEY: process.env.SUPABASE_KEY,
             siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://paget.dk',
             siteName: 'Paget.dk',
             siteDescription: 'Velkommen til Paget.dk!',
             language: 'da-DK', // prefer more explicit language codes like `en-AU` over `en`
         },
+    },
+    gtag: {
+        id: 'G-L04C39X79K',
     },
     anchorscroll: {
         hooks: [
