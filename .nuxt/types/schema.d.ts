@@ -2,6 +2,7 @@ import { NuxtModule, RuntimeConfig } from 'nuxt/schema'
 declare module 'nuxt/schema' {
   interface NuxtConfig {
     ["content"]?: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["tailwindcss"]?: typeof import("@nuxtjs/tailwindcss").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["formkit"]?: typeof import("@formkit/nuxt").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["vueuse"]?: typeof import("@vueuse/nuxt").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["icon"]?: typeof import("nuxt-icon").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
@@ -158,6 +159,8 @@ declare module 'nuxt/schema' {
       },
 
       documentDriven: boolean,
+
+      respectPathCase: boolean,
 
       respectPathCase: boolean,
 
@@ -359,6 +362,10 @@ declare module 'nuxt/schema' {
 
    language: string,
 
+   SUPABASE_URL: string,
+
+   SUPABASE_KEY: string,
+
    content: {
       locales: Array<any>,
 
@@ -371,6 +378,8 @@ declare module 'nuxt/schema' {
 
          clientDB: boolean,
       },
+
+      respectPathCase: boolean,
 
       respectPathCase: boolean,
 

@@ -9,6 +9,8 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "useDefineForClassFields": true,
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
     "strict": true,
     "allowJs": true,
     "noEmit": true,
@@ -17,41 +19,54 @@
     "paths": {
       "~": [
         ".."
+        ".."
       ],
       "~/*": [
+        "../*"
         "../*"
       ],
       "@": [
         ".."
+        ".."
       ],
       "@/*": [
+        "../*"
         "../*"
       ],
       "~~": [
         ".."
+        ".."
       ],
       "~~/*": [
+        "../*"
         "../*"
       ],
       "@@": [
         ".."
+        ".."
       ],
       "@@/*": [
+        "../*"
         "../*"
       ],
       "assets": [
         "../assets"
+        "../assets"
       ],
       "assets/*": [
+        "../assets/*"
         "../assets/*"
       ],
       "public": [
         "../public"
+        "../public"
       ],
       "#app": [
         "../node_modules/nuxt/dist/app"
+        "../node_modules/nuxt/dist/app"
       ],
       "#app/*": [
+        "../node_modules/nuxt/dist/app/*"
         "../node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
@@ -59,20 +74,26 @@
       ],
       "pinia": [
         "../node_modules/pinia/dist/pinia"
+        "../node_modules/pinia/dist/pinia"
       ],
       "#viewport-options": [
+        "./viewport-options.mjs"
         "./viewport-options.mjs"
       ],
       "#image": [
         "../node_modules/@nuxt/image-edge/dist/runtime"
+        "../node_modules/@nuxt/image-edge/dist/runtime"
       ],
       "#image/*": [
+        "../node_modules/@nuxt/image-edge/dist/runtime/*"
         "../node_modules/@nuxt/image-edge/dist/runtime/*"
       ],
       "#cookie-control/set-vars": [
         "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/set-vars/native"
+        "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/set-vars/native"
       ],
       "#cookie-control": [
+        "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime"
         "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime"
       ],
       "#cookie-control/*": [
@@ -92,19 +113,29 @@
       ],
       "#vue-router": [
         "./vue-router"
+        "./vue-router"
       ],
       "#imports": [
+        "./imports"
         "./imports"
       ],
       "#build": [
         "."
+        "."
       ],
       "#build/*": [
+        "./*"
         "./*"
       ],
       "#components": [
         "./components"
+        "./components"
       ]
+    },
+    "types": [
+      "unplugin-icons/types/vue",
+      "swiper/vue"
+    ]
     },
     "types": [
       "unplugin-icons/types/vue",

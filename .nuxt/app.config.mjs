@@ -1,5 +1,6 @@
 
 import { updateAppConfig } from '#app'
+import { updateAppConfig } from '#app'
 import { defuFn } from '/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {
