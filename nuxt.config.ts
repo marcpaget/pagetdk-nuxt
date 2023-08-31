@@ -7,8 +7,8 @@ export default defineNuxtConfig({
         '@formkit/nuxt',
         // '@nuxtjs/prismic',
         '@vueuse/nuxt',
-        '@nuxtjs/supabase',
-        '@nuxtjs/color-mode',
+        //'@nuxtjs/supabase',
+        //'@nuxtjs/color-mode',
         'nuxt-icon',
         'unplugin-icons/nuxt',
         //'@nuxtjs/partytown',
@@ -28,47 +28,88 @@ export default defineNuxtConfig({
         //'@nuxtjs/i18n',
         '@hypernym/nuxt-anime',
         '@varlet/nuxt',
-        'nuxt-purgecss',
+        //'nuxt-purgecss',
         '@nuxthq/ui',
         '@nuxtjs/strapi',
         '@tresjs/nuxt',
         '@nuxtjs/eslint-module',
-        'nuxt-vuefire',
+        //'nuxt-vuefire',
         'vue3-carousel-nuxt',
+        'nuxt-api-party',
+        '@morev/vue-transitions/nuxt',
+        'nuxt-vercel-analytics',
+        '@hypernym/nuxt-gsap',
+        'nuxt-anchorscroll',
+        'nuxt-gtag',
+        'nuxt-og-image',
+        'nuxt-simple-sitemap',
+        'nuxt-simple-robots',
+        'nuxt-link-checker',
+        'nuxt-seo-experiments',
+        //'nuxt-schema-org',
     ],
+
     runtimeConfig: {
         public: {
+            SUPABASE_URL: process.env.SUPABASE_URL,
+            SUPABASE_KEY: process.env.SUPABASE_KEY,
             siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://paget.dk',
             siteName: 'Paget.dk',
             siteDescription: 'Velkommen til Paget.dk!',
             language: 'da-DK', // prefer more explicit language codes like `en-AU` over `en`
         },
     },
-    vuefire: {
-        config: {
-            // there could be other properties depending on the project
-            apiKey: 'AIzaSyCVW5oqUcCHhheg3cTkaOZeTYB0yEonURE',
-            authDomain: 'nuxt3-esp32.firebaseapp.com',
-            projectId: 'nuxt3-esp32',
-            storageBucket: 'nuxt3-esp32.appspot.com',
-            messagingSenderId: '519703147494',
-            appId: '1:519703147494:web:4ff64ace33395546a15c27',
-            measurementId: 'G-9DQ9LHNHZ0',
+    gtag: {
+        id: 'G-L04C39X79K',
+    },
+
+    anchorscroll: {
+        hooks: [
+            // Or any valid hook if needed
+            // Default is `page:finish`
+            'page:transition:finish',
+        ],
+    },
+
+    apiParty: {
+        endpoints: {
+            restCountriesApi: {
+                url: process.env.API_PARTY_BASE_URL!,
+            },
         },
     },
-    eslint: {
-        /* module options */
+    gsap: {
+        extraPlugins: {
+            scrollTrigger: true,
+        },
     },
-    plugins: [{ src: '~/plugins/vercel.js', mode: 'client' }],
+    // vuefire: {
+    //     config: {
+    //         // there could be other properties depending on the project
+    //         apiKey: 'AIzaSyCVW5oqUcCHhheg3cTkaOZeTYB0yEonURE',
+    //         authDomain: 'nuxt3-esp32.firebaseapp.com',
+    //         projectId: 'nuxt3-esp32',
+    //         storageBucket: 'nuxt3-esp32.appspot.com',
+    //         messagingSenderId: '519703147494',
+    //         appId: '1:519703147494:web:4ff64ace33395546a15c27',
+    //         measurementId: 'G-9DQ9LHNHZ0',
+    //     },
+    // },
+    eslint: {
+        emitWarning: false,
+        lintOnStart: false,
+        emitError: false,
+    },
+    //plugins: ['~/plugins/primevue.js', '~/plugins/vuetify.ts', '~/plugins/naive-ui.ts'],
     ssr: false,
     components: true,
     strapi: {
         // Options
     },
-    purgecss: {
-        enabled: true, // Always enable purgecss
-        //  safelist: ['my-class'], // Add my-class token to the safelist (e.g. .my-class)
-    },
+    // purgecss: {
+    //     enabled: true, // Always enable purgecss
+    //     //  safelist: ['my-class'], // Add my-class token to the safelist (e.g. .my-class)
+    // },
     content: {
         documentDriven: true,
     },
@@ -80,7 +121,7 @@ export default defineNuxtConfig({
         shim: false,
     },
 
-    extends: ['nuxt-seo-kit'],
+    // extends: ['nuxt-seo-kit'],
 
     headlessui: {
         prefix: 'Headless',
@@ -95,9 +136,8 @@ export default defineNuxtConfig({
     //     scriptUrl: 'https://analytics.umami.is/script.js',
     // },
     image: {
-        domains: ['paget.dk'],
-        cloudinary: {
-            baseURL: 'https://res.cloudinary.com/selfhostingninja/image/upload/v1684199117',
+        imagekit: {
+            baseURL: 'https://ik.imagekit.io/paget/',
         },
     },
 
@@ -105,7 +145,6 @@ export default defineNuxtConfig({
         classSuffix: '',
         // preference: 'system',
         fallback: 'light',
-        componentName: 'ColorScheme',
     },
 
     // tailwindcss: {
@@ -117,14 +156,22 @@ export default defineNuxtConfig({
     //     viewer: true,
     // },
     // css: ['~/assets/css/main.css', 'vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css'],
-    postcss: {
-        plugins: {
-            'postcss-import': {},
-            'tailwindcss/nesting': 'postcss-nesting',
-            tailwindcss: {},
-            autoprefixer: {},
-        },
-    },
+    // postcss: {
+    //     plugins: {
+    //         'postcss-import': {},
+    //         'tailwindcss/nesting': 'postcss-nesting',
+    //         tailwindcss: {},
+    //         autoprefixer: {},
+    //     },
+    // },
+    // postcss: {
+    //     plugins: {
+    //         'postcss-import': {},
+    //         'tailwindcss/nesting': 'postcss-nesting',
+    //         tailwindcss: {},
+    //         autoprefixer: {},
+    //     },
+    // },
 
     css: [
         'primevue/resources/themes/lara-light-blue/theme.css',
@@ -157,6 +204,6 @@ export default defineNuxtConfig({
     },
 
     devtools: {
-        enabled: true,
+        enabled: false,
     },
 })

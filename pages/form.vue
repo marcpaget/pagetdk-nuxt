@@ -1,21 +1,26 @@
+<script setup>
+const failingSubmitHandler = async function (payload, node) {
+    // assume a failing request
+    await new Promise((r) => setTimeout(r, 1000))
+    node.setErrors(['Something went wrong with the server, please try again'])
+    // comment out this line and refresh after submit
+    // to see how values would otherwise be lost.
+    node.restoreCache()
+}
+</script>
+
 <template>
-    <h1>Carbon Sequestration Grant</h1>
-
-    <FormKit v-slot="{ value }" type="form">
-        <div class="form-body">
-            <h3>Contact info</h3>
-            <FormKit type="email" label="*Email address" validation="required|email" />
-
-            <h3>Organization info</h3>
-            <FormKit type="text" label="*Organization name" validation="required|length:3" />
-
-            <h3>Application</h3>
-            <FormKit type="textarea" label="*How will you use the money?" validation="required|length:20,500" />
-
-            <details>
-                <summary>Form data</summary>
-                <pre>{{ value }}</pre>
-            </details>
-        </div>
+    <p>
+        <em
+            ><small
+                >Data can be recovered with node.restoreCache()<br />If you reload after submit the data will
+                persist.</small
+            ></em
+        >
+    </p>
+    <FormKit type="form" name="contactWithRestore" use-local-storage @submit="failingSubmitHandler">
+        <FormKit type="text" name="name" label="Your name" />
+        <FormKit type="text" name="email" label="Your email" />
+        <FormKit type="area" name="message" label="Your message" />
     </FormKit>
 </template>

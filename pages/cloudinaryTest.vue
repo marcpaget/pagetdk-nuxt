@@ -19,5 +19,3 @@
         />
     </div>
 </template>
-
-<script></script>

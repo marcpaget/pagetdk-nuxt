@@ -18,6 +18,8 @@ import { Carousel, Slide } from 'vue3-carousel'
 
 import 'vue3-carousel/dist/carousel.css'
 
+slide: [{}]
+
 export default defineComponent({
     name: 'Gallery',
     components: {

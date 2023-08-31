@@ -17,9 +17,10 @@ module.exports = {
             fontFamily: {
                 sans: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
                 //header: ['Nunito Sans'],
-                //sans: ['Quicksand', ...defaultTheme.fontFamily.sans],
+                quicksand: ['Quicksand', 'sans-serif'],
                 //sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
                 permanentmarker: ['Permanent Marker', 'cursive'],
+                mavenpro: ['Maven Pro', 'sans-serif'],
             },
             colors: {
                 kaldi: '#ff0000',
@@ -40,6 +41,7 @@ module.exports = {
         require('tw-elements/dist/plugin'),
         require('daisyui'),
         require('tailwind-scrollbar'),
+        require('tailwindcss-animated'),
         formKitTailwind,
     ],
 }

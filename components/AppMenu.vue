@@ -26,61 +26,38 @@
                         <a>Misc</a>
                         <ul class="p-2">
                             <li>
-                                <nuxt-link to="/vueusetest">VueUseTest</nuxt-link>
+                                <NuxtLink to="/vueusetest">VueUseTest</NuxtLink>
                             </li>
                             <li>
-                                <nuxt-link to="/cloudinaryTest">cloudinaryTest</nuxt-link>
+                                <NuxtLink to="/cloudinaryTest">cloudinaryTest</NuxtLink>
                             </li>
                             <li>
-                                <nuxt-link to="/supabasetest">Supabasetest</nuxt-link>
+                                <NuxtLink to="/supabasetest">Supabasetest</NuxtLink>
                             </li>
                             <li>
-                                <nuxt-link to="/storagetest">Storagetest</nuxt-link>
+                                <NuxtLink to="/storagetest">Storagetest</NuxtLink>
                             </li>
                             <li>
-                                <nuxt-link to="/calculator">Calculator</nuxt-link>
+                                <NuxtLink to="/calculator">Calculator</NuxtLink>
                             </li>
 
-                            <li><nuxt-link to="/weather">Weather</nuxt-link></li>
-                            <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
-                            <li><nuxt-link to="/form">Form</nuxt-link></li>
-                            <li><nuxt-link to="/text">Text</nuxt-link></li>
+                            <li><NuxtLink to="/weather">Weather</NuxtLink></li>
+                            <li><NuxtLink to="/gallery">Gallery</NuxtLink></li>
+                            <li><NuxtLink to="/form">Form</NuxtLink></li>
+                            <li><NuxtLink to="/text">Text</NuxtLink></li>
                         </ul>
                     </li>
                     <li>
                         <a>Games</a>
                         <ul class="p-2">
                             <li>
-                                <nuxt-link to="/flagQuizV5">FlagQuizV5</nuxt-link>
+                                <NuxtLink to="/quiz">Quiz</NuxtLink>
                             </li>
                             <li>
-                                <nuxt-link to="/flagQuizV6ApiParty">FlagQuizApiPartyV6</nuxt-link>
-                            </li>
-
-                            <li>
-                                <nuxt-link to="/flagQuizV6ApiParty">FlagQuizApiPartyV6</nuxt-link>
+                                <NuxtLink to="/countrygame">Countrygame</NuxtLink>
                             </li>
                             <li>
-                                <nuxt-link to="/countryQuizV3">CountryQuizV3</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/countryQuizV2">CountryQuizV2</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/flagQuizV3">FlagQuizV3</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/flagQuizV2">FlagQuizV2</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/flagQuizV3">FlagQuizV3</nuxt-link>
-                            </li>
-
-                            <li>
-                                <nuxt-link to="/countrygame">Countrygame</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/restcountries">Restcountries</nuxt-link>
+                                <NuxtLink to="/restcountries">Restcountries</NuxtLink>
                             </li>
                         </ul>
                     </li>
@@ -88,7 +65,7 @@
                 </ul>
             </div>
             <button class="btn-ghost btn font-permanentmarker text-xl normal-case text-kaldi">
-                <nuxt-link to="/">paget.dk</nuxt-link>
+                <NuxtLink to="/">paget.dk</NuxtLink>
                 <Icon name="noto:ninja-light-skin-tone" />
             </button>
         </div>
@@ -99,25 +76,25 @@
                         <summary>Misc</summary>
                         <ul class="p-2">
                             <li>
-                                <nuxt-link to="/vueusetest">VueUseTest</nuxt-link>
+                                <NuxtLink to="/vueusetest">VueUseTest</NuxtLink>
                             </li>
                             <li>
-                                <nuxt-link to="/cloudinaryTest">cloudinaryTest</nuxt-link>
+                                <NuxtLink to="/cloudinaryTest">cloudinaryTest</NuxtLink>
                             </li>
                             <li>
-                                <nuxt-link to="/supabasetest">Supabasetest</nuxt-link>
+                                <NuxtLink to="/supabasetest">Supabasetest</NuxtLink>
                             </li>
                             <li>
-                                <nuxt-link to="/storagetest">Storagetest</nuxt-link>
+                                <NuxtLink to="/storagetest">Storagetest</NuxtLink>
                             </li>
                             <li>
-                                <nuxt-link to="/calculator">Calculator</nuxt-link>
+                                <NuxtLink to="/calculator">Calculator</NuxtLink>
                             </li>
 
-                            <li><nuxt-link to="/weather">Weather</nuxt-link></li>
-                            <li><nuxt-link to="/gallery">Gallery</nuxt-link></li>
-                            <li><nuxt-link to="/form">Form</nuxt-link></li>
-                            <li><nuxt-link to="/text">Text</nuxt-link></li>
+                            <li><NuxtLink to="/weather">Weather</NuxtLink></li>
+                            <li><NuxtLink to="/gallery">Gallery</NuxtLink></li>
+                            <li><NuxtLink to="/form">Form</NuxtLink></li>
+                            <li><NuxtLink to="/text">Text</NuxtLink></li>
                         </ul>
                     </details>
                 </li>
@@ -127,57 +104,41 @@
                         <summary>Games</summary>
                         <ul class="p-2">
                             <li>
-                                <nuxt-link to="/flagQuizV5">FlagQuizV5</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/flagQuizV6ApiParty">FlagQuizApiPartyV6</nuxt-link>
+                                <NuxtLink to="/quiz">Quiz</NuxtLink>
                             </li>
 
                             <li>
-                                <nuxt-link to="/flagQuizV6ApiParty">FlagQuizApiPartyV6</nuxt-link>
+                                <NuxtLink to="/countrygame">Countrygame</NuxtLink>
                             </li>
                             <li>
-                                <nuxt-link to="/countryQuizV3">CountryQuizV3</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/countryQuizV2">CountryQuizV2</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/flagQuizV3">FlagQuizV3</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/flagQuizV2">FlagQuizV2</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/flagQuizV3">FlagQuizV3</nuxt-link>
-                            </li>
-
-                            <li>
-                                <nuxt-link to="/countrygame">Countrygame</nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/restcountries">Restcountries</nuxt-link>
+                                <NuxtLink to="/restcountries">Restcountries</NuxtLink>
                             </li>
                         </ul>
                     </details>
                 </li>
-                <li><a>Item 3</a></li>
+                <li>
+                    <NuxtLink
+                        class="hover:animate-jump animate-once animate-ease-in-out animate-normal animate-fill-forwards"
+                        to="/aboutPage"
+                        >About me</NuxtLink
+                    >
+                </li>
             </ul>
         </div>
         <div class="navbar-end">
+            <ColorModeSwitch />
             <span v-if="user"> Logged in as: {{ user.email }} </span>
             <ul>
-                <ColorModeSwitch />
                 <button v-if="user" class="btn" @click="doSignOut">Log out</button>
                 <button v-else class="btn">
-                    <nuxt-link to="/login">Log in</nuxt-link>
+                    <NuxtLink to="/login">Log in</NuxtLink>
                 </button>
             </ul>
         </div>
     </div>
 </template>
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 const user = useSupabaseUser()
 const client = useSupabaseClient()
 const router = useRouter()
@@ -186,6 +147,6 @@ const doSignOut = async () => {
     await client.auth.signOut()
     router.replace('/login')
 }
-</script>
+</script> -->
 
 <style></style>

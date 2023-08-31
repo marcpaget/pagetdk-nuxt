@@ -7,13 +7,13 @@
 .carddiv {
     background-color: theme('colors.black');
 }
-/*
+
     .body {
       
     }
-   */
+   
 
-/*
+
     ::-webkit-scrollbar {
       width: 20px;
     }
@@ -23,7 +23,7 @@
   ::-webkit-scrollbar-thumb {
     background: #1D3557;
   }
-  */
+ 
 
   
 .slide-left-enter-active,
@@ -58,6 +58,7 @@
     opacity: 0;
     filter: blur(1rem);
 }
+/* 
 .icon {
     @apply md:(w-8 h-8) w-6 h-6;
   }
@@ -67,4 +68,4 @@
   }
   .icon--on {
     @apply hidden group-hover:inline-block;
-  }
+  } */
