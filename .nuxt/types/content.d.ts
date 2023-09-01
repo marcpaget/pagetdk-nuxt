@@ -1,4 +1,4 @@
 declare module '#content/server' {
-  const serverQueryContent: typeof import('/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/content/dist/runtime/server').serverQueryContent
+  const serverQueryContent: typeof import('/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/content/dist/runtime/legacy/types').serverQueryContent
   const parseContent: typeof import('/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/content/dist/runtime/server').parseContent
 }

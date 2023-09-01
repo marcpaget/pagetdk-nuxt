@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
     modules: [
         '@nuxt/content',
-        '@nuxtjs/tailwindcss',
+        //'@nuxtjs/tailwindcss',
         '@formkit/nuxt',
         // '@nuxtjs/prismic',
         '@vueuse/nuxt',
@@ -49,11 +49,8 @@ export default defineNuxtConfig({
         //'nuxt-schema-org',
     ],
 
-
     runtimeConfig: {
         public: {
-            SUPABASE_URL: process.env.SUPABASE_URL,
-            SUPABASE_KEY: process.env.SUPABASE_KEY,
             SUPABASE_URL: process.env.SUPABASE_URL,
             SUPABASE_KEY: process.env.SUPABASE_KEY,
             siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://paget.dk',
@@ -102,9 +99,6 @@ export default defineNuxtConfig({
         emitWarning: false,
         lintOnStart: false,
         emitError: false,
-        emitWarning: false,
-        lintOnStart: false,
-        emitError: false,
     },
     //plugins: ['~/plugins/primevue.js', '~/plugins/vuetify.ts', '~/plugins/naive-ui.ts'],
     ssr: false,
@@ -112,10 +106,6 @@ export default defineNuxtConfig({
     strapi: {
         // Options
     },
-    // purgecss: {
-    //     enabled: true, // Always enable purgecss
-    //     //  safelist: ['my-class'], // Add my-class token to the safelist (e.g. .my-class)
-    // },
     // purgecss: {
     //     enabled: true, // Always enable purgecss
     //     //  safelist: ['my-class'], // Add my-class token to the safelist (e.g. .my-class)
@@ -148,8 +138,6 @@ export default defineNuxtConfig({
     image: {
         imagekit: {
             baseURL: 'https://ik.imagekit.io/paget/',
-        imagekit: {
-            baseURL: 'https://ik.imagekit.io/paget/',
         },
     },
 
@@ -168,22 +156,6 @@ export default defineNuxtConfig({
     //     viewer: true,
     // },
     // css: ['~/assets/css/main.css', 'vuetify/lib/styles/main.sass', '@mdi/font/css/materialdesignicons.min.css'],
-    // postcss: {
-    //     plugins: {
-    //         'postcss-import': {},
-    //         'tailwindcss/nesting': 'postcss-nesting',
-    //         tailwindcss: {},
-    //         autoprefixer: {},
-    //     },
-    // },
-    // postcss: {
-    //     plugins: {
-    //         'postcss-import': {},
-    //         'tailwindcss/nesting': 'postcss-nesting',
-    //         tailwindcss: {},
-    //         autoprefixer: {},
-    //     },
-    // },
     // postcss: {
     //     plugins: {
     //         'postcss-import': {},
