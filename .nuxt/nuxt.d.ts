@@ -38,6 +38,7 @@
 /// <reference path="types/app.config.d.ts" />
 /// <reference types="vite/client" />
 /// <reference path="types/content.d.ts" />
+/// <reference types="@formkit/vue" />
 /// <reference types="@pinia/nuxt" />
 /// <reference types="swiper/vue" />
 /// <reference path="tailwind.config.d.ts" />

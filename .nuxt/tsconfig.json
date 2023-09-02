@@ -58,7 +58,7 @@
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#mdc-imports": [
-        "./mdc-imports.mjs"
+        "./mdc-imports"
       ],
       "pinia": [
         "../node_modules/pinia/dist/pinia"
@@ -86,6 +86,9 @@
       ],
       "#tailwind-config": [
         "./tailwind.config"
+      ],
+      "#tailwind-config/*": [
+        "./tailwind.config/*"
       ],
       "#nuxt-api-party": [
         "./module/nuxt-api-party"

@@ -36,7 +36,7 @@ export { useContentHead } from '../node_modules/@nuxt/content/dist/runtime/compo
 export { useContentPreview } from '../node_modules/@nuxt/content/dist/runtime/composables/preview';
 export { withContentBase } from '../node_modules/@nuxt/content/dist/runtime/composables/utils';
 export { useUnwrap } from '../node_modules/@nuxt/content/dist/runtime/composables/useUnwrap';
-export { fetchContentNavigation } from '../node_modules/@nuxt/content/dist/runtime/composables/navigation';
+export { fetchContentNavigation } from '../node_modules/@nuxt/content/dist/runtime/legacy/composables/navigation';
 export { useContentState, useContent } from '../node_modules/@nuxt/content/dist/runtime/composables/content';
 export { flatUnwrap as unwrapSlot } from '../node_modules/@nuxtjs/mdc/dist/runtime/utils/node';
 export { usePinia } from '../node_modules/@pinia/nuxt/dist/runtime/composables';
