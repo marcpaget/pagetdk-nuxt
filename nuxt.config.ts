@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         '@hypernym/nuxt-anime',
         '@varlet/nuxt',
         //'nuxt-purgecss',
-        '@nuxthq/ui',
+        '@nuxt/ui',
         '@nuxtjs/strapi',
         '@tresjs/nuxt',
         '@nuxtjs/eslint-module',
@@ -47,13 +47,14 @@ export default defineNuxtConfig({
         'nuxt-link-checker',
         'nuxt-seo-experiments',
         //'nuxt-schema-org',
+        'nuxt-aos',
     ],
 
     runtimeConfig: {
         public: {
-            SUPABASE_URL: process.env.SUPABASE_URL,
-            SUPABASE_KEY: process.env.SUPABASE_KEY,
-            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://paget.dk',
+            SUPABASE_URL: process.env.SUPABASE_URL!,
+            SUPABASE_KEY: process.env.SUPABASE_KEY!,
+            siteUrl: process.env.NUXT_PUBLIC_SITE_URL! || 'https://paget.dk',
             siteName: 'Paget.dk',
             siteDescription: 'Velkommen til Paget.dk!',
             language: 'da-DK', // prefer more explicit language codes like `en-AU` over `en`
@@ -118,7 +119,6 @@ export default defineNuxtConfig({
 
     typescript: {
         strict: true,
-        shim: false,
     },
 
     // extends: ['nuxt-seo-kit'],
