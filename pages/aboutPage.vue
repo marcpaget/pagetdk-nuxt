@@ -26,16 +26,20 @@
             <option value="dark">Dark</option>
             <option value="sepia">Sepia</option>
         </select> -->
-            <h1 ref="anim" class="text-4xl pb-8 text-green-500 font-permanentmarker">Irure deserunt reprehenderit</h1>
-            <p class="font-quicksand tracking-normal leading-loose text-xl">
-                Irure deserunt reprehenderit non ad nostrud commodo adipisicing enim adipisicing laborum elit ipsum. Eu
-                id laborum enim ea. Pariatur fugiat exercitation amet. Non proident commodo exercitation aute
-                adipisicing eu ipsum. Tempor occaecat sunt exercitation ea. Aute eu labore duis duis anim esse proident
-                eiusmod aute officia ut minim ea ad. Irure deserunt reprehenderit non ad nostrud commodo adipisicing
-                enim adipisicing laborum elit ipsum. Eu id laborum enim ea. Pariatur fugiat exercitation amet. Non
-                proident commodo exercitation aute adipisicing eu ipsum. Tempor occaecat sunt exercitation ea. Aute eu
-                labore duis duis anim esse proident eiusmod aute officia ut minim ea ad.
-            </p>
+            <div data-aos="fade-up">
+                <h1 ref="anim" class="text-4xl pb-8 text-green-500 font-permanentmarker">
+                    Irure deserunt reprehenderit
+                </h1>
+                <p class="font-quicksand tracking-normal leading-loose text-xl">
+                    Irure deserunt reprehenderit non ad nostrud commodo adipisicing enim adipisicing laborum elit ipsum.
+                    Eu id laborum enim ea. Pariatur fugiat exercitation amet. Non proident commodo exercitation aute
+                    adipisicing eu ipsum. Tempor occaecat sunt exercitation ea. Aute eu labore duis duis anim esse
+                    proident eiusmod aute officia ut minim ea ad. Irure deserunt reprehenderit non ad nostrud commodo
+                    adipisicing enim adipisicing laborum elit ipsum. Eu id laborum enim ea. Pariatur fugiat exercitation
+                    amet. Non proident commodo exercitation aute adipisicing eu ipsum. Tempor occaecat sunt exercitation
+                    ea. Aute eu labore duis duis anim esse proident eiusmod aute officia ut minim ea ad.
+                </p>
+            </div>
             <!-- <transition-fade appear>
             <div v-if="isVisible">...</div> -->
 
@@ -74,7 +78,10 @@
                 <p>Hello world!</p>
             </div>
         </div> -->
-            <nuxt-img src="https://ik.imagekit.io/paget/2s" />
+            <NuxtImg provider="cloudinary" src="/Marc_portr%C3%A6t_AROS_mty5kv.jpg" />
+            <NuxtImg provider="cloudinary" src="/IMG_8467_xta87g.jpg" />
+
+            <NuxtImg provider="cloudinary" src="/IMG_8472_b4ghw9.jpg" />
         </div>
     </div>
 </template>

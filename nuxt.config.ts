@@ -47,7 +47,7 @@ export default defineNuxtConfig({
         'nuxt-link-checker',
         'nuxt-seo-experiments',
         //'nuxt-schema-org',
-        'nuxt-aos',
+        //'nuxt-aos',
     ],
 
     runtimeConfig: {
@@ -136,8 +136,8 @@ export default defineNuxtConfig({
     //     scriptUrl: 'https://analytics.umami.is/script.js',
     // },
     image: {
-        imagekit: {
-            baseURL: 'https://ik.imagekit.io/paget/',
+        cloudinary: {
+            baseURL: 'https://res.cloudinary.com/selfhostingninja/image/upload/v1684195448/pagetdk-nuxt',
         },
     },
 

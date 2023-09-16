@@ -30,7 +30,6 @@
 /// <reference types="nuxt-simple-robots" />
 /// <reference types="nuxt-link-checker" />
 /// <reference types="nuxt-seo-experiments" />
-/// <reference types="nuxt-aos" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference types="nuxt" />
