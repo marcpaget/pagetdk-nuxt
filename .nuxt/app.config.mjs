@@ -37,6 +37,6 @@ if (import.meta.hot) {
 }
 
 import cfg0 from "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/app.config.ts"
-import cfg1 from "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxthq/ui/dist/runtime/app.config.mjs"
+import cfg1 from "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/ui/dist/runtime/app.config.mjs"
 
 export default /* #__PURE__ */ defuFn(cfg0, cfg1, inlineConfig)

@@ -2,7 +2,7 @@
 import type { CustomAppConfig } from 'nuxt/schema'
 import type { Defu } from 'defu'
 import cfg0 from "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/app.config"
-import cfg1 from "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxthq/ui/dist/runtime/app.config"
+import cfg1 from "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/ui/dist/runtime/app.config"
 
 declare const inlineConfig = {
   "ui": {
