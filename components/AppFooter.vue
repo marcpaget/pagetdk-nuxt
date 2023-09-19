@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer footer-center rounded bg-base-200 p-10 text-base-content">
+    <footer class="footer footer-center rounded bg-base-200 p-10 text-base-content sticky z-50">
         <div class="grid grid-flow-col gap-4">
             <a class="link-hover link">About us</a>
             <a class="link-hover link">Contact</a>

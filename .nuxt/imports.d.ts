@@ -27,6 +27,7 @@ export { useStrapiVersion } from '../node_modules/@nuxtjs/strapi/dist/runtime/co
 export { useStrapi } from '../node_modules/@nuxtjs/strapi/dist/runtime/composables-v4/useStrapi';
 export { useStrapi4 } from '../node_modules/@nuxtjs/strapi/dist/runtime/composables-v4/useStrapi4';
 export { useAnchorScroll } from '../node_modules/nuxt-anchorscroll/dist/runtime/composables/anchorscroll';
+export { useCldImageUrl } from '../node_modules/@nuxtjs/cloudinary/dist/runtime/composables/useCldImageUrl';
 export { queryContent } from '../node_modules/@nuxt/content/dist/runtime/legacy/composables/query';
 export { useContentHelpers } from '../node_modules/@nuxt/content/dist/runtime/composables/helpers';
 export { useContentHead } from '../node_modules/@nuxt/content/dist/runtime/composables/head';

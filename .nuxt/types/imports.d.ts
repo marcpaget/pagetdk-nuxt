@@ -225,6 +225,7 @@ declare global {
   const useCamera: typeof import('../../node_modules/@tresjs/core')['useCamera']
   const useCeil: typeof import('../../node_modules/@vueuse/math')['useCeil']
   const useClamp: typeof import('../../node_modules/@vueuse/math')['useClamp']
+  const useCldImageUrl: typeof import('../../node_modules/@nuxtjs/cloudinary/dist/runtime/composables/useCldImageUrl')['useCldImageUrl']
   const useClipboard: typeof import('../../node_modules/@vueuse/core')['useClipboard']
   const useCloned: typeof import('../../node_modules/@vueuse/core')['useCloned']
   const useColorMode: typeof import('../../node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']
@@ -695,6 +696,7 @@ declare module 'vue' {
     readonly useCamera: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useCamera']>
     readonly useCeil: UnwrapRef<typeof import('../../node_modules/@vueuse/math')['useCeil']>
     readonly useClamp: UnwrapRef<typeof import('../../node_modules/@vueuse/math')['useClamp']>
+    readonly useCldImageUrl: UnwrapRef<typeof import('../../node_modules/@nuxtjs/cloudinary/dist/runtime/composables/useCldImageUrl')['useCldImageUrl']>
     readonly useClipboard: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useClipboard']>
     readonly useCloned: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useCloned']>
     readonly useColorMode: UnwrapRef<typeof import('../../node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']>
@@ -1157,6 +1159,7 @@ declare module '@vue/runtime-core' {
     readonly useCamera: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['useCamera']>
     readonly useCeil: UnwrapRef<typeof import('../../node_modules/@vueuse/math')['useCeil']>
     readonly useClamp: UnwrapRef<typeof import('../../node_modules/@vueuse/math')['useClamp']>
+    readonly useCldImageUrl: UnwrapRef<typeof import('../../node_modules/@nuxtjs/cloudinary/dist/runtime/composables/useCldImageUrl')['useCldImageUrl']>
     readonly useClipboard: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useClipboard']>
     readonly useCloned: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useCloned']>
     readonly useColorMode: UnwrapRef<typeof import('../../node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']>
