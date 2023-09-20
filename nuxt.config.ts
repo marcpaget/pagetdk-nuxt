@@ -47,7 +47,7 @@ export default defineNuxtConfig({
         'nuxt-link-checker',
         'nuxt-seo-experiments',
         //'nuxt-schema-org',
-        'nuxt-aos',
+        // 'nuxt-aos',
         '@nuxtjs/cloudinary',
         'nuxt-ark-ui',
     ],
