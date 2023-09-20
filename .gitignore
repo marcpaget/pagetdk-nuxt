@@ -8,11 +8,11 @@ node_modules
 .slicemachine
 .unlighthouse
 .vscode
-*.DS_Store
 dist
 .idea
 images/*
 !images/README.md
 .vercel
 netlify.toml
-.DS_Store
+
+
