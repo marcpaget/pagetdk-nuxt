@@ -22,7 +22,7 @@
 
         <div v-if="images" class="grid" style="max-width: 400px">
             <div v-for="(image, index) of images" :key="index" class="col-4">
-                <CldImage
+                <img
                     :src="image.thumbnailImageSrc"
                     :alt="image.alt"
                     style="cursor: pointer"
@@ -32,11 +32,39 @@
         </div>
     </div>
 </template>
-// use cloudinary nuxt module to get images from cloudinary npm install @nuxtjs/cloudinary
-<script setup>
-import { ref, onMounted } from 'vue'
 
-const images = ref([])
+<script setup>
+import { ref } from 'vue'
+
+const images = [
+    {
+        itemImageSrc:
+            'https://res.cloudinary.com/selfhostingninja/image/upload/v1684195448/pagetdk-nuxt/Marc_portr%C3%A6t_AROS_mty5kv.jpg',
+        thumbnailImageSrc:
+            'https://res.cloudinary.com/selfhostingninja/image/upload/v1684195448/pagetdk-nuxt/Marc_portr%C3%A6t_AROS_mty5kv.jpg',
+        alt: 'Portrait',
+    },
+    {
+        itemImageSrc: 'https://res.cloudinary.com/selfhostingninja/image/upload/v1684195448/pagetdk-nuxt/flower.webp',
+        thumbnailImageSrc:
+            'https://res.cloudinary.com/selfhostingninja/image/upload/v1684195448/pagetdk-nuxt/flower.webp',
+        alt: 'Flower',
+    },
+    {
+        itemImageSrc:
+            'https://res.cloudinary.com/selfhostingninja/image/upload/v1684195448/pagetdk-nuxt/flower-cropped.webp',
+        thumbnailImageSrc:
+            'https://res.cloudinary.com/selfhostingninja/image/upload/v1684195448/pagetdk-nuxt/flower-cropped.webp',
+        alt: 'Flower cropped',
+    },
+    {
+        itemImageSrc: 'https://res.cloudinary.com/selfhostingninja/image/upload/v1684195448/pagetdk-nuxt/bird.jpeg',
+        thumbnailImageSrc:
+            'https://res.cloudinary.com/selfhostingninja/image/upload/v1684195448/pagetdk-nuxt/bird.jpeg',
+        alt: 'Bird',
+    },
+]
+
 const activeIndex = ref(0)
 const responsiveOptions = ref([
     {
@@ -58,14 +86,4 @@ const imageClick = (index) => {
     activeIndex.value = index
     displayCustom.value = true
 }
-
-onMounted(async () => {
-    const response = await fetch('https://api.cloudinary.com/v1_1/selfhostingninja/resources/pagetdk-nuxt')
-    const data = await response.json()
-    images.value = data.resources.map((resource) => ({
-        itemImageSrc: resource.secure_url,
-        thumbnailImageSrc: resource.secure_url,
-        alt: resource.public_id,
-    }))
-})
 </script>

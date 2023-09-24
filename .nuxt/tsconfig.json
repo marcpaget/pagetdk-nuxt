@@ -84,15 +84,6 @@
       "#cookie-control/*": [
         "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
       ],
-      "#color-mode-options": [
-        "./color-mode-options.mjs"
-      ],
-      "#tailwind-config": [
-        "./tailwind.config"
-      ],
-      "#tailwind-config/*": [
-        "./tailwind.config/*"
-      ],
       "#nuxt-api-party": [
         "./module/nuxt-api-party"
       ],

@@ -1,4 +1,3 @@
-import { FlagQuiz } from '#build/components';
 <template>
     <div>
         <FlagQuizComponent />

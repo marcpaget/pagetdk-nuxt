@@ -5,6 +5,7 @@
         <OgImageScreenshot />
         <AppMenu />
         <NuxtPage />
+        <CookieControl />
         <ScrollTop />
         <AppFooter />
     </div>

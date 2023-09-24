@@ -22,9 +22,6 @@ type NuxtAppInjections =
   InjectionType<typeof import("../gsapPlugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt-vercel-analytics/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/strapi/dist/runtime/strapi.plugin").default> &
-  InjectionType<typeof import("../../node_modules/@nuxt/ui/dist/runtime/plugins/colors").default> &
-  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server").default> &
-  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/@hypernym/nuxt-anime/dist/runtime/plugin").default> &
   InjectionType<typeof import("../../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/plugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt-viewport/dist/runtime/plugin").default> &
