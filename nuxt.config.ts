@@ -1,5 +1,4 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
     modules: [
         '@nuxt/content',
@@ -7,7 +6,7 @@ export default defineNuxtConfig({
         '@formkit/nuxt',
         // '@nuxtjs/prismic',
         '@vueuse/nuxt',
-        //'@nuxtjs/supabase',
+        '@nuxtjs/supabase',
         // '@nuxtjs/color-mode',
         'nuxt-icon',
         'unplugin-icons/nuxt',
@@ -49,7 +48,8 @@ export default defineNuxtConfig({
         //'nuxt-schema-org',
         //'nuxt-aos',
         '@nuxtjs/cloudinary',
-        'nuxt-ark-ui',
+        //'radix-vue/nuxt',
+        // 'nuxt-mapbox',
     ],
 
     runtimeConfig: {
@@ -62,9 +62,33 @@ export default defineNuxtConfig({
             language: 'da-DK', // prefer more explicit language codes like `en-AU` over `en`
         },
     },
+    // supabase: {
+    //     clientOptions: {
+    //         auth: {
+    //             flowType: 'pkce',
+    //             detectSessionInUrl: true,
+    //             persistSession: true,
+    //             autoRefreshToken: true,
+    //         },
+    //     },
+    //     redirectOptions: {
+    //         login: '/login',
+    //         callback: '/confirm',
+    //         exclude: [],
+    //     },
+    //     redirect: false,
+    //     cookieOptions: {
+    //         maxAge: 60 * 60 * 8,
+    //         sameSite: 'lax',
+    //         secure: true,
+    //     },
+    // },
     gtag: {
         id: 'G-L04C39X79K',
     },
+    // mapbox: {
+    //     accessToken: process.env.MAPBOX_API!,
+    // },
 
     anchorscroll: {
         hooks: [
@@ -143,11 +167,11 @@ export default defineNuxtConfig({
         },
     },
 
-    colorMode: {
-        classSuffix: '',
-        // preference: 'system',
-        fallback: 'light',
-    },
+    // colorMode: {
+    //     classSuffix: '',
+    //     // preference: 'system',
+    //     fallback: 'light',
+    // },
 
     // tailwindcss: {
     //     cssPath: '~/assets/css/tailwind.css',
@@ -192,20 +216,23 @@ export default defineNuxtConfig({
     vite: {
         logLevel: 'info',
         optimizeDeps: {
-            include: [
-                '@headlessui/vue',
-                '@heroicons/vue/solid',
-                '@heroicons/vue/outline',
-                'vue',
-                'ufo',
-                'naive-ui',
-                'vueuc',
-                'date-fns-tz/esm/formatInTimeZone',
-            ],
+            include:
+                process.env.NODE_ENV === 'development'
+                    ? [
+                          '@headlessui/vue',
+                          '@heroicons/vue/solid',
+                          '@heroicons/vue/outline',
+                          'vue',
+                          'ufo',
+                          'naive-ui',
+                          'vueuc',
+                          // 'date-fns-tz/esm/formatInTimeZone',
+                      ]
+                    : [],
         },
     },
 
     devtools: {
-        enabled: false,
+        enabled: true,
     },
 })

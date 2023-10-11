@@ -2,7 +2,9 @@
 import { updateAppConfig } from '#app'
 import { defuFn } from '/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/defu/dist/defu.mjs'
 
-const inlineConfig = {}
+const inlineConfig = {
+  "nuxt": {}
+}
 
 // Vite - webpack is handled directly in #app/config
 if (import.meta.hot) {

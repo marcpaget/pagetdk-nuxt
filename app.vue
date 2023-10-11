@@ -1,13 +1,15 @@
 <template>
-    <div class="scrollbar-thumb-blue-700">
-        <SeoKit />
-        <NuxtLoadingIndicator />
-        <OgImageScreenshot />
-        <AppMenu />
-        <NuxtPage />
-        <CookieControl />
-        <ScrollTop />
-        <AppFooter />
+    <div>
+        <NuxtLayout>
+            <SeoKit />
+            <NuxtLoadingIndicator />
+            <OgImageScreenshot />
+            <AppMenu />
+            <NuxtPage />
+            <CookieControl />
+            <ScrollTop />
+            <AppFooter />
+        </NuxtLayout>
     </div>
 </template>
 

@@ -1,4 +1,8 @@
 <script setup>
+definePageMeta({
+    middleware: 'auth',
+})
+
 const failingSubmitHandler = async function (payload, node) {
     // assume a failing request
     await new Promise((r) => setTimeout(r, 1000))
