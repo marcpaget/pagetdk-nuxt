@@ -12,11 +12,13 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/nuxt/dist/head/runtime/plugins/unhead").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/router").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client").default> &
+  InjectionType<typeof import("../../node_modules/nuxt3-leaflet/dist/runtime/leaflet-runtime").default> &
   InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/plugins/1.absoluteImageUrls.server").default> &
   InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/plugins/0.routeRules.server").default> &
   InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/plugins/siteConfig").default> &
   InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/plugins/inferSeoMetaPlugin").default> &
-  InjectionType<typeof import("../../node_modules/nuxt-site-config/dist/runtime/plugins/siteConfig").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-link-checker/dist/runtime/plugin/ui.client").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-site-config/dist/runtime/plugins/0.siteConfig").default> &
   InjectionType<typeof import("../../node_modules/nuxt-gtag/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/nuxt-anchorscroll/dist/runtime/anchorscroll-plugin").default> &
   InjectionType<typeof import("../gsapPlugin").default> &
@@ -26,11 +28,14 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/@hypernym/nuxt-anime/dist/runtime/plugin").default> &
+  InjectionType<typeof import("../../node_modules/@nuxt/devtools/dist/runtime/plugins/devtools.server").default> &
+  InjectionType<typeof import("../../node_modules/@nuxt/devtools/dist/runtime/plugins/devtools.client").default> &
   InjectionType<typeof import("../../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/plugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt-viewport/dist/runtime/plugin").default> &
   InjectionType<typeof import("../../node_modules/@nuxt/content/dist/runtime/plugins/ws").default> &
   InjectionType<typeof import("../../node_modules/@nuxt/content/dist/runtime/legacy/plugins/documentDriven").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/chunk-reload.client").default> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/check-outdated-build.client").default> &
   InjectionType<typeof import("../../plugins/naive-ui").default> &
   InjectionType<typeof import("../../plugins/primevue").default> &
   InjectionType<typeof import("../../plugins/vuetify").default>

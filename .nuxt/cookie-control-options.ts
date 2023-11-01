@@ -1,8 +1,8 @@
-import { ModuleOptions } from '#cookie-control/types'
+import type { ModuleOptions } from '#cookie-control/types'
 
 export default {
   "barPosition": "bottom-full",
-  "closeModalOnClickOutside": false,
+  "closeModalOnClickOutside": true,
   "colors": {
     "barBackground": "#000",
     "barButtonBackground": "#fff",
@@ -10,7 +10,7 @@ export default {
     "barButtonHoverBackground": "#333",
     "barButtonHoverColor": "#fff",
     "barTextColor": "#fff",
-    "checkboxActiveBackground": "#000",
+    "checkboxActiveBackground": "#00A34A",
     "checkboxActiveCircleBackground": "#fff",
     "checkboxDisabledBackground": "#ddd",
     "checkboxDisabledCircleBackground": "#fff",
@@ -32,8 +32,37 @@ export default {
     "modalUnsavedColor": "#fff"
   },
   "cookies": {
-    "necessary": [],
-    "optional": []
+    "necessary": [
+      {
+        "description": {
+          "en": "This cookie does something very very very very very very very long."
+        },
+        "name": {
+          "en": "Necessary Cookie"
+        },
+        "targetCookieIds": [
+          "NEC"
+        ]
+      }
+    ],
+    "optional": [
+      {
+        "id": "op",
+        "name": "Optional Cookie",
+        "links": {
+          "https://example.com": "Privacy Policy",
+          "https://example.cop": null
+        },
+        "targetCookieIds": [
+          "_o",
+          "_p",
+          "_t"
+        ]
+      },
+      {
+        "name": "functional"
+      }
+    ]
   },
   "cookieExpiryOffsetMs": 31536000000,
   "cookieNameIsConsentGiven": "ncc_c",
@@ -43,13 +72,14 @@ export default {
   },
   "isAcceptNecessaryButtonEnabled": true,
   "isControlButtonEnabled": true,
-  "isCookieIdVisible": false,
+  "isCookieIdVisible": true,
   "isCssEnabled": true,
   "isCssPonyfillEnabled": false,
   "isDashInDescriptionEnabled": true,
-  "isIframeBlocked": false,
+  "isIframeBlocked": true,
   "isModalForced": false,
   "locales": [
+    "en",
     "en"
   ],
   "localeTexts": {
@@ -65,7 +95,7 @@ export default {
       "decline": "Decline",
       "declineAll": "Decline all",
       "here": "here",
-      "iframeBlocked": "To see this, please enable functional cookies",
+      "iframeBlocked": "Bitte funktionale Cookies aktivieren:",
       "manageCookies": "Learn more and customize",
       "save": "Save",
       "settingsUnsaved": "You have unsaved settings"

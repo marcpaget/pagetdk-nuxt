@@ -3,6 +3,9 @@ import { updateAppConfig } from '#app'
 import { defuFn } from '/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {
+  "nuxt": {
+    "buildId": "test"
+  },
   "ui": {
     "primary": "green",
     "gray": "cool",
@@ -25,7 +28,8 @@ const inlineConfig = {
       "pink",
       "rose",
       "primary"
-    ]
+    ],
+    "strategy": "merge"
   }
 }
 
@@ -37,6 +41,5 @@ if (import.meta.hot) {
 }
 
 import cfg0 from "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/app.config.ts"
-import cfg1 from "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxt/ui/dist/runtime/app.config.mjs"
 
-export default /* #__PURE__ */ defuFn(cfg0, cfg1, inlineConfig)
+export default /* #__PURE__ */ defuFn(cfg0, inlineConfig)

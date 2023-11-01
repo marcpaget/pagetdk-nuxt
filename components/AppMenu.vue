@@ -61,7 +61,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a>Item 3</a></li>
+                    <li>
+                        <NuxtLink
+                            class="hover:animate-jump animate-once animate-ease-in-out animate-normal animate-fill-forwards"
+                            to="/blog"
+                            >Blog</NuxtLink
+                        >
+                    </li>
                 </ul>
             </div>
             <button class="btn-ghost btn font-permanentmarker text-xl normal-case text-kaldi">
@@ -121,6 +127,13 @@
                         class="hover:animate-jump animate-once animate-ease-in-out animate-normal animate-fill-forwards"
                         to="/aboutPage"
                         >About me</NuxtLink
+                    >
+                </li>
+                <li>
+                    <NuxtLink
+                        class="hover:animate-jump animate-once animate-ease-in-out animate-normal animate-fill-forwards"
+                        to="/blog"
+                        >Blog</NuxtLink
                     >
                 </li>
             </ul>

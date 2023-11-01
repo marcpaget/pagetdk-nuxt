@@ -7,8 +7,8 @@
             <p />
         </article>
         <p class="font-sans ...">The quick brown fox ...</p>
-<p class="font-serif ...">The quick brown fox ...</p>
-<p class="font-mono ...">The quick brown fox ...</p>
+        <p class="font-serif ...">The quick brown fox ...</p>
+        <p class="font-mono ...">The quick brown fox ...</p>
     </main>
 </template>
 <script>

@@ -1,7 +1,8 @@
+<script setup lang="ts">
+const { page } = useContent()
+</script>
+
 <template>
-    <main>
-        <article class="prose m-auto max-w-3xl p-16">
-            <ContentDoc />
-        </article>
-    </main>
+    <PageToc />
+    <ContentRenderer :key="page._id" :value="page" />
 </template>

@@ -1,39 +1,31 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-import { defineNuxtConfig } from 'nuxt/config'
+
 export default defineNuxtConfig({
     modules: [
-        '@nuxt/content',
-        //'@nuxtjs/tailwindcss',
-        '@formkit/nuxt',
-        // '@nuxtjs/prismic',
-        '@vueuse/nuxt',
-        //'@nuxtjs/supabase',
+        '@nuxt/content', //'@nuxtjs/tailwindcss',
+        '@formkit/nuxt', // '@nuxtjs/prismic',
+        '@vueuse/nuxt', //'@nuxtjs/supabase',
         //'@nuxtjs/color-mode',
         'nuxt-icon',
-        'unplugin-icons/nuxt',
-        //'@nuxtjs/partytown',
+        'unplugin-icons/nuxt', //'@nuxtjs/partytown',
         //'@inkline/nuxt',
         //'nuxt-umami',
         '@sidebase/nuxt-session',
-        '@pinia/nuxt',
-        // '@nuxtjs/vuetify',
+        '@pinia/nuxt', // '@nuxtjs/vuetify',
         'nuxt-viewport',
         'nuxt-swiper',
         '@nuxt/image-edge',
         'nuxt-headlessui',
         '@dargmuesli/nuxt-cookie-control',
-        '@nuxt/devtools',
-        // 'nuxt-logrocket',
+        '@nuxt/devtools', // 'nuxt-logrocket',
         // 'nuxt-bugsnag',
         //'@nuxtjs/i18n',
         '@hypernym/nuxt-anime',
-        '@varlet/nuxt',
-        //'nuxt-purgecss',
+        '@varlet/nuxt', //'nuxt-purgecss',
         '@nuxt/ui',
         '@nuxtjs/strapi',
         '@tresjs/nuxt',
-        '@nuxtjs/eslint-module',
-        //'nuxt-vuefire',
+        '@nuxtjs/eslint-module', //'nuxt-vuefire',
         'vue3-carousel-nuxt',
         'nuxt-api-party',
         '@morev/vue-transitions/nuxt',
@@ -45,11 +37,12 @@ export default defineNuxtConfig({
         'nuxt-simple-sitemap',
         'nuxt-simple-robots',
         'nuxt-link-checker',
-        'nuxt-seo-experiments',
-        //'nuxt-schema-org',
-        // 'nuxt-aos',
+        'nuxt-seo-experiments', //'nuxt-schema-org',
+        //'nuxt-aos',
         '@nuxtjs/cloudinary',
-        'nuxt-ark-ui',
+        'nuxt3-leaflet',
+        '@nuxt/image',
+        // '@nuxtus/nuxt-localtunnel',
     ],
 
     runtimeConfig: {
@@ -62,6 +55,7 @@ export default defineNuxtConfig({
             language: 'da-DK', // prefer more explicit language codes like `en-AU` over `en`
         },
     },
+    // localtunnel: {},
     gtag: {
         id: 'G-L04C39X79K',
     },
@@ -73,7 +67,45 @@ export default defineNuxtConfig({
             'page:transition:finish',
         ],
     },
-
+    // module options
+    cookieControl: {
+        colors: {
+            checkboxActiveBackground: '#00A34A', // text-green-600
+        },
+        closeModalOnClickOutside: true,
+        cookies: {
+            necessary: [
+                {
+                    description: {
+                        en: 'This cookie does something very very very very very very very long.',
+                    },
+                    name: {
+                        en: 'Necessary Cookie',
+                    },
+                    targetCookieIds: ['NEC'],
+                },
+            ],
+            optional: [
+                {
+                    id: 'op',
+                    name: 'Optional Cookie',
+                    links: {
+                        'https://example.com': 'Privacy Policy',
+                        'https://example.cop': null,
+                    },
+                    targetCookieIds: ['_o', '_p', '_t'],
+                },
+            ],
+        },
+        isCookieIdVisible: true,
+        isIframeBlocked: true,
+        locales: ['en'],
+        localeTexts: {
+            en: {
+                iframeBlocked: 'Bitte funktionale Cookies aktivieren:',
+            },
+        },
+    },
     apiParty: {
         endpoints: {
             restCountriesApi: {
@@ -120,7 +152,7 @@ export default defineNuxtConfig({
     devServerHandlers: [],
 
     typescript: {
-        strict: true,
+        // strict: true,
     },
 
     // extends: ['nuxt-seo-kit'],
@@ -200,12 +232,11 @@ export default defineNuxtConfig({
                 'ufo',
                 'naive-ui',
                 'vueuc',
-                'date-fns-tz/esm/formatInTimeZone',
             ],
         },
     },
 
     devtools: {
-        enabled: false,
+        enabled: true,
     },
 })

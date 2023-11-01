@@ -41,13 +41,41 @@
               "id": "#appConfig/nuxtIcon/aliases",
               "default": {},
               "type": "object"
+            },
+            "iconifyApiOptions": {
+              "id": "#appConfig/nuxtIcon/iconifyApiOptions",
+              "properties": {
+                "url": {
+                  "title": "Iconify API URL",
+                  "description": "Define a custom Iconify API URL. Useful if you want to use a self-hosted Iconify API. Learn more: https://iconify.design/docs/api/",
+                  "id": "#appConfig/nuxtIcon/iconifyApiOptions/url",
+                  "default": "https://api.iconify.design",
+                  "type": "string"
+                },
+                "publicApiFallback": {
+                  "title": "Public Iconify API fallback",
+                  "description": "Define, if the public Iconify API should be used as fallback if the .",
+                  "id": "#appConfig/nuxtIcon/iconifyApiOptions/publicApiFallback",
+                  "default": false,
+                  "type": "boolean"
+                }
+              },
+              "type": "object",
+              "default": {
+                "url": "https://api.iconify.design",
+                "publicApiFallback": false
+              }
             }
           },
           "type": "object",
           "default": {
             "size": "1em",
             "class": "",
-            "aliases": {}
+            "aliases": {},
+            "iconifyApiOptions": {
+              "url": "https://api.iconify.design",
+              "publicApiFallback": false
+            }
           }
         }
       },
@@ -56,7 +84,11 @@
         "nuxtIcon": {
           "size": "1em",
           "class": "",
-          "aliases": {}
+          "aliases": {},
+          "iconifyApiOptions": {
+            "url": "https://api.iconify.design",
+            "publicApiFallback": false
+          }
         }
       }
     }
@@ -67,7 +99,11 @@
       "nuxtIcon": {
         "size": "1em",
         "class": "",
-        "aliases": {}
+        "aliases": {},
+        "iconifyApiOptions": {
+          "url": "https://api.iconify.design",
+          "publicApiFallback": false
+        }
       }
     }
   }

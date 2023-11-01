@@ -40,6 +40,26 @@ export interface NuxtCustomSchema {
     * @studioInputObjectValueType icon
    */
    aliases?: { [alias: string]: string },
+
+   iconifyApiOptions?: {
+    /**
+     * Iconify API URL
+     * 
+     * Define a custom Iconify API URL. Useful if you want to use a self-hosted Iconify API. Learn more: https://iconify.design/docs/api/
+     * 
+     * @default "https://api.iconify.design"
+    */
+    url?: string,
+
+    /**
+     * Public Iconify API fallback
+     * 
+     * Define, if the public Iconify API should be used as fallback if the .
+     * 
+     * @default false
+    */
+    publicApiFallback?: boolean,
+   },
   },
  },
 }
