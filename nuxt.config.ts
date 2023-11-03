@@ -50,6 +50,7 @@ export default defineNuxtConfig({
         // 'nuxt-aos',
         '@nuxtjs/cloudinary',
         'nuxt-ark-ui',
+        '@nuxthq/studio',
     ],
 
     runtimeConfig: {

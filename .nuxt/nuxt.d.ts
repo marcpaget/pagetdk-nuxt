@@ -32,6 +32,7 @@
 /// <reference types="nuxt-seo-experiments" />
 /// <reference types="@nuxtjs/cloudinary" />
 /// <reference types="nuxt-ark-ui" />
+/// <reference types="@nuxthq/studio" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference types="nuxt" />
