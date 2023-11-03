@@ -66,19 +66,13 @@
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#mdc-imports": [
-        "./mdc-imports"
+        "./mdc-imports.mjs"
       ],
       "pinia": [
         "../node_modules/pinia/dist/pinia"
       ],
       "#viewport-options": [
         "./viewport-options.mjs"
-      ],
-      "#image": [
-        "../node_modules/@nuxt/image-edge/dist/runtime"
-      ],
-      "#image/*": [
-        "../node_modules/@nuxt/image-edge/dist/runtime/*"
       ],
       "#cookie-control/set-vars": [
         "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/set-vars/native"
@@ -107,11 +101,14 @@
       "#tailwind-config": [
         "./tailwind.config"
       ],
-      "#tailwind-config/*": [
-        "./tailwind.config/*"
-      ],
       "#nuxt-api-party": [
         "./module/nuxt-api-party"
+      ],
+      "#image": [
+        "../node_modules/@nuxt/image/dist/runtime"
+      ],
+      "#image/*": [
+        "../node_modules/@nuxt/image/dist/runtime/*"
       ],
       "#vue-router": [
         "./vue-router-stub"
@@ -143,7 +140,6 @@
     "../node_modules/@pinia/nuxt/runtime",
     "../node_modules/nuxt-viewport/runtime",
     "../node_modules/nuxt-swiper/runtime",
-    "../node_modules/@nuxt/image-edge/runtime",
     "../node_modules/nuxt-headlessui/runtime",
     "../node_modules/@dargmuesli/nuxt-cookie-control/runtime",
     "../node_modules/@nuxt/devtools/runtime",
@@ -170,6 +166,7 @@
     "../node_modules/nuxt-seo-experiments/runtime",
     "../node_modules/@nuxtjs/cloudinary/runtime",
     "../node_modules/nuxt3-leaflet/runtime",
+    "../node_modules/@nuxt/image/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
@@ -187,7 +184,6 @@
     "../node_modules/@pinia/nuxt/runtime/server",
     "../node_modules/nuxt-viewport/runtime/server",
     "../node_modules/nuxt-swiper/runtime/server",
-    "../node_modules/@nuxt/image-edge/runtime/server",
     "../node_modules/nuxt-headlessui/runtime/server",
     "../node_modules/@dargmuesli/nuxt-cookie-control/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
@@ -214,6 +210,7 @@
     "../node_modules/nuxt-seo-experiments/runtime/server",
     "../node_modules/@nuxtjs/cloudinary/runtime/server",
     "../node_modules/nuxt3-leaflet/runtime/server",
+    "../node_modules/@nuxt/image/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"

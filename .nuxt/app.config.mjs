@@ -4,7 +4,7 @@ import { defuFn } from '/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules
 
 const inlineConfig = {
   "nuxt": {
-    "buildId": "test"
+    "buildId": "e9d4196c-e8cf-4686-8c78-0e6205f208ea"
   },
   "ui": {
     "primary": "green",

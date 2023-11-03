@@ -8,7 +8,6 @@
 /// <reference types="@pinia/nuxt" />
 /// <reference types="nuxt-viewport" />
 /// <reference types="nuxt-swiper" />
-/// <reference types="@nuxt/image-edge" />
 /// <reference types="nuxt-headlessui" />
 /// <reference types="@dargmuesli/nuxt-cookie-control" />
 /// <reference types="@nuxt/devtools" />

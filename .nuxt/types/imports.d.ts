@@ -292,7 +292,7 @@ declare global {
   const useHead: typeof import('../../node_modules/@unhead/vue')['useHead']
   const useHeadSafe: typeof import('../../node_modules/@unhead/vue')['useHeadSafe']
   const useIdle: typeof import('../../node_modules/@vueuse/core')['useIdle']
-  const useImage: typeof import('../../node_modules/@nuxt/image-edge/dist/runtime/composables')['useImage']
+  const useImage: typeof import('../../node_modules/@nuxt/image/dist/runtime/composables')['useImage']
   const useInfiniteScroll: typeof import('../../node_modules/@vueuse/core')['useInfiniteScroll']
   const useIntersectionObserver: typeof import('../../node_modules/@vueuse/core')['useIntersectionObserver']
   const useInterval: typeof import('../../node_modules/@vueuse/core')['useInterval']
@@ -326,7 +326,6 @@ declare global {
   const useNow: typeof import('../../node_modules/@vueuse/core')['useNow']
   const useNuxtApp: typeof import('../../node_modules/nuxt/dist/app')['useNuxtApp']
   const useNuxtData: typeof import('../../node_modules/nuxt/dist/app')['useNuxtData']
-  const useNuxtDevTools: typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']
   const useObjectUrl: typeof import('../../node_modules/@vueuse/core')['useObjectUrl']
   const useOffsetPagination: typeof import('../../node_modules/@vueuse/core')['useOffsetPagination']
   const useOnline: typeof import('../../node_modules/@vueuse/core')['useOnline']
@@ -773,7 +772,7 @@ declare module 'vue' {
     readonly useHead: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useHead']>
     readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useHeadSafe']>
     readonly useIdle: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useIdle']>
-    readonly useImage: UnwrapRef<typeof import('../../node_modules/@nuxt/image-edge/dist/runtime/composables')['useImage']>
+    readonly useImage: UnwrapRef<typeof import('../../node_modules/@nuxt/image/dist/runtime/composables')['useImage']>
     readonly useInfiniteScroll: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useInfiniteScroll']>
     readonly useIntersectionObserver: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useIntersectionObserver']>
     readonly useInterval: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useInterval']>
@@ -807,7 +806,6 @@ declare module 'vue' {
     readonly useNow: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useNow']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useNuxtData']>
-    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly useObjectUrl: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useObjectUrl']>
     readonly useOffsetPagination: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useOffsetPagination']>
     readonly useOnline: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useOnline']>
@@ -1246,7 +1244,7 @@ declare module '@vue/runtime-core' {
     readonly useHead: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useHead']>
     readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/@unhead/vue')['useHeadSafe']>
     readonly useIdle: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useIdle']>
-    readonly useImage: UnwrapRef<typeof import('../../node_modules/@nuxt/image-edge/dist/runtime/composables')['useImage']>
+    readonly useImage: UnwrapRef<typeof import('../../node_modules/@nuxt/image/dist/runtime/composables')['useImage']>
     readonly useInfiniteScroll: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useInfiniteScroll']>
     readonly useIntersectionObserver: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useIntersectionObserver']>
     readonly useInterval: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useInterval']>
@@ -1280,7 +1278,6 @@ declare module '@vue/runtime-core' {
     readonly useNow: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useNow']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useNuxtData']>
-    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly useObjectUrl: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useObjectUrl']>
     readonly useOffsetPagination: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useOffsetPagination']>
     readonly useOnline: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useOnline']>

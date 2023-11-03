@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         '@pinia/nuxt', // '@nuxtjs/vuetify',
         'nuxt-viewport',
         'nuxt-swiper',
-        '@nuxt/image-edge',
+        // '@nuxt/image-edge',
         'nuxt-headlessui',
         '@dargmuesli/nuxt-cookie-control',
         '@nuxt/devtools', // 'nuxt-logrocket',
