@@ -10,17 +10,30 @@ const failingSubmitHandler = async function (payload, node) {
 </script>
 
 <template>
-    <p>
-        <em
-            ><small
-                >Data can be recovered with node.restoreCache()<br />If you reload after submit the data will
-                persist.</small
-            ></em
-        >
-    </p>
-    <FormKit type="form" name="contactWithRestore" use-local-storage @submit="failingSubmitHandler">
-        <FormKit type="text" name="name" label="Your name" />
-        <FormKit type="text" name="email" label="Your email" />
-        <FormKit type="area" name="message" label="Your message" />
-    </FormKit>
+  <p>
+    <em><small>Data can be recovered with node.restoreCache()<br>If you reload after submit the data will
+      persist.</small></em>
+  </p>
+  <FormKit
+    type="form"
+    name="contactWithRestore"
+    use-local-storage
+    @submit="failingSubmitHandler"
+  >
+    <FormKit
+      type="text"
+      name="name"
+      label="Your name"
+    />
+    <FormKit
+      type="text"
+      name="email"
+      label="Your email"
+    />
+    <FormKit
+      type="area"
+      name="message"
+      label="Your message"
+    />
+  </FormKit>
 </template>

@@ -22,10 +22,10 @@ const getPublicUrl = async () => {
 </script>
 
 <template>
-    <div>
-        <h1>Hej</h1>
-        <p>
-            {{ getPublicUrl.name }}
-        </p>
-    </div>
+  <div>
+    <h1>Hej</h1>
+    <p>
+      {{ getPublicUrl.name }}
+    </p>
+  </div>
 </template>

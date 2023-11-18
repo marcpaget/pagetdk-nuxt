@@ -1,36 +1,52 @@
 <template>
-    <div class="card flex justify-content-center">
-        <Galleria
-            v-model:activeIndex="activeIndex"
-            v-model:visible="displayCustom"
-            :value="images"
-            :responsive-options="responsiveOptions"
-            :num-visible="7"
-            container-style="max-width: 850px"
-            :circular="true"
-            :full-screen="true"
-            :show-item-navigators="true"
-            :show-thumbnails="false"
+  <div class="card flex justify-content-center">
+    <Galleria
+      v-model:activeIndex="activeIndex"
+      v-model:visible="displayCustom"
+      :value="images"
+      :responsive-options="responsiveOptions"
+      :num-visible="7"
+      container-style="max-width: 850px"
+      :circular="true"
+      :full-screen="true"
+      :show-item-navigators="true"
+      :show-thumbnails="false"
+    >
+      <template #item="slotProps">
+        <img
+          :src="slotProps.item.itemImageSrc"
+          :alt="slotProps.item.alt"
+          style="width: 100%; display: block"
         >
-            <template #item="slotProps">
-                <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
-            </template>
-            <template #thumbnail="slotProps">
-                <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" style="display: block" />
-            </template>
-        </Galleria>
+      </template>
+      <template #thumbnail="slotProps">
+        <img
+          :src="slotProps.item.thumbnailImageSrc"
+          :alt="slotProps.item.alt"
+          style="display: block"
+        >
+      </template>
+    </Galleria>
 
-        <div v-if="images" class="grid" style="max-width: 400px">
-            <div v-for="(image, index) of images" :key="index" class="col-4">
-                <img
-                    :src="image.thumbnailImageSrc"
-                    :alt="image.alt"
-                    style="cursor: pointer"
-                    @click="imageClick(index)"
-                />
-            </div>
-        </div>
+    <div
+      v-if="images"
+      class="grid"
+      style="max-width: 400px"
+    >
+      <div
+        v-for="(image, index) of images"
+        :key="index"
+        class="col-4"
+      >
+        <img
+          :src="image.thumbnailImageSrc"
+          :alt="image.alt"
+          style="cursor: pointer"
+          @click="imageClick(index)"
+        >
+      </div>
     </div>
+  </div>
 </template>
 
 <script setup>

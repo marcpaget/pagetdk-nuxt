@@ -1,19 +1,26 @@
 <template>
-    <div class="card md:flex md:items-center">
-        <Galleria
-            :value="images"
-            :responsive-options="responsiveOptions"
-            :num-visible="5"
-            container-style="max-width: 640px"
+  <div class="card md:flex md:items-center">
+    <Galleria
+      :value="images"
+      :responsive-options="responsiveOptions"
+      :num-visible="5"
+      container-style="max-width: 640px"
+    >
+      <template #item="slotProps">
+        <img
+          :src="slotProps.item.itemImageSrc"
+          :alt="slotProps.item.alt"
+          style="width: 100%"
         >
-            <template #item="slotProps">
-                <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%" />
-            </template>
-            <template #thumbnail="slotProps">
-                <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" />
-            </template>
-        </Galleria>
-    </div>
+      </template>
+      <template #thumbnail="slotProps">
+        <img
+          :src="slotProps.item.thumbnailImageSrc"
+          :alt="slotProps.item.alt"
+        >
+      </template>
+    </Galleria>
+  </div>
 </template>
 
 <script setup>

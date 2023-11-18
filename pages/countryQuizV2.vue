@@ -1,34 +1,44 @@
 <template>
-    <div class="flex flex-col">
-        <span class="mb-4 mt-4 text-center text-4xl text-sky-600">Guess the capital</span>
+  <div class="flex flex-col">
+    <span class="mb-4 mt-4 text-center text-4xl text-sky-600">Guess the capital</span>
 
-        <div
-            class="mt-8 box-border h-full justify-center self-center rounded-md border-8 bg-slate-300 p-8 shadow-md shadow-slate-500 outline outline-1 dark:bg-slate-100 dark:shadow-slate-50"
-        >
-            <section v-if="totalQuestions < 10">
-                <div class="min-w-max max-w-lg">
-                    <div>
-                        <p class="mb-4 text-left text-xl text-sky-600">Question</p>
-                        <p class="mb-4 text-left text-xl text-sky-600">{{ totalQuestions }} / 10</p>
+    <div
+      class="mt-8 box-border h-full justify-center self-center rounded-md border-8 bg-slate-300 p-8 shadow-md shadow-slate-500 outline outline-1 dark:bg-slate-100 dark:shadow-slate-50"
+    >
+      <section v-if="totalQuestions < 10">
+        <div class="min-w-max max-w-lg">
+          <div>
+            <p class="mb-4 text-left text-xl text-sky-600">
+              Question
+            </p>
+            <p class="mb-4 text-left text-xl text-sky-600">
+              {{ totalQuestions }} / 10
+            </p>
 
-                        <p class="mb-4 text-right text-xl text-sky-600">Score</p>
-                        <p class="mb-4 text-right text-xl text-sky-600">{{ score }} / {{ totalQuestions }}</p>
-                    </div>
-                </div>
-                <!-- ! FIX: Add optional timer -->
-                <div class="justify-center self-center">
-                    <p class="text-5xl">{{ currentCountry }}</p>
-                </div>
-                <div class="mt-4 flex min-w-max max-w-lg flex-col rounded-md shadow-sm">
-                    <!--   ! FIX: Add a button to start the quiz  -->
-                    <button
-                        v-for="(option, index) in options"
-                        :key="index"
-                        class="mt-2 items-center justify-center gap-2 border bg-slate-500 px-4 py-3 align-middle text-xl text-white transition-all hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-slate-800"
-                        @click="checkAnswer(option)"
-                    >
-                        {{ option }}
-                        <!--
+            <p class="mb-4 text-right text-xl text-sky-600">
+              Score
+            </p>
+            <p class="mb-4 text-right text-xl text-sky-600">
+              {{ score }} / {{ totalQuestions }}
+            </p>
+          </div>
+        </div>
+        <!-- ! FIX: Add optional timer -->
+        <div class="justify-center self-center">
+          <p class="text-5xl">
+            {{ currentCountry }}
+          </p>
+        </div>
+        <div class="mt-4 flex min-w-max max-w-lg flex-col rounded-md shadow-sm">
+          <!--   ! FIX: Add a button to start the quiz  -->
+          <button
+            v-for="(option, index) in options"
+            :key="index"
+            class="mt-2 items-center justify-center gap-2 border bg-slate-500 px-4 py-3 align-middle text-xl text-white transition-all hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-slate-800"
+            @click="checkAnswer(option)"
+          >
+            {{ option }}
+            <!--
                 copilot change color of button to green if answer is correct and red if answer incorrect
 
 
@@ -36,20 +46,26 @@
             
             
             -->
-                    </button>
-                </div>
-            </section>
-            <section v-else>
-                <div class="min-w-max max-w-lg">
-                    <span class="mb-4 text-center text-4xl text-sky-600">Score</span>
-
-                    <p class="mb-4 text-center text-2xl text-green-600">Correct: {{ score }}</p>
-                    <p class="mb-4 text-center text-2xl text-red-600">Wrong: {{ wrong }}</p>
-                    <button @click="totalQuestions = 0">Play Again</button>
-                </div>
-            </section>
+          </button>
         </div>
+      </section>
+      <section v-else>
+        <div class="min-w-max max-w-lg">
+          <span class="mb-4 text-center text-4xl text-sky-600">Score</span>
+
+          <p class="mb-4 text-center text-2xl text-green-600">
+            Correct: {{ score }}
+          </p>
+          <p class="mb-4 text-center text-2xl text-red-600">
+            Wrong: {{ wrong }}
+          </p>
+          <button @click="totalQuestions = 0">
+            Play Again
+          </button>
+        </div>
+      </section>
     </div>
+  </div>
 </template>
 
 <!-- 
@@ -127,7 +143,7 @@ export default {
             this.options = this.getRandomOptions(this.correctAnswer)
         },
         getRandomOptions(correctAnswer) {
-            let options = [correctAnswer]
+            const options = [correctAnswer]
             while (options.length < 4) {
                 const randomIndex = Math.floor(Math.random() * this.countries.length)
                 const option = this.countries[randomIndex].capital

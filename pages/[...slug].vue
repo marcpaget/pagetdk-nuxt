@@ -31,20 +31,23 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <main class="flex flex-col gap-4 p-4">
-        <ContentDoc>
-            <template #default="{ doc }">
-                <div class="grid grid-cols-12 gap-8">
-                    <div class="nuxt-content col-span-8">
-                        <ContentRenderer ref="nuxtContent" :value="doc" />
-                    </div>
-                    <div class="col-span-4 rounded-md border p-4">
-                        <div class="sticky top-0 flex flex-col items-center">
-                            <TableOfContents :active-toc-id="activeTocId" />
-                        </div>
-                    </div>
-                </div>
-            </template>
-        </ContentDoc>
-    </main>
+  <main class="flex flex-col gap-4 p-4">
+    <ContentDoc>
+      <template #default="{ doc }">
+        <div class="grid grid-cols-12 gap-8">
+          <div class="nuxt-content col-span-8">
+            <ContentRenderer
+              ref="nuxtContent"
+              :value="doc"
+            />
+          </div>
+          <div class="col-span-4 rounded-md border p-4">
+            <div class="sticky top-0 flex flex-col items-center">
+              <TableOfContents :active-toc-id="activeTocId" />
+            </div>
+          </div>
+        </div>
+      </template>
+    </ContentDoc>
+  </main>
 </template>

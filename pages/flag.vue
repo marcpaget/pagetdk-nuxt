@@ -1,6 +1,6 @@
 import { FlagQuiz } from '#build/components';
 <template>
-    <div>
-        <FlagQuizComponent />
-    </div>
+  <div>
+    <FlagQuizComponent />
+  </div>
 </template>

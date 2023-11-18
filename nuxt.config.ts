@@ -1,5 +1,4 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
     modules: [
         '@nuxt/content',
@@ -49,8 +48,10 @@ export default defineNuxtConfig({
         //'nuxt-schema-org',
         // 'nuxt-aos',
         '@nuxtjs/cloudinary',
-        'nuxt-ark-ui',
         '@nuxthq/studio',
+        //'nuxt3-leaflet',
+        // '@nuxt/image',
+        'nuxt-primevue',
     ],
 
     runtimeConfig: {
@@ -74,7 +75,45 @@ export default defineNuxtConfig({
             'page:transition:finish',
         ],
     },
-
+    // module options
+    cookieControl: {
+        colors: {
+            checkboxActiveBackground: '#00A34A', // text-green-600
+        },
+        closeModalOnClickOutside: true,
+        cookies: {
+            necessary: [
+                {
+                    description: {
+                        en: 'This cookie does something very very very very very very very long.',
+                    },
+                    name: {
+                        en: 'Necessary Cookie',
+                    },
+                    targetCookieIds: ['NEC'],
+                },
+            ],
+            optional: [
+                {
+                    id: 'op',
+                    name: 'Optional Cookie',
+                    links: {
+                        'https://example.com': 'Privacy Policy',
+                        'https://example.cop': null,
+                    },
+                    targetCookieIds: ['_o', '_p', '_t'],
+                },
+            ],
+        },
+        isCookieIdVisible: true,
+        isIframeBlocked: true,
+        locales: ['en'],
+        localeTexts: {
+            en: {
+                iframeBlocked: 'Bitte funktionale Cookies aktivieren:',
+            },
+        },
+    },
     apiParty: {
         endpoints: {
             restCountriesApi: {
@@ -105,7 +144,7 @@ export default defineNuxtConfig({
         emitError: false,
     },
     //plugins: ['~/plugins/primevue.js', '~/plugins/vuetify.ts', '~/plugins/naive-ui.ts'],
-    ssr: false,
+    ssr: true,
     components: true,
     strapi: {
         // Options
@@ -117,7 +156,13 @@ export default defineNuxtConfig({
     content: {
         documentDriven: true,
     },
-
+    // webpack: {
+    //     loaders: {
+    //       vue: {
+    //         hotReload: true,
+    //       }
+    //     }
+    //   },
     devServerHandlers: [],
 
     typescript: {
@@ -175,19 +220,28 @@ export default defineNuxtConfig({
     //         autoprefixer: {},
     //     },
     // },
-
+    primevue: {
+        options: {
+          ripple: true
+        },
+        components: {
+          include: ['InputText', 'Button', 'Galleria', 'TabMenu', 'Menubar', 'ScrollPanel', 'ScrollTop']
+        }
+      },
     css: [
         'primevue/resources/themes/lara-light-blue/theme.css',
         'primevue/resources/primevue.css',
         'primeicons/primeicons.css',
-        'primeflex/primeflex.css',
+        'primeflex/primeflex.css',  
     ],
+    
+   
 
     build: {
         transpile:
             process.env.NODE_ENV === 'production'
-                ? ['naive-ui', 'vueuc', '@css-render/vue3-ssr', '@juggle/resize-observer', 'vuetify', 'primevue']
-                : ['@juggle/resize-observer', 'vuetify', 'primevue'],
+                ? ['naive-ui', 'vueuc', '@css-render/vue3-ssr', '@juggle/resize-observer', 'vuetify']
+                : ['@juggle/resize-observer', 'vuetify'],
     },
 
     vite: {
@@ -201,12 +255,11 @@ export default defineNuxtConfig({
                 'ufo',
                 'naive-ui',
                 'vueuc',
-                'date-fns-tz/esm/formatInTimeZone',
             ],
         },
     },
 
     devtools: {
-        enabled: false,
+        enabled: true,
     },
 })

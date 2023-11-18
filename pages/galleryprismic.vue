@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <PrismicGallery />
-    </div>
+  <div>
+    <PrismicGallery />
+  </div>
 </template>
 
 <script>

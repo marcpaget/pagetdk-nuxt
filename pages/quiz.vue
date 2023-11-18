@@ -1,45 +1,63 @@
 <template>
-    <div class="flex flex-col">
-        <span class="text-4xl text-sky-600 text-center m-4">Guess the country</span>
+  <div class="flex flex-col">
+    <span class="text-4xl text-sky-600 text-center m-4">Guess the country</span>
 
-        <div class="card w-96 bg-base-100 shadow-xl justify-center self-center">
-            <section v-if="totalQuestions < 10">
-                <progress class="place-content-center progress progress-primary" :value="totalQuestions" :max="10" />
-                <span class="text-4xl text-sky-600 text-center mb-4">Score</span>
-                <!-- TODO: Difficulty levels hardcoded or based on countrys size or region/continent -->
-                <p class="text-2xl text-green-600 text-center mb-4">Correct: {{ score }}</p>
-                <p class="text-2xl text-red-600 text-center mb-4">Wrong: {{ wrong }}</p>
+    <div class="card w-96 bg-base-100 shadow-xl justify-center self-center">
+      <section v-if="totalQuestions < 10">
+        <progress
+          class="place-content-center progress progress-primary"
+          :value="totalQuestions"
+          :max="10"
+        />
+        <span class="text-4xl text-sky-600 text-center mb-4">Score</span>
+        <!-- TODO: Difficulty levels hardcoded or based on countrys size or region/continent -->
+        <p class="text-2xl text-green-600 text-center mb-4">
+          Correct: {{ score }}
+        </p>
+        <p class="text-2xl text-red-600 text-center mb-4">
+          Wrong: {{ wrong }}
+        </p>
 
-                <div class="card-body items-center text-center">
-                    <figure class="px-10 pt-10">
-                        <img :src="currentFlag" alt="Shoes" class="rounded-xl" />
-                    </figure>
+        <div class="card-body items-center text-center">
+          <figure class="px-10 pt-10">
+            <img
+              :src="currentFlag"
+              alt="Shoes"
+              class="rounded-xl"
+            >
+          </figure>
 
-                    <div class="card-actions">
-                        <div class="min-w-max max-w-lg flex flex-col rounded-md shadow-sm mt-4">
-                            <label
-                                v-for="(option, index) in options"
-                                :key="index"
-                                class="btn btn-primary py-3 px-4 mt-2 justify-center items-center gap-2 border align-middle"
-                                @click="checkAnswer(option)"
-                            >
-                                {{ option }}
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section v-else>
-                <div class="min-w-max max-w-lg">
-                    <span class="text-4xl text-sky-600 text-center mb-4">Score</span>
-
-                    <p class="text-2xl text-green-600 text-center mb-4">Correct: {{ score }}</p>
-                    <p class="text-2xl text-red-600 text-center mb-4">Wrong: {{ wrong }}</p>
-                    <button @click="totalQuestions = 0">Play Again</button>
-                </div>
-            </section>
+          <div class="card-actions">
+            <div class="min-w-max max-w-lg flex flex-col rounded-md shadow-sm mt-4">
+              <label
+                v-for="(option, index) in options"
+                :key="index"
+                class="btn btn-primary py-3 px-4 mt-2 justify-center items-center gap-2 border align-middle"
+                @click="checkAnswer(option)"
+              >
+                {{ option }}
+              </label>
+            </div>
+          </div>
         </div>
+      </section>
+      <section v-else>
+        <div class="min-w-max max-w-lg">
+          <span class="text-4xl text-sky-600 text-center mb-4">Score</span>
+
+          <p class="text-2xl text-green-600 text-center mb-4">
+            Correct: {{ score }}
+          </p>
+          <p class="text-2xl text-red-600 text-center mb-4">
+            Wrong: {{ wrong }}
+          </p>
+          <button @click="totalQuestions = 0">
+            Play Again
+          </button>
+        </div>
+      </section>
     </div>
+  </div>
 </template>
 
 <script>
@@ -89,7 +107,7 @@ export default {
             this.options = this.getRandomOptions(this.correctAnswer)
         },
         getRandomOptions(correctAnswer) {
-            let options = [correctAnswer]
+            const options = [correctAnswer]
             while (options.length < 4) {
                 const randomIndex = Math.floor(Math.random() * this.countries.length)
                 const option = this.countries[randomIndex].name

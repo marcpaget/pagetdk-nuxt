@@ -1,5 +1,5 @@
 <template>
-    <prismic-image :field="document.data.example_image" />
+  <prismic-image :field="document.data.example_image" />
 </template>
 
 <script setup>

@@ -1,23 +1,29 @@
 <template>
-    <div>
-        <!-- <form>
+  <div>
+    <!-- <form>
             <select v-model="locale">
                 <option value="en">en</option>
                 <option value="fr">fr</option>
             </select>
             <p>{{ $t('welcome') }}</p>
         </form> -->
-        <h1 class="title">PAGET.DK</h1>
-        <h1 class="title">Nuxt Anime</h1>
-        <h1 class="css-text">CSS</h1>
-        <div class="align-items-center justify-content-center flex flex-wrap">
-            <div
-                class="zoomin animation-duration-1000 animation-iteration-1 align-items-center justify-content-center border-round m-2 flex bg-primary px-5 py-3 font-bold"
-            >
-                zoomin
-            </div>
-        </div>
+    <h1 class="title">
+      PAGET.DK
+    </h1>
+    <h1 class="title">
+      Nuxt Anime
+    </h1>
+    <h1 class="css-text">
+      CSS
+    </h1>
+    <div class="align-items-center justify-content-center flex flex-wrap">
+      <div
+        class="zoomin animation-duration-1000 animation-iteration-1 align-items-center justify-content-center border-round m-2 flex bg-primary px-5 py-3 font-bold"
+      >
+        zoomin
+      </div>
     </div>
+  </div>
 </template>
 
 <script setup lang="ts">

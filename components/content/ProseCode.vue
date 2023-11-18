@@ -1,23 +1,31 @@
 <template>
-    <div class="container">
-        <span v-if="filename" class="filename-text">
-            {{ filename }}
-        </span>
+  <div class="container">
+    <span
+      v-if="filename"
+      class="filename-text"
+    >
+      {{ filename }}
+    </span>
+    <span
+      v-if="languageText"
+      :style="{ background: languageBackground, color: languageColor }"
+      class="language-text"
+    >
+      {{ languageText }}
+    </span>
+    <slot />
+    <div class="bottom-container">
+      <div class="copy-container">
         <span
-            v-if="languageText"
-            :style="{ background: languageBackground, color: languageColor }"
-            class="language-text"
-        >
-            {{ languageText }}
-        </span>
-        <slot />
-        <div class="bottom-container">
-            <div class="copy-container">
-                <span v-if="copied" class="copied-text">Copied code!</span>
-                <button @click="copy(code)">Copy Code</button>
-            </div>
-        </div>
+          v-if="copied"
+          class="copied-text"
+        >Copied code!</span>
+        <button @click="copy(code)">
+          Copy Code
+        </button>
+      </div>
     </div>
+  </div>
 </template>
 
 <script setup lang="ts">

@@ -19,21 +19,33 @@ const handleLogin = async () => {
 </script>
 
 <template>
-    <form class="row flex-center flex" @submit.prevent="handleLogin">
-        <div class="col-6 form-widget">
-            <h1 class="header">Supabase + Nuxt 3</h1>
-            <p class="description">Sign in via magic link with your email below</p>
-            <div>
-                <input v-model="email" class="inputField" type="email" placeholder="Your email" />
-            </div>
-            <div>
-                <input
-                    type="submit"
-                    class="button block"
-                    :value="loading ? 'Loading' : 'Send magic link'"
-                    :disabled="loading"
-                />
-            </div>
-        </div>
-    </form>
+  <form
+    class="row flex-center flex"
+    @submit.prevent="handleLogin"
+  >
+    <div class="col-6 form-widget">
+      <h1 class="header">
+        Supabase + Nuxt 3
+      </h1>
+      <p class="description">
+        Sign in via magic link with your email below
+      </p>
+      <div>
+        <input
+          v-model="email"
+          class="inputField"
+          type="email"
+          placeholder="Your email"
+        >
+      </div>
+      <div>
+        <input
+          type="submit"
+          class="button block"
+          :value="loading ? 'Loading' : 'Send magic link'"
+          :disabled="loading"
+        >
+      </div>
+    </div>
+  </form>
 </template>

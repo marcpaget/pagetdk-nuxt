@@ -1,5 +1,5 @@
 <template>
-    <div />
+  <div />
 </template>
 <!-- <template>
     <div class="card md:flex md:justify-content-center">

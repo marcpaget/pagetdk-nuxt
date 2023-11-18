@@ -35,7 +35,7 @@ const shuffle = () => {
     return shuffled
 }
 
-let landNr = Math.floor(Math.random * country.length)
+const landNr = Math.floor(Math.random * country.length)
 //let korrektLand = country[landNr].name.common;
 //let hovedstad = country[landNr].capital;
 //print(navn + " " +hovedstad);x
@@ -43,35 +43,43 @@ console.log('LandNr' + landNr)
 </script>
 
 <template>
-    <div class="relative h-screen overflow-hidden">
-        <div class="overlay absolute top-0 h-full w-full" />
-        <div class="absolute top-0 h-full w-full p-48">
-            <div class="flex justify-around">
-                <div>
-                    <p class="text-2xl font-extralight text-white">
-                        <span class="font-bold">Country Game</span>
-                    </p>
-                    <img :src="country[0].flags.png" class="icon w-56" />
-                    <div>
-                        <p class="text-2xl font-extralight text-white">
-                            {{ country[0].region }}
-                        </p>
-                        <div>
-                            <p class="text-2xl font-extralight text-white">
-                                {{ country[0].name.official }}
-                            </p>
-                            <div>
-                                <button class="btn-xs btn sm:btn-sm md:btn-md lg:btn-lg">Tryk</button>
-                                <button class="btn-xs btn sm:btn-sm md:btn-md lg:btn-lg" @click="nextCountry">
-                                    Næste land
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="relative h-screen overflow-hidden">
+    <div class="overlay absolute top-0 h-full w-full" />
+    <div class="absolute top-0 h-full w-full p-48">
+      <div class="flex justify-around">
+        <div>
+          <p class="text-2xl font-extralight text-white">
+            <span class="font-bold">Country Game</span>
+          </p>
+          <img
+            :src="country[0].flags.png"
+            class="icon w-56"
+          >
+          <div>
+            <p class="text-2xl font-extralight text-white">
+              {{ country[0].region }}
+            </p>
+            <div>
+              <p class="text-2xl font-extralight text-white">
+                {{ country[0].name.official }}
+              </p>
+              <div>
+                <button class="btn-xs btn sm:btn-sm md:btn-md lg:btn-lg">
+                  Tryk
+                </button>
+                <button
+                  class="btn-xs btn sm:btn-sm md:btn-md lg:btn-lg"
+                  @click="nextCountry"
+                >
+                  Næste land
+                </button>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <style scoped>

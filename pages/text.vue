@@ -1,7 +1,9 @@
 <template>
-    <div>
-        <h1 class="title">Nuxt Anime</h1>
-    </div>
+  <div>
+    <h1 class="title">
+      Nuxt Anime
+    </h1>
+  </div>
 </template>
 
 <script setup lang="ts">

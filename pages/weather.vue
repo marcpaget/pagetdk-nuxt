@@ -27,28 +27,47 @@ const handleClick = () => {
 </script>
 
 <template>
-    {{ input }}
-    <div class="relative h-screen overflow-hidden">
-        <img />
-        {{ search }}
-        <div class="overlay absolute top-0 h-full w-full" />
-        <div class="absolute top-0 h-full w-full p-48">
-            <div class="flex justify-between">
-                <div>
-                    <h1 class="text-7xl text-white">{{ city.name }}</h1>
-                    <p class="mt-2 text-2xl font-extralight text-white">Sunday</p>
-                    <img :src="`https://openweathermap.org/img/wn/${city.weather[0].icon}@4x.png`" class="icon w-56" />
-                </div>
-                <div>
-                    <p class="text-9xl font-extralight text-white">{{ city.main.temp }}°</p>
-                </div>
-            </div>
-            <div class="mt-20">
-                <input v-model="input" type="text" class="h-10 w-1/2" placeholder="Search weather for a city" />
-                <button class="h-10 w-20 bg-sky-400 text-white" @click="handleClick">Search</button>
-            </div>
+  {{ input }}
+  <div class="relative h-screen overflow-hidden">
+    <img>
+    {{ search }}
+    <div class="overlay absolute top-0 h-full w-full" />
+    <div class="absolute top-0 h-full w-full p-48">
+      <div class="flex justify-between">
+        <div>
+          <h1 class="text-7xl text-white">
+            {{ city.name }}
+          </h1>
+          <p class="mt-2 text-2xl font-extralight text-white">
+            Sunday
+          </p>
+          <img
+            :src="`https://openweathermap.org/img/wn/${city.weather[0].icon}@4x.png`"
+            class="icon w-56"
+          >
         </div>
+        <div>
+          <p class="text-9xl font-extralight text-white">
+            {{ city.main.temp }}°
+          </p>
+        </div>
+      </div>
+      <div class="mt-20">
+        <input
+          v-model="input"
+          type="text"
+          class="h-10 w-1/2"
+          placeholder="Search weather for a city"
+        >
+        <button
+          class="h-10 w-20 bg-sky-400 text-white"
+          @click="handleClick"
+        >
+          Search
+        </button>
+      </div>
     </div>
+  </div>
 </template>
 
 <style scoped>

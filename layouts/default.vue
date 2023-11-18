@@ -1,24 +1,21 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 // eslint-disable-next-line vue/multi-word-component-names // eslint-disable-next-line vue/multi-word-component-names
 <template>
-    <div>
-        <AppMenu />
-        <Breadcrumbs>
-            <template #breadcrumb="{ to, title }">
-                <NuxtLink :to="to">
-                    {{ title }}
-                </NuxtLink>
-                <div class="scrollbar-thin scrollbar-track-blue-300 scrollbar-thumb-blue-700">
-                    <div class="h-screen w-screen bg-blue-500 dark:bg-orange-400">
-                        <slot />
-                        <ScrollToTop />
-                    </div>
-
-                    <AppFooter />
-                </div>
-            </template>
-        </Breadcrumbs>
-    </div>
+  <div>
+    <AppMenu />
+    <Breadcrumbs>
+      <template #breadcrumb="{ to, title }">
+        <NuxtLink :to="to">
+          {{ title }}
+        </NuxtLink>
+        <div class="flex flex-col min-h-screen justify-center scrollbar-thin scrollbar-track-blue-300 scrollbar-thumb-blue-700">
+          <slot />
+        </div>
+        <ScrollToTop />
+        <AppFooter />
+      </template>
+    </Breadcrumbs>
+  </div>
 </template>
 
 <script></script>

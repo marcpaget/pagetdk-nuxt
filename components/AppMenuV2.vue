@@ -1,7 +1,7 @@
 <template>
-    <div class="z-2 card relative">
-        <Menubar :model="items" />
-    </div>
+  <div class="z-2 card relative">
+    <Menubar :model="items" />
+  </div>
 </template>
 
 <script setup>
