@@ -98,6 +98,41 @@
                         </ul>
                     </details>
                 </li>
+
+                <li tabindex="0">
+                    <details>
+                        <summary>Games</summary>
+                        <ul class="p-2">
+                            <li>
+                                <NuxtLink to="/quiz">Quiz</NuxtLink>
+                            </li>
+
+                            <li>
+                                <NuxtLink to="/countrygame">Countrygame</NuxtLink>
+                            </li>
+                            <li>
+                                <NuxtLink to="/restcountries">Restcountries</NuxtLink>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <NuxtLink
+                        class="hover:animate-jump animate-once animate-ease-in-out animate-normal animate-fill-forwards"
+                        to="/aboutPage"
+                        >About me</NuxtLink
+                    >
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <ColorModeSwitch />
+            <span v-if="user"> Logged in as: {{ user.email }} </span>
+            <ul>
+                <button v-if="user" class="btn" @click="doSignOut">Log out</button>
+                <button v-else class="btn">
+                    <NuxtLink to="/login">Log in</NuxtLink>
+                </button>
                 <label class="cursor-pointer grid place-items-center">
                     <input
                         type="checkbox"
@@ -136,40 +171,6 @@
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
                     </svg>
                 </label>
-                <li tabindex="0">
-                    <details>
-                        <summary>Games</summary>
-                        <ul class="p-2">
-                            <li>
-                                <NuxtLink to="/quiz">Quiz</NuxtLink>
-                            </li>
-
-                            <li>
-                                <NuxtLink to="/countrygame">Countrygame</NuxtLink>
-                            </li>
-                            <li>
-                                <NuxtLink to="/restcountries">Restcountries</NuxtLink>
-                            </li>
-                        </ul>
-                    </details>
-                </li>
-                <li>
-                    <NuxtLink
-                        class="hover:animate-jump animate-once animate-ease-in-out animate-normal animate-fill-forwards"
-                        to="/aboutPage"
-                        >About me</NuxtLink
-                    >
-                </li>
-            </ul>
-        </div>
-        <div class="navbar-end">
-            <ColorModeSwitch />
-            <span v-if="user"> Logged in as: {{ user.email }} </span>
-            <ul>
-                <button v-if="user" class="btn" @click="doSignOut">Log out</button>
-                <button v-else class="btn">
-                    <NuxtLink to="/login">Log in</NuxtLink>
-                </button>
             </ul>
         </div>
     </div>

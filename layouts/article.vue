@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="content">
-            <AppMenu />
+            <AppMenuUpdated />
             <AppMenuDaisy />
             <slot />
         </div>

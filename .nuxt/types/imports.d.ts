@@ -2,13 +2,6 @@
 export {}
 declare global {
   const $restCountriesApi: typeof import('../module/nuxt-api-party')['$restCountriesApi']
-  const ActionSheet: typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['ActionSheet']
-  const Dialog: typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['Dialog']
-  const ImagePreview: typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['ImagePreview']
-  const LoadingBar: typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['LoadingBar']
-  const Picker: typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['Picker']
-  const Snackbar: typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['Snackbar']
-  const StyleProvider: typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['StyleProvider']
   const SwiperA11y: typeof import('../../node_modules/swiper/modules')['A11y']
   const SwiperAutoplay: typeof import('../../node_modules/swiper/modules')['Autoplay']
   const SwiperController: typeof import('../../node_modules/swiper/modules')['Controller']
@@ -387,6 +380,7 @@ declare global {
   const useStrapiUrl: typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiUrl')['useStrapiUrl']
   const useStrapiUser: typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiUser')['useStrapiUser']
   const useStrapiVersion: typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiVersion')['useStrapiVersion']
+  const useStyle: typeof import('primevue/usestyle')['useStyle']
   const useStyleTag: typeof import('../../node_modules/@vueuse/core')['useStyleTag']
   const useSum: typeof import('../../node_modules/@vueuse/math')['useSum']
   const useSupported: typeof import('../../node_modules/@vueuse/core')['useSupported']
@@ -473,13 +467,6 @@ import { UnwrapRef } from 'vue'
 declare module 'vue' {
   interface ComponentCustomProperties {
     readonly $restCountriesApi: UnwrapRef<typeof import('../module/nuxt-api-party')['$restCountriesApi']>
-    readonly ActionSheet: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['ActionSheet']>
-    readonly Dialog: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['Dialog']>
-    readonly ImagePreview: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['ImagePreview']>
-    readonly LoadingBar: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['LoadingBar']>
-    readonly Picker: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['Picker']>
-    readonly Snackbar: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['Snackbar']>
-    readonly StyleProvider: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['StyleProvider']>
     readonly SwiperA11y: UnwrapRef<typeof import('../../node_modules/swiper/modules')['A11y']>
     readonly SwiperAutoplay: UnwrapRef<typeof import('../../node_modules/swiper/modules')['Autoplay']>
     readonly SwiperController: UnwrapRef<typeof import('../../node_modules/swiper/modules')['Controller']>
@@ -858,6 +845,7 @@ declare module 'vue' {
     readonly useStrapiUrl: UnwrapRef<typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiUrl')['useStrapiUrl']>
     readonly useStrapiUser: UnwrapRef<typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiUser')['useStrapiUser']>
     readonly useStrapiVersion: UnwrapRef<typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiVersion')['useStrapiVersion']>
+    readonly useStyle: UnwrapRef<typeof import('primevue/usestyle')['useStyle']>
     readonly useStyleTag: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useStyleTag']>
     readonly useSum: UnwrapRef<typeof import('../../node_modules/@vueuse/math')['useSum']>
     readonly useSupported: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useSupported']>
@@ -936,13 +924,6 @@ declare module 'vue' {
 declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
     readonly $restCountriesApi: UnwrapRef<typeof import('../module/nuxt-api-party')['$restCountriesApi']>
-    readonly ActionSheet: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['ActionSheet']>
-    readonly Dialog: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['Dialog']>
-    readonly ImagePreview: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['ImagePreview']>
-    readonly LoadingBar: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['LoadingBar']>
-    readonly Picker: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['Picker']>
-    readonly Snackbar: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['Snackbar']>
-    readonly StyleProvider: UnwrapRef<typeof import('../../node_modules/@varlet/ui/lib/varlet.cjs')['StyleProvider']>
     readonly SwiperA11y: UnwrapRef<typeof import('../../node_modules/swiper/modules')['A11y']>
     readonly SwiperAutoplay: UnwrapRef<typeof import('../../node_modules/swiper/modules')['Autoplay']>
     readonly SwiperController: UnwrapRef<typeof import('../../node_modules/swiper/modules')['Controller']>
@@ -1321,6 +1302,7 @@ declare module '@vue/runtime-core' {
     readonly useStrapiUrl: UnwrapRef<typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiUrl')['useStrapiUrl']>
     readonly useStrapiUser: UnwrapRef<typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiUser')['useStrapiUser']>
     readonly useStrapiVersion: UnwrapRef<typeof import('../../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiVersion')['useStrapiVersion']>
+    readonly useStyle: UnwrapRef<typeof import('primevue/usestyle')['useStyle']>
     readonly useStyleTag: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useStyleTag']>
     readonly useSum: UnwrapRef<typeof import('../../node_modules/@vueuse/math')['useSum']>
     readonly useSupported: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useSupported']>

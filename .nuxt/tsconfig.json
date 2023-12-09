@@ -96,6 +96,9 @@
       "#nuxt-api-party": [
         "./module/nuxt-api-party"
       ],
+      "#primevue-style": [
+        "./primevue-style.mjs"
+      ],
       "#vue-router": [
         "./vue-router"
       ],

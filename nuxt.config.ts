@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         // 'nuxt-bugsnag',
         //'@nuxtjs/i18n',
         '@hypernym/nuxt-anime',
-        '@varlet/nuxt',
+        //'@varlet/nuxt',
         //'nuxt-purgecss',
         '@nuxt/ui',
         '@nuxtjs/strapi',
@@ -50,6 +50,7 @@ export default defineNuxtConfig({
         // 'nuxt-aos',
         '@nuxtjs/cloudinary',
         'nuxt-ark-ui',
+        'nuxt-primevue',
     ],
 
     runtimeConfig: {
@@ -65,7 +66,14 @@ export default defineNuxtConfig({
     gtag: {
         id: 'G-L04C39X79K',
     },
-
+    primevue: {
+        options: {
+            ripple: true,
+        },
+        components: {
+            include: ['MegaMenu', 'Button'],
+        },
+    },
     anchorscroll: {
         hooks: [
             // Or any valid hook if needed
@@ -200,7 +208,6 @@ export default defineNuxtConfig({
                 'ufo',
                 'naive-ui',
                 'vueuc',
-                'date-fns-tz/esm/formatInTimeZone',
             ],
         },
     },
