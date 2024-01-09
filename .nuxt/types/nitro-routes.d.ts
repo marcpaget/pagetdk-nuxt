@@ -3,50 +3,56 @@ import type { Serialize, Simplify } from 'nitropack'
 declare module 'nitropack' {
   type Awaited<T> = T extends PromiseLike<infer U> ? Awaited<U> : T
   interface InternalApi {
-    '/sitemap.xml': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../server/routes/sitemap.xml').default>>>> | Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-sitemap/dist/runtime/routes/sitemap').default>>>>
-    }
     '/__nuxt_error': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/renderer').default>>>>
     }
-    '/api/_mdc/highlight': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/shiki/event-handler').default>>>>
-    }
     '/api/session': {
-      'patch': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session').default>>>>
-      'delete': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session').default>>>>
-      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session').default>>>>
-      'post': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session').default>>>>
+      'patch': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session.patch').default>>>>
+      'delete': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session.delete').default>>>>
+      'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session.get').default>>>>
+      'post': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@sidebase/nuxt-session/dist/runtime/server/api/session.post').default>>>>
     }
     '/api/__api_party/:endpointId': {
       'post': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-api-party/dist/runtime/server/handler').default>>>>
     }
-    '/api/og-image-html': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-og-image/dist/runtime/nitro/routes/html').default>>>>
-    }
-    '/api/og-image-options': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-og-image/dist/runtime/nitro/routes/options').default>>>>
-    }
-    '/api/og-image-svg': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-og-image/dist/runtime/nitro/routes/svg').default>>>>
-    }
-    '/api/og-image-vnode': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-og-image/dist/runtime/nitro/routes/vnode').default>>>>
-    }
-    '/api/og-image-font': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-og-image/dist/runtime/nitro/routes/font').default>>>>
-    }
-    '/api/__sitemap__/debug': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-sitemap/dist/runtime/routes/debug').default>>>>
-    }
-    '/__sitemap__/style.xsl': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-sitemap/dist/runtime/routes/sitemap').default>>>>
-    }
-    '/api/__sitemap__/document-driven-urls': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-sitemap/dist/runtime/routes/document-driven-urls').default>>>>
+    '/__site-config__/debug.json': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-site-config/dist/runtime/nitro/routes/__site-config__/debug').default>>>>
     }
     '/robots.txt': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/server/robots-txt').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nitro/server/robots-txt').default>>>>
+    }
+    '/__robots__/nuxt-content.json': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nitro/server/__robots__/nuxt-content').default>>>>
+    }
+    '/__robots__/debug.json': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nitro/server/__robots__/debug').default>>>>
+    }
+    '/__robots__/debug-path.json': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nitro/server/__robots__/debug-path').default>>>>
+    }
+    '/__sitemap__/nuxt-content-urls.json': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/sitemap/dist/runtime/nitro/routes/__sitemap__/nuxt-content-urls').default>>>>
+    }
+    '/__sitemap__/debug.json': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/sitemap/dist/runtime/nitro/routes/__sitemap__/debug').default>>>>
+    }
+    '/__sitemap__/style.xsl': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/sitemap/dist/runtime/nitro/routes/sitemap.xsl').default>>>>
+    }
+    '/sitemap.xml': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/sitemap/dist/runtime/nitro/routes/sitemap.xml').default>>>>
+    }
+    '/__og-image__/font/**': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/server/routes/__og-image__/font-[name]-[weight].[extension]').default>>>>
+    }
+    '/__og-image__/debug.json': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/server/routes/__og-image__/debug.json').default>>>>
+    }
+    '/__og-image__/image/**': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/server/routes/__og-image__/image').default>>>>
+    }
+    '/__schema-org__/debug.json': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-schema-org/dist/runtime/nitro/routes/__schema-org__/debug').default>>>>
     }
     '/api/_content/query/:qid/**:params': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>
@@ -68,6 +74,9 @@ declare module 'nitropack' {
     }
     '/api/_content/navigation': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/navigation').default>>>>
+    }
+    '/_ipx/**': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/image/dist/runtime/ipx').default>>>>
     }
   }
 }

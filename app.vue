@@ -1,22 +1,23 @@
 <template>
-    <div class="scrollbar-thumb-blue-700 h-screen w-screen">
-        <CookieControl>
-            <template #bar>
-                <h3>Bar title</h3>
-                <p>Bar description (you can use $cookies.text.barDescription)</p>
-                <n-link>Go somewhere</n-link>
-            </template>
-        </CookieControl>
-        <SeoKit />
-        <NuxtLoadingIndicator />
-        <OgImageScreenshot />
-        <div class="sticky top-0">
-            <AppMenuUpdated />
+    <NuxtLayout>
+        <div class="w-screen scrollbar-thin scrollbar-track-blue-300 scrollbar-thumb-blue-700 dark:bg-slate-100">
+            <CookieControl>
+                <template #bar>
+                    <h3>Bar title</h3>
+                    <p>Bar description (you can use $cookies.text.barDescription)</p>
+                    <NuxtLink>Go somewhere</NuxtLink>
+                </template>
+            </CookieControl>
+            <NuxtLoadingIndicator />
+            <OgImageScreenshot />
+            <div class="sticky top-0">
+                <AppMenuUpdated />
+            </div>
+            <NuxtPage />
+            <ScrollTop />
         </div>
-        <NuxtPage />
-        <ScrollTop />
         <AppFooter />
-    </div>
+    </NuxtLayout>
 </template>
 
 <!------------------------------------------------------

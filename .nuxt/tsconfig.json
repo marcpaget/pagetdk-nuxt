@@ -13,6 +13,11 @@
     "strict": true,
     "noImplicitThis": true,
     "esModuleInterop": true,
+    "types": [
+      "unplugin-icons/types/vue",
+      "swiper/vue"
+    ],
+    "verbatimModuleSyntax": true,
     "allowJs": true,
     "noEmit": true,
     "resolveJsonModule": true,
@@ -63,17 +68,17 @@
       "#mdc-imports": [
         "./mdc-imports"
       ],
+      "#color-mode-options": [
+        "./color-mode-options.mjs"
+      ],
+      "#icon-collections": [
+        "./icon-collections"
+      ],
       "pinia": [
         "../node_modules/pinia/dist/pinia"
       ],
       "#viewport-options": [
         "./viewport-options.mjs"
-      ],
-      "#image": [
-        "../node_modules/@nuxt/image-edge/dist/runtime"
-      ],
-      "#image/*": [
-        "../node_modules/@nuxt/image-edge/dist/runtime/*"
       ],
       "#cookie-control/set-vars": [
         "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/set-vars/native"
@@ -84,23 +89,20 @@
       "#cookie-control/*": [
         "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
       ],
-      "#color-mode-options": [
-        "./color-mode-options.mjs"
-      ],
-      "#tailwind-config": [
-        "./tailwind.config"
-      ],
-      "#tailwind-config/*": [
-        "./tailwind.config/*"
-      ],
       "#nuxt-api-party": [
         "./module/nuxt-api-party"
       ],
       "#primevue-style": [
         "./primevue-style.mjs"
       ],
+      "#image": [
+        "../node_modules/@nuxt/image/dist/runtime"
+      ],
+      "#image/*": [
+        "../node_modules/@nuxt/image/dist/runtime/*"
+      ],
       "#vue-router": [
-        "./vue-router"
+        "./vue-router-stub"
       ],
       "#imports": [
         "./imports"
@@ -114,21 +116,101 @@
       "#components": [
         "./components"
       ]
-    },
-    "types": [
-      "unplugin-icons/types/vue",
-      "swiper/vue"
-    ]
+    }
   },
   "include": [
     "./nuxt.d.ts",
     "../**/*",
+    "../node_modules/@nuxtjs/mdc/runtime",
+    "../node_modules/@nuxt/content/runtime",
+    "../node_modules/@nuxtjs/tailwindcss/runtime",
+    "../node_modules/@formkit/nuxt/runtime",
+    "../node_modules/@vueuse/nuxt/runtime",
+    "../node_modules/@nuxtjs/color-mode/runtime",
+    "../node_modules/nuxt-icon/runtime",
+    "../../../K/runtime",
+    "../node_modules/@sidebase/nuxt-session/runtime",
+    "../node_modules/@pinia/nuxt/runtime",
+    "../node_modules/nuxt-viewport/runtime",
+    "../node_modules/nuxt-swiper/runtime",
+    "../node_modules/nuxt-headlessui/runtime",
+    "../node_modules/@dargmuesli/nuxt-cookie-control/runtime",
+    "../node_modules/@nuxt/devtools/runtime",
+    "../node_modules/@hypernym/nuxt-anime/runtime",
+    "../node_modules/@nuxtjs/strapi/runtime",
+    "../node_modules/@tresjs/nuxt/runtime",
+    "../node_modules/@nuxtjs/eslint-module/runtime",
+    "../node_modules/vue3-carousel-nuxt/runtime",
+    "../node_modules/nuxt-api-party/runtime",
+    "../node_modules/@morev/vue-transitions/nuxt/runtime",
+    "../node_modules/nuxt-vercel-analytics/runtime",
+    "../node_modules/@hypernym/nuxt-gsap/runtime",
+    "../node_modules/nuxt-anchorscroll/runtime",
+    "../node_modules/nuxt-gtag/runtime",
+    "../node_modules/@nuxtjs/cloudinary/runtime",
+    "../node_modules/nuxt-ark-ui/runtime",
+    "../node_modules/nuxt-primevue/runtime",
+    "../node_modules/@nuxt/image/runtime",
+    "../node_modules/nuxt-site-config/dist/runtime",
+    "../node_modules/nuxt-simple-robots/dist/runtime",
+    "../node_modules/@nuxtjs/sitemap/dist/runtime",
+    "../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime",
+    "../node_modules/nuxt-schema-org/dist/runtime",
+    "../node_modules/nuxt-seo-experiments/dist/runtime",
+    "../node_modules/@nuxtjs/seo/node_modules/nuxt-link-checker/dist/runtime",
+    "../node_modules/@nuxtjs/seo/runtime",
+    "../node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
   "exclude": [
     "../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/nuxt-site-config/dist",
+    "../node_modules/nuxt-simple-robots/dist",
+    "../node_modules/@nuxtjs/sitemap/dist",
+    "../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist",
+    "../node_modules/nuxt-schema-org/dist",
+    "../node_modules/nuxt-seo-experiments/dist",
+    "../node_modules/@nuxtjs/seo/node_modules/nuxt-link-checker/dist",
+    "../node_modules/@nuxtjs/mdc/runtime/server",
+    "../node_modules/@nuxt/content/runtime/server",
+    "../node_modules/@nuxtjs/tailwindcss/runtime/server",
+    "../node_modules/@formkit/nuxt/runtime/server",
+    "../node_modules/@vueuse/nuxt/runtime/server",
+    "../node_modules/@nuxtjs/color-mode/runtime/server",
+    "../node_modules/nuxt-icon/runtime/server",
+    "../../../K/runtime/server",
+    "../node_modules/@sidebase/nuxt-session/runtime/server",
+    "../node_modules/@pinia/nuxt/runtime/server",
+    "../node_modules/nuxt-viewport/runtime/server",
+    "../node_modules/nuxt-swiper/runtime/server",
+    "../node_modules/nuxt-headlessui/runtime/server",
+    "../node_modules/@dargmuesli/nuxt-cookie-control/runtime/server",
+    "../node_modules/@nuxt/devtools/runtime/server",
+    "../node_modules/@hypernym/nuxt-anime/runtime/server",
+    "../node_modules/@nuxtjs/strapi/runtime/server",
+    "../node_modules/@tresjs/nuxt/runtime/server",
+    "../node_modules/@nuxtjs/eslint-module/runtime/server",
+    "../node_modules/vue3-carousel-nuxt/runtime/server",
+    "../node_modules/nuxt-api-party/runtime/server",
+    "../node_modules/@morev/vue-transitions/nuxt/runtime/server",
+    "../node_modules/nuxt-vercel-analytics/runtime/server",
+    "../node_modules/@hypernym/nuxt-gsap/runtime/server",
+    "../node_modules/nuxt-anchorscroll/runtime/server",
+    "../node_modules/nuxt-gtag/runtime/server",
+    "../node_modules/@nuxtjs/cloudinary/runtime/server",
+    "../node_modules/nuxt-ark-ui/runtime/server",
+    "../node_modules/nuxt-primevue/runtime/server",
+    "../node_modules/@nuxt/image/runtime/server",
+    "../node_modules/nuxt-site-config/dist/runtime/server",
+    "../node_modules/nuxt-simple-robots/dist/runtime/server",
+    "../node_modules/@nuxtjs/sitemap/dist/runtime/server",
+    "../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/server",
+    "../node_modules/nuxt-schema-org/dist/runtime/server",
+    "../node_modules/nuxt-seo-experiments/dist/runtime/server",
+    "../node_modules/@nuxtjs/seo/node_modules/nuxt-link-checker/dist/runtime/server",
+    "../node_modules/@nuxtjs/seo/runtime/server",
+    "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"
   ]

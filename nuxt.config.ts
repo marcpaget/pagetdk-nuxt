@@ -1,39 +1,30 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
     modules: [
         '@nuxt/content',
-        //'@nuxtjs/tailwindcss',
-        '@formkit/nuxt',
-        // '@nuxtjs/prismic',
-        '@vueuse/nuxt',
-        //'@nuxtjs/supabase',
-        //'@nuxtjs/color-mode',
+        '@nuxtjs/tailwindcss',
+        '@formkit/nuxt', // '@nuxtjs/prismic',
+        '@vueuse/nuxt', //'@nuxtjs/supabase',
+        '@nuxtjs/color-mode',
         'nuxt-icon',
-        'unplugin-icons/nuxt',
-        //'@nuxtjs/partytown',
+        'unplugin-icons/nuxt', //'@nuxtjs/partytown',
         //'@inkline/nuxt',
         //'nuxt-umami',
         '@sidebase/nuxt-session',
-        '@pinia/nuxt',
-        // '@nuxtjs/vuetify',
+        '@pinia/nuxt', // '@nuxtjs/vuetify',
         'nuxt-viewport',
         'nuxt-swiper',
-        '@nuxt/image-edge',
+        // '@nuxt/image-edge',
         'nuxt-headlessui',
         '@dargmuesli/nuxt-cookie-control',
-        '@nuxt/devtools',
-        // 'nuxt-logrocket',
+        '@nuxt/devtools', // 'nuxt-logrocket',
         // 'nuxt-bugsnag',
         //'@nuxtjs/i18n',
-        '@hypernym/nuxt-anime',
-        //'@varlet/nuxt',
+        '@hypernym/nuxt-anime', //'@varlet/nuxt',
         //'nuxt-purgecss',
-        '@nuxt/ui',
         '@nuxtjs/strapi',
         '@tresjs/nuxt',
-        '@nuxtjs/eslint-module',
-        //'nuxt-vuefire',
+        '@nuxtjs/eslint-module', //'nuxt-vuefire',
         'vue3-carousel-nuxt',
         'nuxt-api-party',
         '@morev/vue-transitions/nuxt',
@@ -41,16 +32,12 @@ export default defineNuxtConfig({
         '@hypernym/nuxt-gsap',
         'nuxt-anchorscroll',
         'nuxt-gtag',
-        'nuxt-og-image',
-        'nuxt-simple-sitemap',
-        'nuxt-simple-robots',
-        'nuxt-link-checker',
-        'nuxt-seo-experiments',
-        //'nuxt-schema-org',
         // 'nuxt-aos',
         '@nuxtjs/cloudinary',
         'nuxt-ark-ui',
         'nuxt-primevue',
+        '@nuxt/image',
+        '@nuxtjs/seo',
     ],
 
     runtimeConfig: {
@@ -71,7 +58,7 @@ export default defineNuxtConfig({
             ripple: true,
         },
         components: {
-            include: ['MegaMenu', 'Button'],
+            include: ['MegaMenu', 'Button', 'ScrollTop'],
         },
     },
     anchorscroll: {
@@ -85,7 +72,7 @@ export default defineNuxtConfig({
     apiParty: {
         endpoints: {
             restCountriesApi: {
-                url: process.env.API_PARTY_BASE_URL!,
+                url: 'https://restcountries.com/',
             },
         },
     },
@@ -112,7 +99,7 @@ export default defineNuxtConfig({
         emitError: false,
     },
     //plugins: ['~/plugins/primevue.js', '~/plugins/vuetify.ts', '~/plugins/naive-ui.ts'],
-    ssr: false,
+    ssr: true,
     components: true,
     strapi: {
         // Options
@@ -128,11 +115,8 @@ export default defineNuxtConfig({
     devServerHandlers: [],
 
     typescript: {
-        strict: true,
+        shim: false,
     },
-
-    // extends: ['nuxt-seo-kit'],
-
     headlessui: {
         prefix: 'Headless',
     },

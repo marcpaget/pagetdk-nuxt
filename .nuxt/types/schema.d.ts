@@ -3,21 +3,19 @@ declare module 'nuxt/schema' {
   interface NuxtConfig {
     ["mdc"]?: typeof import("@nuxtjs/mdc").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["content"]?: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["tailwindcss"]?: typeof import("@nuxtjs/tailwindcss").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["formkit"]?: typeof import("@formkit/nuxt").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["vueuse"]?: typeof import("@vueuse/nuxt").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["colorMode"]?: typeof import("@nuxtjs/color-mode").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["icon"]?: typeof import("nuxt-icon").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["session"]?: typeof import("@sidebase/nuxt-session").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["pinia"]?: typeof import("@pinia/nuxt").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["viewport"]?: typeof import("nuxt-viewport").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["swiper"]?: typeof import("nuxt-swiper").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["image"]?: typeof import("@nuxt/image-edge").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["headlessui"]?: typeof import("nuxt-headlessui").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["cookieControl"]?: typeof import("@dargmuesli/nuxt-cookie-control").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["devtools"]?: typeof import("@nuxt/devtools").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["anime"]?: typeof import("@hypernym/nuxt-anime").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["colorMode"]?: typeof import("@nuxtjs/color-mode").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["tailwindcss"]?: typeof import("@nuxtjs/tailwindcss").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["ui"]?: typeof import("@nuxt/ui").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["strapi"]?: typeof import("@nuxtjs/strapi").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["tres"]?: typeof import("@tresjs/nuxt").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["eslint"]?: typeof import("@nuxtjs/eslint-module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
@@ -28,17 +26,20 @@ declare module 'nuxt/schema' {
     ["gsap"]?: typeof import("@hypernym/nuxt-gsap").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["anchorscroll"]?: typeof import("nuxt-anchorscroll").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["gtag"]?: typeof import("nuxt-gtag").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["site"]?: typeof import("/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["ogImage"]?: typeof import("nuxt-og-image").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["sitemap"]?: typeof import("nuxt-simple-sitemap").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["robots"]?: typeof import("nuxt-simple-robots").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["linkChecker"]?: typeof import("nuxt-link-checker").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["seoExperiments"]?: typeof import("nuxt-seo-experiments").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["cloudinary"]?: typeof import("@nuxtjs/cloudinary").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["ark-ui"]?: typeof import("nuxt-ark-ui").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["primevue"]?: typeof import("nuxt-primevue").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["image"]?: typeof import("@nuxt/image").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["site"]?: typeof import("/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt-site-config/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["robots"]?: typeof import("/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt-simple-robots/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["sitemap"]?: typeof import("/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxtjs/sitemap/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["ogImage"]?: typeof import("/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["schemaOrg"]?: typeof import("/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt-schema-org/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["seoExperiments"]?: typeof import("/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt-seo-experiments/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["linkChecker"]?: typeof import("/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxtjs/seo/node_modules/nuxt-link-checker/dist/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["seo"]?: typeof import("@nuxtjs/seo").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (undefined | null | false | NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@formkit/nuxt", Exclude<NuxtConfig["formkit"], boolean>] | ["@vueuse/nuxt", Exclude<NuxtConfig["vueuse"], boolean>] | ["nuxt-icon", Exclude<NuxtConfig["icon"], boolean>] | ["@sidebase/nuxt-session", Exclude<NuxtConfig["session"], boolean>] | ["@pinia/nuxt", Exclude<NuxtConfig["pinia"], boolean>] | ["nuxt-viewport", Exclude<NuxtConfig["viewport"], boolean>] | ["nuxt-swiper", Exclude<NuxtConfig["swiper"], boolean>] | ["@nuxt/image-edge", Exclude<NuxtConfig["image"], boolean>] | ["nuxt-headlessui", Exclude<NuxtConfig["headlessui"], boolean>] | ["@dargmuesli/nuxt-cookie-control", Exclude<NuxtConfig["cookieControl"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@hypernym/nuxt-anime", Exclude<NuxtConfig["anime"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["@nuxtjs/tailwindcss", Exclude<NuxtConfig["tailwindcss"], boolean>] | ["@nuxt/ui", Exclude<NuxtConfig["ui"], boolean>] | ["@nuxtjs/strapi", Exclude<NuxtConfig["strapi"], boolean>] | ["@tresjs/nuxt", Exclude<NuxtConfig["tres"], boolean>] | ["@nuxtjs/eslint-module", Exclude<NuxtConfig["eslint"], boolean>] | ["vue3-carousel-nuxt", Exclude<NuxtConfig["vue3-carousel-nuxt"], boolean>] | ["nuxt-api-party", Exclude<NuxtConfig["apiParty"], boolean>] | ["@morev/vue-transitions/nuxt", Exclude<NuxtConfig["vueTransitions"], boolean>] | ["nuxt-vercel-analytics", Exclude<NuxtConfig["nuxt-vercel-analytics"], boolean>] | ["@hypernym/nuxt-gsap", Exclude<NuxtConfig["gsap"], boolean>] | ["nuxt-anchorscroll", Exclude<NuxtConfig["anchorscroll"], boolean>] | ["nuxt-gtag", Exclude<NuxtConfig["gtag"], boolean>] | ["/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["nuxt-og-image", Exclude<NuxtConfig["ogImage"], boolean>] | ["nuxt-simple-sitemap", Exclude<NuxtConfig["sitemap"], boolean>] | ["nuxt-simple-robots", Exclude<NuxtConfig["robots"], boolean>] | ["nuxt-link-checker", Exclude<NuxtConfig["linkChecker"], boolean>] | ["nuxt-seo-experiments", Exclude<NuxtConfig["seoExperiments"], boolean>] | ["@nuxtjs/cloudinary", Exclude<NuxtConfig["cloudinary"], boolean>] | ["nuxt-ark-ui", Exclude<NuxtConfig["ark-ui"], boolean>] | ["nuxt-primevue", Exclude<NuxtConfig["primevue"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
+    modules?: (undefined | null | false | NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/mdc", Exclude<NuxtConfig["mdc"], boolean>] | ["@nuxt/content", Exclude<NuxtConfig["content"], boolean>] | ["@nuxtjs/tailwindcss", Exclude<NuxtConfig["tailwindcss"], boolean>] | ["@formkit/nuxt", Exclude<NuxtConfig["formkit"], boolean>] | ["@vueuse/nuxt", Exclude<NuxtConfig["vueuse"], boolean>] | ["@nuxtjs/color-mode", Exclude<NuxtConfig["colorMode"], boolean>] | ["nuxt-icon", Exclude<NuxtConfig["icon"], boolean>] | ["@sidebase/nuxt-session", Exclude<NuxtConfig["session"], boolean>] | ["@pinia/nuxt", Exclude<NuxtConfig["pinia"], boolean>] | ["nuxt-viewport", Exclude<NuxtConfig["viewport"], boolean>] | ["nuxt-swiper", Exclude<NuxtConfig["swiper"], boolean>] | ["nuxt-headlessui", Exclude<NuxtConfig["headlessui"], boolean>] | ["@dargmuesli/nuxt-cookie-control", Exclude<NuxtConfig["cookieControl"], boolean>] | ["@nuxt/devtools", Exclude<NuxtConfig["devtools"], boolean>] | ["@hypernym/nuxt-anime", Exclude<NuxtConfig["anime"], boolean>] | ["@nuxtjs/strapi", Exclude<NuxtConfig["strapi"], boolean>] | ["@tresjs/nuxt", Exclude<NuxtConfig["tres"], boolean>] | ["@nuxtjs/eslint-module", Exclude<NuxtConfig["eslint"], boolean>] | ["vue3-carousel-nuxt", Exclude<NuxtConfig["vue3-carousel-nuxt"], boolean>] | ["nuxt-api-party", Exclude<NuxtConfig["apiParty"], boolean>] | ["@morev/vue-transitions/nuxt", Exclude<NuxtConfig["vueTransitions"], boolean>] | ["nuxt-vercel-analytics", Exclude<NuxtConfig["nuxt-vercel-analytics"], boolean>] | ["@hypernym/nuxt-gsap", Exclude<NuxtConfig["gsap"], boolean>] | ["nuxt-anchorscroll", Exclude<NuxtConfig["anchorscroll"], boolean>] | ["nuxt-gtag", Exclude<NuxtConfig["gtag"], boolean>] | ["@nuxtjs/cloudinary", Exclude<NuxtConfig["cloudinary"], boolean>] | ["nuxt-ark-ui", Exclude<NuxtConfig["ark-ui"], boolean>] | ["nuxt-primevue", Exclude<NuxtConfig["primevue"], boolean>] | ["@nuxt/image", Exclude<NuxtConfig["image"], boolean>] | ["/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt-site-config/dist/module", Exclude<NuxtConfig["site"], boolean>] | ["/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt-simple-robots/dist/module", Exclude<NuxtConfig["robots"], boolean>] | ["/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxtjs/sitemap/dist/module", Exclude<NuxtConfig["sitemap"], boolean>] | ["/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/module", Exclude<NuxtConfig["ogImage"], boolean>] | ["/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt-schema-org/dist/module", Exclude<NuxtConfig["schemaOrg"], boolean>] | ["/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/nuxt-seo-experiments/dist/module", Exclude<NuxtConfig["seoExperiments"], boolean>] | ["/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/node_modules/@nuxtjs/seo/node_modules/nuxt-link-checker/dist/module", Exclude<NuxtConfig["linkChecker"], boolean>] | ["@nuxtjs/seo", Exclude<NuxtConfig["seo"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
   }
   interface RuntimeConfig {
    app: {
@@ -47,6 +48,10 @@ declare module 'nuxt/schema' {
       buildAssetsDir: string,
 
       cdnURL: string,
+   },
+
+   mdc: {
+      highlight: any,
    },
 
    content: {
@@ -169,9 +174,13 @@ declare module 'nuxt/schema' {
       experimental: {
          clientDB: boolean,
 
+         cacheContents: boolean,
+
          stripQueryParameters: boolean,
 
          advanceQuery: boolean,
+
+         search: any,
       },
    },
 
@@ -236,102 +245,84 @@ declare module 'nuxt/schema' {
          },
       },
 
-      allowClient: boolean,
+      client: boolean,
 
       openAPITS: any,
-   },
 
-   "nuxt-simple-sitemap": {
-      version: string,
-
-      moduleConfig: {
-         isI18nMap: boolean,
-
-         autoLastmod: boolean,
-
-         xsl: string,
-
-         xslTips: boolean,
-
-         cacheTtl: number,
-
-         defaultSitemapsChunkSize: number,
-
-         runtimeCacheStorage: string,
-
-         autoAlternativeLangPrefixes: any,
-
-         credits: boolean,
-
-         defaults: any,
-
-         xslColumns: Array<{
-
-         }>,
-
-         include: Array<any>,
-
-         exclude: Array<any>,
-
-         sitemaps: any,
-
-         sitemapName: string,
-
-         dynamicUrlsApiEndpoint: string,
-
-         urls: Array<any>,
-
-         debug: boolean,
-
-         discoverImages: boolean,
-      },
-
-      buildTimeMeta: {
-         isNuxtContentDocumentDriven: boolean,
-
-         hasApiRoutesUrl: boolean,
-
-         hasPrerenderedRoutesPayload: boolean,
-
-         prerenderSitemap: boolean,
-
-         version: string,
+      server: {
+         basePath: string,
       },
    },
 
-   "nuxt-og-image": {
-      version: string,
+   sitemap: {
+      isI18nMapped: boolean,
 
-      satoriOptions: any,
+      sitemapName: string,
 
-      runtimeSatori: boolean,
+      isMultiSitemap: boolean,
 
-      runtimeBrowser: boolean,
+      excludeAppSources: Array<any>,
 
-      defaults: {
-         provider: string,
+      cacheMaxAgeSeconds: number,
 
-         component: string,
+      autoLastmod: boolean,
 
-         width: number,
+      defaultSitemapsChunkSize: number,
 
-         height: number,
+      sortEntries: boolean,
 
-         cache: boolean,
+      debug: boolean,
 
-         cacheTtl: number,
-      },
+      discoverImages: boolean,
 
-      runtimeCacheStorage: string,
+      isNuxtContentDocumentDriven: boolean,
 
-      fonts: Array<{
+      xsl: string,
+
+      xslTips: boolean,
+
+      xslColumns: Array<{
 
       }>,
 
-      assetDirs: Array<string>,
+      credits: boolean,
+
+      version: string,
+
+      sitemaps: {
+         "sitemap.xml": {
+            sitemapName: string,
+
+            route: string,
+
+            defaults: any,
+
+            include: Array<any>,
+
+            exclude: Array<string>,
+
+            includeAppSources: boolean,
+         },
+      },
+   },
+
+   "nuxt-site-config": {
+      stack: Array<{
+
+      }>,
+
+      version: string,
+
+      debug: boolean,
    },
 
    "nuxt-simple-robots": {
+      version: string,
+
+      usingNuxtContent: boolean,
+
+      debug: boolean,
+
       credits: boolean,
 
       groups: Array<{
@@ -343,6 +334,46 @@ declare module 'nuxt/schema' {
       robotsEnabledValue: string,
 
       robotsDisabledValue: string,
+   },
+
+   "nuxt-og-image": {
+      version: string,
+
+      satoriOptions: any,
+
+      resvgOptions: any,
+
+      sharpOptions: any,
+
+      defaults: {
+         emojis: string,
+
+         renderer: string,
+
+         component: string,
+
+         extension: string,
+
+         width: number,
+
+         height: number,
+
+         cacheMaxAgeSeconds: number,
+      },
+
+      debug: boolean,
+
+      baseCacheKey: string,
+
+      fonts: Array<{
+
+      }>,
+
+      hasNuxtIcon: boolean,
+
+      colorPreference: string,
+
+      isNuxtContentDocumentDriven: boolean,
    },
   }
   interface PublicRuntimeConfig {
@@ -537,6 +568,8 @@ declare module 'nuxt/schema' {
 
       trailingSlash: boolean,
 
+      search: any,
+
       contentHead: boolean,
 
       anchorLinks: {
@@ -569,7 +602,11 @@ declare module 'nuxt/schema' {
          },
       },
 
-      allowClient: boolean,
+      client: boolean,
+
+      server: {
+         basePath: string,
+      },
    },
 
    anchorScroll: {
@@ -592,6 +629,8 @@ declare module 'nuxt/schema' {
       uploadPreset: any,
 
       apiKey: any,
+
+      analytics: boolean,
    },
 
    primevue: {
@@ -634,40 +673,18 @@ declare module 'nuxt/schema' {
       injectStylesAsStringToTop: Array<string>,
    },
 
-   site: {
-      _context: {
-         defaultLocale: string,
+   "nuxt-schema-org": {
+      reactive: boolean,
 
-         trailingSlash: string,
+      minify: boolean,
 
-         titleSeparator: string,
-
-         name: string,
-
-         indexable: string,
-
-         debug: string,
-
-         url: string,
-
-         description: string,
+      scriptAttributes: {
+         id: string,
       },
 
-      defaultLocale: string,
+      identity: any,
 
-      trailingSlash: boolean,
-
-      titleSeparator: string,
-
-      name: string,
-
-      indexable: boolean,
-
-      debug: boolean,
-
-      url: string,
-
-      description: string,
+      version: string,
    },
   }
 }

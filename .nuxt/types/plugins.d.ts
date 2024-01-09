@@ -3,41 +3,55 @@ import type { Plugin } from '#app'
 
 type Decorate<T extends Record<string, any>> = { [K in keyof T as K extends string ? `$${K}` : never]: T[K] }
 
-type InjectionType<A extends Plugin> = A extends Plugin<infer T> ? Decorate<T> : unknown
+type IsAny<T> = 0 extends 1 & T ? true : false
+type InjectionType<A extends Plugin> = IsAny<A> extends true ? unknown : A extends Plugin<infer T> ? Decorate<T> : unknown
 
 type NuxtAppInjections = 
+  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/check-outdated-build.client").default> &
   InjectionType<typeof import("../../node_modules/@pinia/nuxt/dist/runtime/plugin.vue3").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/revive-payload.server").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/revive-payload.client").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/head/runtime/plugins/unhead").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/router").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/seo/dist/runtime/nuxt/plugin/titles").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/seo/dist/runtime/nuxt/plugin/defaults").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/nuxt/plugins/1.absoluteImageUrls.server").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/nuxt/plugins/0.routeRules.server").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/nuxt/plugins/siteConfig").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/nuxt/plugins/inferSeoMetaPlugin").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-schema-org/dist/runtime/nuxt/plugin/defaults").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-schema-org/dist/runtime/nuxt/plugin/init").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/plugins/og-image-canonical-urls.server").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/plugins/route-rule-og-image.server").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-simple-robots/dist/runtime/nuxt/plugins/robot-meta.server").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-site-config/dist/runtime/nuxt/plugins/0.siteConfig").default> &
   InjectionType<typeof import("../../node_modules/nuxt-primevue/dist/runtime/plugin.client").default> &
-  InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/plugins/1.absoluteImageUrls.server").default> &
-  InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/plugins/0.routeRules.server").default> &
-  InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/plugins/siteConfig").default> &
-  InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/plugins/inferSeoMetaPlugin").default> &
-  InjectionType<typeof import("../../node_modules/nuxt-site-config/dist/runtime/plugins/siteConfig").default> &
   InjectionType<typeof import("../../node_modules/nuxt-gtag/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/nuxt-anchorscroll/dist/runtime/anchorscroll-plugin").default> &
   InjectionType<typeof import("../gsapPlugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt-vercel-analytics/dist/runtime/plugin.client").default> &
-  InjectionType<typeof import("../../node_modules/@nuxtjs/strapi/dist/runtime/strapi.plugin").default> &
-  InjectionType<typeof import("../../node_modules/@nuxt/ui/dist/runtime/plugins/colors").default> &
-  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server").default> &
-  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/strapi/dist/runtime/plugins/dns.server").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/strapi/dist/runtime/plugins/strapi").default> &
   InjectionType<typeof import("../../node_modules/@hypernym/nuxt-anime/dist/runtime/plugin").default> &
   InjectionType<typeof import("../../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/plugin").default> &
-  InjectionType<typeof import("../../node_modules/nuxt-viewport/dist/runtime/plugin").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-viewport/dist/runtime/plugin.server").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-viewport/dist/runtime/plugin.client").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/@nuxt/content/dist/runtime/plugins/ws").default> &
   InjectionType<typeof import("../../node_modules/@nuxt/content/dist/runtime/legacy/plugins/documentDriven").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/chunk-reload.client").default> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/check-if-layout-used").default> &
   InjectionType<typeof import("../../plugins/naive-ui").default> &
-  InjectionType<typeof import("../../plugins/primevue").default> &
   InjectionType<typeof import("../../plugins/vuetify").default>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }
+
+  interface NuxtAppLiterals {
+    pluginName: 'nuxt:revive-payload:client' | 'nuxt:head' | 'nuxt:router' | 'nuxt-site-config:init' | 'nuxt:revive-payload:server' | 'nuxt:global-components' | 'nuxt:prefetch' | 'nuxt-seo:fallback-titles' | 'nuxt-seo:defaults' | 'nuxt-schema-org:defaults' | 'nuxt:chunk-reload' | 'nuxt:checkIfLayoutUsed' | 'nuxt-schema-org:init'
+  }
 }
 
 declare module 'vue' {

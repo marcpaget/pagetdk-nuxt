@@ -44,4 +44,7 @@ module.exports = {
         require('tailwindcss-animated'),
         formKitTailwind,
     ],
+    daisyui: {
+        themes: ['dracula', 'dark', 'cupcake'],
+    },
 }
