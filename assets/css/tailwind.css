@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 @layer components {
-    .icon {
+    /* .icon {
         @apply w-6 h-6;
     }
 
@@ -16,7 +16,7 @@
     }
     .icon--on {
         @apply hidden group-hover:inline-block;
-    }
+    } */
 }
 
 @layer base{

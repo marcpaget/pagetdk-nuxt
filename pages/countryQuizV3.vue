@@ -68,10 +68,6 @@ TODO: add option for multiple players
  -->
 
 <script>
-definePageMeta({
-    layout: 'defaultwithouthandw',
-})
-
 export default {
     data() {
         return {

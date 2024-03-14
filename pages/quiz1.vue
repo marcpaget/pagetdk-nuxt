@@ -65,10 +65,6 @@
 </template>
 
 <script>
-definePageMeta({
-    layout: 'defaultwithouthandw',
-})
-
 export default {
     data() {
         return {

@@ -38,6 +38,8 @@ export default defineNuxtConfig({
         'nuxt-primevue',
         '@nuxt/image',
         '@nuxtjs/seo',
+        'nuxt-particles',
+        '@oku-ui/motion-nuxt',
     ],
 
     runtimeConfig: {
@@ -53,12 +55,14 @@ export default defineNuxtConfig({
     gtag: {
         id: 'G-L04C39X79K',
     },
+
+    particles: { mode: 'full' },
     primevue: {
         options: {
             ripple: true,
         },
         components: {
-            include: ['MegaMenu', 'Button', 'ScrollTop'],
+            include: ['MegaMenu', 'Button', 'ScrollTop', 'Menubar', 'AnimateOnScroll'],
         },
     },
     anchorscroll: {

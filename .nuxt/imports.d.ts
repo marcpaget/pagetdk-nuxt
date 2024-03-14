@@ -78,4 +78,5 @@ export { defineOgImageScreenshot } from '../node_modules/@nuxtjs/seo/node_module
 export { useSchemaOrg } from '../node_modules/nuxt-schema-org/dist/runtime/nuxt/imports/useSchemaOrg';
 export { useI18n } from '../node_modules/@nuxtjs/seo/dist/runtime/nuxt/composables/polyfills';
 export { useBreadcrumbItems } from '../node_modules/@nuxtjs/seo/dist/runtime/nuxt/composables/useBreadcrumbItems';
+export { animate, timeline, stagger, spring, glide, inView, scroll } from '@oku-ui/motion';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';

@@ -160,17 +160,20 @@
                         >About me</NuxtLink
                     >
                 </li>
+                <li>
+                    <ul>
+                        <span v-if="user"> Logged in as: {{ user.email }} </span>
+
+                        <button v-if="user" class="btn" @click="doSignOut">Log out</button>
+                        <button v-else class="btn">
+                            <NuxtLink to="/login">Log in</NuxtLink>
+                        </button>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="navbar-end">
-            <ColorModeSwitch />
-            <span v-if="user"> Logged in as: {{ user.email }} </span>
-            <ul>
-                <button v-if="user" class="btn" @click="doSignOut">Log out</button>
-                <button v-else class="btn">
-                    <NuxtLink to="/login">Log in</NuxtLink>
-                </button>
-            </ul>
+            <!-- <ColorModeSwitch /> -->
         </div>
     </div>
 </template>
@@ -185,5 +188,3 @@ const doSignOut = async () => {
     router.replace('/login')
 }
 </script> -->
-
-<style></style>

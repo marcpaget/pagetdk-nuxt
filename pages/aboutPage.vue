@@ -3,7 +3,7 @@
         <div class="basis-5/12 place-content-center">
             <!-- This page correctly has only one single root element -->
             <h1 class="font-permanentmarker text-kaldi py-4 text-4xl">The Coldest Sunset</h1>
-            <p class="text-xl font-quicksand text-gray-400 pt-2 pb-6 leading-relaxed tracking-tight">
+            <p class="text-xl font-quicksand text-gray-800 dark:text-gray-400 pt-2 pb-6 leading-relaxed tracking-tight">
                 Irure deserunt reprehenderit non ad nostrud commodo adipisicing enim adipisicing laborum elit ipsum. Eu
                 id laborum enim ea. Pariatur fugiat exercitation amet. Non proident commodo exercitation aute
                 adipisicing eu ipsum. Tempor occaecat sunt exercitation ea. Aute eu labore duis duis anim esse proident
@@ -27,7 +27,7 @@
             <option value="sepia">Sepia</option>
         </select> -->
             <div data-aos="fade-up">
-                <h1 ref="anim" class="text-4xl pb-8 text-green-500 font-permanentmarker">
+                <h1 ref="anim" class="text-4xl text-green-800 pb-8 dark:text-green-500 font-permanentmarker">
                     Irure deserunt reprehenderit
                 </h1>
                 <p class="font-quicksand tracking-normal leading-loose text-xl">

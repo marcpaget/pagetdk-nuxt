@@ -12,6 +12,7 @@
             <OgImageScreenshot />
             <div class="sticky top-0">
                 <AppMenuUpdated />
+                <!-- <PrimevueMenubar /> -->
             </div>
             <NuxtPage />
             <ScrollTop />
