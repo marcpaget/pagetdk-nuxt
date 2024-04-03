@@ -53,7 +53,6 @@ module.exports = {
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),
-        require('tw-elements/dist/plugin'),
         require('daisyui'),
         require('tailwind-scrollbar'),
         require('tailwindcss-animated'),

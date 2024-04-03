@@ -76,6 +76,18 @@
                         <summary>Misc</summary>
                         <ul class="p-2">
                             <li>
+                                <NuxtLink to="/spiring">Spiring</NuxtLink>
+                            </li>
+                            <li>
+                                <NuxtLink to="/geo">Geo</NuxtLink>
+                            </li>
+                            <li>
+                                <NuxtLink to="/lego">Lego</NuxtLink>
+                            </li>
+                            <li>
+                                <NuxtLink to="/github">Github repositories</NuxtLink>
+                            </li>
+                            <li>
                                 <NuxtLink to="/vueusetest">VueUseTest</NuxtLink>
                             </li>
                             <li>

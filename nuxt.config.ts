@@ -4,7 +4,8 @@ export default defineNuxtConfig({
         '@nuxt/content',
         '@nuxtjs/tailwindcss',
         '@formkit/nuxt', // '@nuxtjs/prismic',
-        '@vueuse/nuxt', //'@nuxtjs/supabase',
+        '@vueuse/nuxt',
+        '@nuxtjs/supabase',
         '@nuxtjs/color-mode',
         'nuxt-icon',
         'unplugin-icons/nuxt', //'@nuxtjs/partytown',
@@ -34,14 +35,16 @@ export default defineNuxtConfig({
         'nuxt-gtag',
         // 'nuxt-aos',
         '@nuxtjs/cloudinary',
-        'nuxt-ark-ui',
         'nuxt-primevue',
         '@nuxt/image',
         '@nuxtjs/seo',
         'nuxt-particles',
         '@oku-ui/motion-nuxt',
     ],
-
+    supabase: {
+        redirect: false,
+        // https://www.reddit.com/r/Nuxt/comments/17a3p7r/nuxt_app_keeps_redirecting_to_login/
+    },
     runtimeConfig: {
         public: {
             SUPABASE_URL: process.env.SUPABASE_URL!,
@@ -201,6 +204,6 @@ export default defineNuxtConfig({
     },
 
     devtools: {
-        enabled: false,
+        enabled: true,
     },
 })

@@ -68,6 +68,7 @@ export default {
                 const res = await useRestCountriesApiData('v2/all/')
                 this.countries = res.data
                 this.getRandomFlag()
+                console.log(res.data)
             } catch (error) {
                 console.error(error)
             }

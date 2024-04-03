@@ -22,4 +22,5 @@
 
 <script setup>
 const { error, pending, data } = await useFetch('https://api.github.com/users/marcpaget/repos')
+console.log(data)
 </script>
