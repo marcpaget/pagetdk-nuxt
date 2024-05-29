@@ -17,6 +17,7 @@
                 </a>
             </li>
         </ul>
+        <Particles />
     </section>
 </template>
 

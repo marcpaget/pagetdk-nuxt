@@ -15,6 +15,11 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/router").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/check-if-page-unused").default> &
+  InjectionType<typeof import("../../node_modules/@nuxt/ui/dist/runtime/plugins/slideovers").default> &
+  InjectionType<typeof import("../../node_modules/@nuxt/ui/dist/runtime/plugins/modals").default> &
+  InjectionType<typeof import("../../node_modules/@nuxt/ui/dist/runtime/plugins/colors").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/seo/dist/runtime/nuxt/plugin/titles").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/seo/dist/runtime/nuxt/plugin/defaults").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/seo/node_modules/nuxt-link-checker/dist/runtime/nuxt/plugin/ui.client").default> &
@@ -41,14 +46,12 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/plugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt-viewport/dist/runtime/plugin.server").default> &
   InjectionType<typeof import("../../node_modules/nuxt-viewport/dist/runtime/plugin.client").default> &
-  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.server").default> &
-  InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/supabase/dist/runtime/plugins/supabase.server").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/supabase/dist/runtime/plugins/supabase.client").default> &
   InjectionType<typeof import("../../node_modules/@nuxt/content/dist/runtime/plugins/ws").default> &
   InjectionType<typeof import("../../node_modules/@nuxt/content/dist/runtime/legacy/plugins/documentDriven").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/chunk-reload.client").default> &
-  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/dev-server-logs.client").default> &
+  InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/dev-server-logs").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/check-if-layout-used").default> &
   InjectionType<typeof import("../../plugins/naive-ui").default> &
   InjectionType<typeof import("../../plugins/vuetify").default>

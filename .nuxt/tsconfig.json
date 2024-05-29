@@ -11,11 +11,20 @@
       "h3": [
         "../node_modules/h3"
       ],
-      "@unhead/vue": [
-        "../node_modules/@unhead/vue"
+      "consola": [
+        "../node_modules/consola"
+      ],
+      "ofetch": [
+        "../node_modules/ofetch"
       ],
       "vue": [
         "../node_modules/vue"
+      ],
+      "@vue/runtime-core": [
+        "../node_modules/@vue/runtime-core"
+      ],
+      "@vue/compiler-sfc": [
+        "../node_modules/@vue/compiler-sfc"
       ],
       "vue-router": [
         "../node_modules/vue-router"
@@ -25,12 +34,6 @@
       ],
       "nuxt": [
         "../node_modules/nuxt"
-      ],
-      "consola": [
-        "../node_modules/consola"
-      ],
-      "ofetch": [
-        "../node_modules/ofetch"
       ],
       "~": [
         ".."
@@ -83,12 +86,6 @@
       "#mdc-imports": [
         "./mdc-imports"
       ],
-      "#color-mode-options": [
-        "./color-mode-options.mjs"
-      ],
-      "#icon-collections": [
-        "./icon-collections"
-      ],
       "pinia": [
         "../node_modules/pinia/dist/pinia"
       ],
@@ -103,6 +100,9 @@
       ],
       "#cookie-control/*": [
         "../node_modules/@dargmuesli/nuxt-cookie-control/dist/runtime/*"
+      ],
+      "vue3-carousel/dist/carousel": [
+        "../node_modules/vue3-carousel/dist/carousel.es"
       ],
       "#nuxt-api-party": [
         "./module/nuxt-api-party"
@@ -119,11 +119,32 @@
       "#sitemap": [
         "../node_modules/@nuxtjs/sitemap/dist/runtime/types"
       ],
+      "#ui": [
+        "../node_modules/@nuxt/ui/dist/runtime"
+      ],
+      "#ui/*": [
+        "../node_modules/@nuxt/ui/dist/runtime/*"
+      ],
+      "#ui-colors": [
+        "./ui.colors"
+      ],
+      "#icon-collections": [
+        "./icon-collections"
+      ],
+      "#color-mode-options": [
+        "./color-mode-options.mjs"
+      ],
       "#vue-router": [
         "./vue-router-stub"
       ],
       "#imports": [
         "./imports"
+      ],
+      "#tailwind-config": [
+        "./tailwind.config"
+      ],
+      "#tailwind-config/*": [
+        "./tailwind.config/*"
       ],
       "#app-manifest": [
         "./manifest/meta/dev"
@@ -166,12 +187,9 @@
     "../**/*",
     "../node_modules/@nuxtjs/mdc/runtime",
     "../node_modules/@nuxt/content/runtime",
-    "../node_modules/@nuxtjs/tailwindcss/runtime",
     "../node_modules/@formkit/nuxt/runtime",
     "../node_modules/@vueuse/nuxt/runtime",
     "../node_modules/@nuxtjs/supabase/runtime",
-    "../node_modules/@nuxtjs/color-mode/runtime",
-    "../node_modules/nuxt-icon/runtime",
     "../../../K/runtime",
     "../node_modules/@sidebase/nuxt-session/runtime",
     "../node_modules/@pinia/nuxt/runtime",
@@ -183,7 +201,6 @@
     "../node_modules/@hypernym/nuxt-anime/runtime",
     "../node_modules/@nuxtjs/strapi/runtime",
     "../node_modules/@tresjs/nuxt/runtime",
-    "../node_modules/@nuxtjs/eslint-module/runtime",
     "../node_modules/vue3-carousel-nuxt/runtime",
     "../node_modules/nuxt-api-party/runtime",
     "../node_modules/@morev/vue-transitions/nuxt/runtime",
@@ -204,6 +221,11 @@
     "../node_modules/@nuxtjs/seo/runtime",
     "../node_modules/nuxt-particles/runtime",
     "../node_modules/@oku-ui/motion-nuxt/runtime",
+    "../node_modules/nuxt-icon/runtime",
+    "../node_modules/@nuxtjs/color-mode/runtime",
+    "../node_modules/@nuxtjs/tailwindcss/runtime",
+    "../node_modules/@nuxt/ui/runtime",
+    "../node_modules/@nuxt/eslint/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
@@ -219,12 +241,9 @@
     "../node_modules/@nuxtjs/seo/node_modules/nuxt-link-checker/dist/node_modules",
     "../node_modules/@nuxtjs/mdc/runtime/server",
     "../node_modules/@nuxt/content/runtime/server",
-    "../node_modules/@nuxtjs/tailwindcss/runtime/server",
     "../node_modules/@formkit/nuxt/runtime/server",
     "../node_modules/@vueuse/nuxt/runtime/server",
     "../node_modules/@nuxtjs/supabase/runtime/server",
-    "../node_modules/@nuxtjs/color-mode/runtime/server",
-    "../node_modules/nuxt-icon/runtime/server",
     "../../../K/runtime/server",
     "../node_modules/@sidebase/nuxt-session/runtime/server",
     "../node_modules/@pinia/nuxt/runtime/server",
@@ -236,7 +255,6 @@
     "../node_modules/@hypernym/nuxt-anime/runtime/server",
     "../node_modules/@nuxtjs/strapi/runtime/server",
     "../node_modules/@tresjs/nuxt/runtime/server",
-    "../node_modules/@nuxtjs/eslint-module/runtime/server",
     "../node_modules/vue3-carousel-nuxt/runtime/server",
     "../node_modules/nuxt-api-party/runtime/server",
     "../node_modules/@morev/vue-transitions/nuxt/runtime/server",
@@ -257,6 +275,11 @@
     "../node_modules/@nuxtjs/seo/runtime/server",
     "../node_modules/nuxt-particles/runtime/server",
     "../node_modules/@oku-ui/motion-nuxt/runtime/server",
+    "../node_modules/nuxt-icon/runtime/server",
+    "../node_modules/@nuxtjs/color-mode/runtime/server",
+    "../node_modules/@nuxtjs/tailwindcss/runtime/server",
+    "../node_modules/@nuxt/ui/runtime/server",
+    "../node_modules/@nuxt/eslint/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"

@@ -1,6 +1,7 @@
 <template>
     <div class="flex flex-col mt-2">
         <p>LEGO</p>
+        <!-- Indsæt input field fra enten primevue, daisyui eller nuxt-UI https://ui.nuxt.com/components/input -->
         <p class="text-2xl font-bold font-aptos">Søg efter Mocs du kan bygge med sætnr.:</p>
         <input type="text" class="border-2 border-gray-300 p-2 rounded-lg" />
         <button class="bg-blue-500 text-white p-2 rounded-lg">Søg</button>

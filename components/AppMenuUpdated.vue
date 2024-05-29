@@ -138,7 +138,7 @@
             </ul>
         </div>
         <div class="navbar-end">
-            <ColorModeSwitch />
+            <UiColorModeSwitch />
             <span v-if="user"> Logged in as: {{ user.email }} </span>
             <ul>
                 <button v-if="user" class="btn" @click="doSignOut">Log out</button>

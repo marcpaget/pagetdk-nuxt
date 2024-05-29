@@ -198,6 +198,7 @@
         </div>
         <div class="navbar-end">
             <!-- <ColorModeSwitch /> -->
+            <UiColorModeSwitch />
         </div>
     </div>
 </template>

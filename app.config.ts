@@ -9,4 +9,8 @@ export default defineAppConfig({
             return event
         },
     },
+    ui: {
+        primary: 'green',
+        gray: 'cool',
+    },
 })

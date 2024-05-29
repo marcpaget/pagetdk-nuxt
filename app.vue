@@ -10,6 +10,7 @@
         <NuxtLoadingIndicator />
         <OgImageScreenshot />
         <div class="sticky top-0">
+            <!-- <UiNav /> -->
             <AppMenuUpdated />
             <!-- <PrimevueMenubar /> -->
         </div>

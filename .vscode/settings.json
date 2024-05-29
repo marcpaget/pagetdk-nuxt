@@ -14,7 +14,9 @@
     "tailwindCSS.suggestions": true,
     "tailwindCSS.classAttributes": [
         "class",
-        "className"
+        "className",
+        "ngClass",
+        "ui"
     ],
     "files.associations": {
         "*.css": "tailwindcss"
@@ -89,7 +91,7 @@
     "tailwindCSS.codeActions": true,
     "editor.formatOnSave": false,
     "prettier.bracketSameLine": true,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "editor.autoClosingDelete": "never",
     "eslint.validate": ["javascript","javascriptreact", "typescript", "typescriptreact"],
     "editor.codeActionsOnSave": {
@@ -129,7 +131,8 @@
           ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
         ],
       
-    "github.copilot.inlineSuggest.enable": true,
+    // "github.copilot.inlineSuggest.enable": true,
+    "github.copilot.editor.enableAutoCompletions": true,
     "indentRainbow.excludedLanguages": [
         
         "plaintext"
