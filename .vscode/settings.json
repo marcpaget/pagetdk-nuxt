@@ -1,4 +1,5 @@
 {
+    "eslint.experimental.useFlatConfig": true,
     "eslint.alwaysShowStatus": false,
     "eslint.trace.server": "off",
     "editor.quickSuggestions": {
