@@ -159,26 +159,34 @@
         "./components"
       ]
     },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": false,
     "forceConsistentCasingInFileNames": true,
+    "noImplicitOverride": true,
+    "module": "preserve",
+    "noEmit": true,
+    "lib": [
+      "ESNext",
+      "dom",
+      "dom.iterable"
+    ],
     "jsx": "preserve",
     "jsxImportSource": "vue",
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "skipLibCheck": true,
-    "isolatedModules": true,
-    "useDefineForClassFields": true,
-    "strict": true,
-    "noImplicitThis": true,
-    "esModuleInterop": true,
     "types": [
       "unplugin-icons/types/vue",
       "swiper/vue"
     ],
-    "verbatimModuleSyntax": true,
-    "allowJs": true,
-    "noEmit": true,
-    "resolveJsonModule": true,
+    "moduleResolution": "Bundler",
+    "useDefineForClassFields": true,
+    "noImplicitThis": true,
     "allowSyntheticDefaultImports": true
   },
   "include": [
@@ -230,6 +238,7 @@
     ".."
   ],
   "exclude": [
+    "../dist",
     "../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/nuxt-site-config/dist/node_modules",
@@ -281,7 +290,6 @@
     "../node_modules/@nuxt/ui/runtime/server",
     "../node_modules/@nuxt/eslint/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
-    "../dist",
     "../.output"
   ]
 }
