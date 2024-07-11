@@ -1,6 +1,6 @@
 
 import type { DefineComponent, SlotsType } from 'vue'
-type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
+type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
       'Card': typeof import("../components/content/Card.vue")['default']
     'Hero': typeof import("../components/content/Hero.vue")['default']
@@ -147,7 +147,6 @@ interface _GlobalComponents {
     'NuxtLink': typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
     'NuxtLoadingIndicator': typeof import("../node_modules/nuxt/dist/app/components/nuxt-loading-indicator")['default']
     'NuxtRouteAnnouncer': typeof import("../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']
-    'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtImg': typeof import("../node_modules/@nuxt/image/dist/runtime/components/nuxt-img")['default']
     'NuxtPicture': typeof import("../node_modules/@nuxt/image/dist/runtime/components/nuxt-picture")['default']
     'MDC': typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDC")['default']
@@ -208,10 +207,6 @@ interface _GlobalComponents {
     'Slide': typeof import("vue3-carousel/dist/carousel")['Slide']
     'Pagination': typeof import("vue3-carousel/dist/carousel")['Pagination']
     'Navigation': typeof import("vue3-carousel/dist/carousel")['Navigation']
-    'Button': typeof import("primevue/button")['default']
-    'Menubar': typeof import("primevue/menubar")['default']
-    'MegaMenu': typeof import("primevue/megamenu")['default']
-    'ScrollTop': typeof import("primevue/scrolltop")['default']
     'SiteLink': typeof import("../node_modules/nuxt-site-config/dist/runtime/nuxt/component/SiteLink.vue")['default']
     'RobotMeta': typeof import("../node_modules/nuxt-simple-robots/dist/runtime/nuxt/components/RobotMeta")['default']
     'OgImage': typeof import("../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/components/OgImage/OgImage")['default']
@@ -257,6 +252,7 @@ interface _GlobalComponents {
     'Head': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Head']
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
+    'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'UModals': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
     'USlideovers': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
@@ -405,7 +401,6 @@ interface _GlobalComponents {
     'LazyNuxtLink': typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
     'LazyNuxtLoadingIndicator': typeof import("../node_modules/nuxt/dist/app/components/nuxt-loading-indicator")['default']
     'LazyNuxtRouteAnnouncer': typeof import("../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']
-    'LazyNuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'LazyNuxtImg': typeof import("../node_modules/@nuxt/image/dist/runtime/components/nuxt-img")['default']
     'LazyNuxtPicture': typeof import("../node_modules/@nuxt/image/dist/runtime/components/nuxt-picture")['default']
     'LazyMDC': typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDC")['default']
@@ -466,10 +461,6 @@ interface _GlobalComponents {
     'LazySlide': typeof import("vue3-carousel/dist/carousel")['Slide']
     'LazyPagination': typeof import("vue3-carousel/dist/carousel")['Pagination']
     'LazyNavigation': typeof import("vue3-carousel/dist/carousel")['Navigation']
-    'LazyButton': typeof import("primevue/button")['default']
-    'LazyMenubar': typeof import("primevue/menubar")['default']
-    'LazyMegaMenu': typeof import("primevue/megamenu")['default']
-    'LazyScrollTop': typeof import("primevue/scrolltop")['default']
     'LazySiteLink': typeof import("../node_modules/nuxt-site-config/dist/runtime/nuxt/component/SiteLink.vue")['default']
     'LazyRobotMeta': typeof import("../node_modules/nuxt-simple-robots/dist/runtime/nuxt/components/RobotMeta")['default']
     'LazyOgImage': typeof import("../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/components/OgImage/OgImage")['default']
@@ -515,6 +506,7 @@ interface _GlobalComponents {
     'LazyHead': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Head']
     'LazyHtml': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'LazyBody': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
+    'LazyNuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'LazyUModals': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
     'LazyUSlideovers': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
     'LazyNuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
@@ -677,7 +669,6 @@ export const ServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/com
 export const NuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
 export const NuxtLoadingIndicator: typeof import("../node_modules/nuxt/dist/app/components/nuxt-loading-indicator")['default']
 export const NuxtRouteAnnouncer: typeof import("../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']
-export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtImg: typeof import("../node_modules/@nuxt/image/dist/runtime/components/nuxt-img")['default']
 export const NuxtPicture: typeof import("../node_modules/@nuxt/image/dist/runtime/components/nuxt-picture")['default']
 export const MDC: typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDC")['default']
@@ -738,10 +729,6 @@ export const Carousel: typeof import("vue3-carousel/dist/carousel")['Carousel']
 export const Slide: typeof import("vue3-carousel/dist/carousel")['Slide']
 export const Pagination: typeof import("vue3-carousel/dist/carousel")['Pagination']
 export const Navigation: typeof import("vue3-carousel/dist/carousel")['Navigation']
-export const Button: typeof import("primevue/button")['default']
-export const Menubar: typeof import("primevue/menubar")['default']
-export const MegaMenu: typeof import("primevue/megamenu")['default']
-export const ScrollTop: typeof import("primevue/scrolltop")['default']
 export const SiteLink: typeof import("../node_modules/nuxt-site-config/dist/runtime/nuxt/component/SiteLink.vue")['default']
 export const RobotMeta: typeof import("../node_modules/nuxt-simple-robots/dist/runtime/nuxt/components/RobotMeta")['default']
 export const OgImage: typeof import("../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/components/OgImage/OgImage")['default']
@@ -787,6 +774,7 @@ export const Style: typeof import("../node_modules/nuxt/dist/head/runtime/compon
 export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Head']
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
+export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const UModals: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const USlideovers: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
@@ -935,7 +923,6 @@ export const LazyServerPlaceholder: typeof import("../node_modules/nuxt/dist/app
 export const LazyNuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
 export const LazyNuxtLoadingIndicator: typeof import("../node_modules/nuxt/dist/app/components/nuxt-loading-indicator")['default']
 export const LazyNuxtRouteAnnouncer: typeof import("../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']
-export const LazyNuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const LazyNuxtImg: typeof import("../node_modules/@nuxt/image/dist/runtime/components/nuxt-img")['default']
 export const LazyNuxtPicture: typeof import("../node_modules/@nuxt/image/dist/runtime/components/nuxt-picture")['default']
 export const LazyMDC: typeof import("../node_modules/@nuxtjs/mdc/dist/runtime/components/MDC")['default']
@@ -996,10 +983,6 @@ export const LazyCarousel: typeof import("vue3-carousel/dist/carousel")['Carouse
 export const LazySlide: typeof import("vue3-carousel/dist/carousel")['Slide']
 export const LazyPagination: typeof import("vue3-carousel/dist/carousel")['Pagination']
 export const LazyNavigation: typeof import("vue3-carousel/dist/carousel")['Navigation']
-export const LazyButton: typeof import("primevue/button")['default']
-export const LazyMenubar: typeof import("primevue/menubar")['default']
-export const LazyMegaMenu: typeof import("primevue/megamenu")['default']
-export const LazyScrollTop: typeof import("primevue/scrolltop")['default']
 export const LazySiteLink: typeof import("../node_modules/nuxt-site-config/dist/runtime/nuxt/component/SiteLink.vue")['default']
 export const LazyRobotMeta: typeof import("../node_modules/nuxt-simple-robots/dist/runtime/nuxt/components/RobotMeta")['default']
 export const LazyOgImage: typeof import("../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/components/OgImage/OgImage")['default']
@@ -1045,6 +1028,7 @@ export const LazyStyle: typeof import("../node_modules/nuxt/dist/head/runtime/co
 export const LazyHead: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Head']
 export const LazyHtml: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const LazyBody: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
+export const LazyNuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const LazyUModals: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyUSlideovers: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyNuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>

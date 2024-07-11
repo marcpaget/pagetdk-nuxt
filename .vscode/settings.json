@@ -1,7 +1,13 @@
 {
-    "eslint.experimental.useFlatConfig": true,
+    "eslint.useFlatConfig": true,
     "eslint.alwaysShowStatus": false,
     "eslint.trace.server": "off",
+    "eslint.rules.customizations": [
+          {
+            "rule": "@stylistic/*",
+            "severity": "off"
+          }
+        ],
     "editor.quickSuggestions": {
         "strings": true
     },
@@ -91,13 +97,13 @@
     "tailwindCSS.experimental.configFile": "tailwind.config.js",
     "tailwindCSS.codeActions": true,
     "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "always",
+    },
     "prettier.bracketSameLine": true,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "editor.autoClosingDelete": "never",
     "eslint.validate": ["javascript","javascriptreact", "typescript", "typescriptreact"],
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
-    },
     "typescript.tsdk": "node_modules/typescript/lib",
     "nuxt.isNuxtApp": false,
     "search.exclude": {
