@@ -24,7 +24,7 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/seo/dist/runtime/nuxt/plugin/titles").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/seo/dist/runtime/nuxt/plugin/defaults").default> &
-  InjectionType<typeof import("../../node_modules/@nuxtjs/seo/node_modules/nuxt-link-checker/dist/runtime/nuxt/plugin/ui.client").default> &
+  InjectionType<typeof import("../../node_modules/nuxt-link-checker/dist/runtime/nuxt/plugin/ui.client").default> &
   InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/nuxt/plugins/1.absoluteImageUrls.server").default> &
   InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/nuxt/plugins/0.routeRules.server").default> &
   InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/nuxt/plugins/siteConfig").default> &
@@ -33,11 +33,10 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/nuxt-schema-org/dist/runtime/nuxt/plugin/init").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/plugins/og-image-canonical-urls.server").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/plugins/route-rule-og-image.server").default> &
-  InjectionType<typeof import("../../node_modules/nuxt-simple-robots/dist/runtime/nuxt/plugins/robot-meta.server").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/robots/dist/runtime/nuxt/plugins/robot-meta.server").default> &
   InjectionType<typeof import("../../node_modules/nuxt-site-config/dist/runtime/nuxt/plugins/0.siteConfig").default> &
   InjectionType<typeof import("../../node_modules/nuxt-gtag/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/nuxt-anchorscroll/dist/runtime/anchorscroll-plugin").default> &
-  InjectionType<typeof import("../gsapPlugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt-vercel-analytics/dist/runtime/plugin.client").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/strapi/dist/runtime/plugins/dns.server").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/strapi/dist/runtime/plugins/strapi").default> &

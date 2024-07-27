@@ -19,16 +19,16 @@ declare module 'nitropack' {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-site-config/dist/runtime/nitro/routes/__site-config__/debug').default>>>>
     }
     '/robots.txt': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nitro/server/robots-txt').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/nitro/server/robots-txt').default>>>>
     }
     '/__robots__/nuxt-content.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nitro/server/__robots__/nuxt-content').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/nitro/server/__robots__/nuxt-content').default>>>>
     }
     '/__robots__/debug.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nitro/server/__robots__/debug').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/nitro/server/__robots__/debug').default>>>>
     }
     '/__robots__/debug-path.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nitro/server/__robots__/debug-path').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/nitro/server/__robots__/debug-path').default>>>>
     }
     '/__sitemap__/nuxt-content-urls.json': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/sitemap/dist/runtime/nitro/routes/__sitemap__/nuxt-content-urls').default>>>>
@@ -55,13 +55,13 @@ declare module 'nitropack' {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-schema-org/dist/runtime/nitro/routes/__schema-org__/debug').default>>>>
     }
     '/__link-checker__/inspect': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/seo/node_modules/nuxt-link-checker/dist/runtime/nitro/routes/__link-checker__/inspect').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-link-checker/dist/runtime/nitro/routes/__link-checker__/inspect').default>>>>
     }
     '/__link-checker__/links': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/seo/node_modules/nuxt-link-checker/dist/runtime/nitro/routes/__link-checker__/links').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-link-checker/dist/runtime/nitro/routes/__link-checker__/links').default>>>>
     }
     '/__link-checker__/debug.json': {
-      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/seo/node_modules/nuxt-link-checker/dist/runtime/nitro/routes/__link-checker__/debug').default>>>>
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-link-checker/dist/runtime/nitro/routes/__link-checker__/debug').default>>>>
     }
     '/api/_content/query/:qid/**:params': {
       'get': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>>>

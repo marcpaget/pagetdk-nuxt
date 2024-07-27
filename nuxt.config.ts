@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 	// '@varlet/nuxt',
 	// 'nuxt-purgecss',
 	'@hypernym/nuxt-anime', '@nuxtjs/strapi', // 'nuxt-vuefire',
-	'@tresjs/nuxt', 'vue3-carousel-nuxt', 'nuxt-api-party', '@morev/vue-transitions/nuxt', 'nuxt-vercel-analytics', '@hypernym/nuxt-gsap', 'nuxt-anchorscroll', // 'nuxt-aos',
+	'@tresjs/nuxt', 'vue3-carousel-nuxt', 'nuxt-api-party', '@morev/vue-transitions/nuxt', 'nuxt-vercel-analytics', 'nuxt-anchorscroll', // 'nuxt-aos',
 	'nuxt-gtag', '@nuxtjs/cloudinary',
 	// '@primevue/nuxt-module',
 	'@nuxt/image', '@nuxtjs/seo', 'nuxt-particles', '@oku-ui/motion-nuxt', '@nuxt/ui', '@nuxt/eslint', 'usemods-nuxt'],
@@ -88,13 +88,6 @@ export default defineNuxtConfig({
 			},
 		},
 	},
-
-	gsap: {
-		extraPlugins: {
-			scrollTrigger: true,
-		},
-	},
-
 	// vuefire: {
 	//     config: {
 	//         // there could be other properties depending on the project

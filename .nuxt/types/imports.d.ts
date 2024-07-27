@@ -118,7 +118,7 @@ declare global {
   const defineReadAction: typeof import('../../node_modules/@unhead/schema-org/vue')['defineReadAction']
   const defineRecipe: typeof import('../../node_modules/@unhead/schema-org/vue')['defineRecipe']
   const defineReview: typeof import('../../node_modules/@unhead/schema-org/vue')['defineReview']
-  const defineRobotMeta: typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nuxt/composables/defineRobotMeta')['defineRobotMeta']
+  const defineRobotMeta: typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/defineRobotMeta')['defineRobotMeta']
   const defineSearchAction: typeof import('../../node_modules/@unhead/schema-org/vue')['defineSearchAction']
   const defineShortcuts: typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/defineShortcuts')['defineShortcuts']
   const defineSlots: typeof import('../../node_modules/vue')['defineSlots']
@@ -284,8 +284,8 @@ declare global {
   const nextTick: typeof import('../../node_modules/vue')['nextTick']
   const onActivated: typeof import('../../node_modules/vue')['onActivated']
   const onBeforeMount: typeof import('../../node_modules/vue')['onBeforeMount']
-  const onBeforeRouteLeave: typeof import('../../node_modules/nuxt/dist/app/composables/router')['onBeforeRouteLeave']
-  const onBeforeRouteUpdate: typeof import('../../node_modules/nuxt/dist/app/composables/router')['onBeforeRouteUpdate']
+  const onBeforeRouteLeave: typeof import('../../node_modules/vue-router/auto-routes')['onBeforeRouteLeave']
+  const onBeforeRouteUpdate: typeof import('../../node_modules/vue-router/auto-routes')['onBeforeRouteUpdate']
   const onBeforeUnmount: typeof import('../../node_modules/vue')['onBeforeUnmount']
   const onBeforeUpdate: typeof import('../../node_modules/vue')['onBeforeUpdate']
   const onClickOutside: typeof import('../../node_modules/@vueuse/core')['onClickOutside']
@@ -553,7 +553,6 @@ declare global {
   const usePermission: typeof import('../../node_modules/@vueuse/core')['usePermission']
   const usePinia: typeof import('../../node_modules/@pinia/nuxt/dist/runtime/composables')['usePinia']
   const usePointer: typeof import('../../node_modules/@vueuse/core')['usePointer']
-  const usePointerEventHandler: typeof import('../../node_modules/@tresjs/core')['usePointerEventHandler']
   const usePointerLock: typeof import('../../node_modules/@vueuse/core')['usePointerLock']
   const usePointerSwipe: typeof import('../../node_modules/@vueuse/core')['usePointerSwipe']
   const usePopper: typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/usePopper')['usePopper']
@@ -579,6 +578,7 @@ declare global {
   const useRequestURL: typeof import('../../node_modules/nuxt/dist/app/composables/url')['useRequestURL']
   const useResizeObserver: typeof import('../../node_modules/@vueuse/core')['useResizeObserver']
   const useRestCountriesApiData: typeof import('../module/nuxt-api-party')['useRestCountriesApiData']
+  const useRobotsRule: typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/useRobotsRule')['useRobotsRule']
   const useRound: typeof import('../../node_modules/@vueuse/math')['useRound']
   const useRoute: typeof import('../../node_modules/nuxt/dist/app/composables/router')['useRoute']
   const useRouteAnnouncer: typeof import('../../node_modules/nuxt/dist/app/composables/route-announcer')['useRouteAnnouncer']
@@ -590,6 +590,7 @@ declare global {
   const useScript: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScript']
   const useScriptClarity: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptClarity']
   const useScriptCloudflareWebAnalytics: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptCloudflareWebAnalytics']
+  const useScriptCrisp: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptCrisp']
   const useScriptFathomAnalytics: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptFathomAnalytics']
   const useScriptGoogleAdsense: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptGoogleAdsense']
   const useScriptGoogleAnalytics: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptGoogleAnalytics']
@@ -847,7 +848,7 @@ declare module 'vue' {
     readonly defineReadAction: UnwrapRef<typeof import('../../node_modules/@unhead/schema-org/vue')['defineReadAction']>
     readonly defineRecipe: UnwrapRef<typeof import('../../node_modules/@unhead/schema-org/vue')['defineRecipe']>
     readonly defineReview: UnwrapRef<typeof import('../../node_modules/@unhead/schema-org/vue')['defineReview']>
-    readonly defineRobotMeta: UnwrapRef<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nuxt/composables/defineRobotMeta')['defineRobotMeta']>
+    readonly defineRobotMeta: UnwrapRef<typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/defineRobotMeta')['defineRobotMeta']>
     readonly defineSearchAction: UnwrapRef<typeof import('../../node_modules/@unhead/schema-org/vue')['defineSearchAction']>
     readonly defineShortcuts: UnwrapRef<typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/defineShortcuts')['defineShortcuts']>
     readonly defineSlots: UnwrapRef<typeof import('../../node_modules/vue')['defineSlots']>
@@ -1013,8 +1014,8 @@ declare module 'vue' {
     readonly nextTick: UnwrapRef<typeof import('../../node_modules/vue')['nextTick']>
     readonly onActivated: UnwrapRef<typeof import('../../node_modules/vue')['onActivated']>
     readonly onBeforeMount: UnwrapRef<typeof import('../../node_modules/vue')['onBeforeMount']>
-    readonly onBeforeRouteLeave: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['onBeforeRouteLeave']>
-    readonly onBeforeRouteUpdate: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['onBeforeRouteUpdate']>
+    readonly onBeforeRouteLeave: UnwrapRef<typeof import('../../node_modules/vue-router/auto-routes')['onBeforeRouteLeave']>
+    readonly onBeforeRouteUpdate: UnwrapRef<typeof import('../../node_modules/vue-router/auto-routes')['onBeforeRouteUpdate']>
     readonly onBeforeUnmount: UnwrapRef<typeof import('../../node_modules/vue')['onBeforeUnmount']>
     readonly onBeforeUpdate: UnwrapRef<typeof import('../../node_modules/vue')['onBeforeUpdate']>
     readonly onClickOutside: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['onClickOutside']>
@@ -1282,7 +1283,6 @@ declare module 'vue' {
     readonly usePermission: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['usePermission']>
     readonly usePinia: UnwrapRef<typeof import('../../node_modules/@pinia/nuxt/dist/runtime/composables')['usePinia']>
     readonly usePointer: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['usePointer']>
-    readonly usePointerEventHandler: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['usePointerEventHandler']>
     readonly usePointerLock: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['usePointerLock']>
     readonly usePointerSwipe: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['usePointerSwipe']>
     readonly usePopper: UnwrapRef<typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/usePopper')['usePopper']>
@@ -1308,6 +1308,7 @@ declare module 'vue' {
     readonly useRequestURL: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/url')['useRequestURL']>
     readonly useResizeObserver: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useResizeObserver']>
     readonly useRestCountriesApiData: UnwrapRef<typeof import('../module/nuxt-api-party')['useRestCountriesApiData']>
+    readonly useRobotsRule: UnwrapRef<typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/useRobotsRule')['useRobotsRule']>
     readonly useRound: UnwrapRef<typeof import('../../node_modules/@vueuse/math')['useRound']>
     readonly useRoute: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['useRoute']>
     readonly useRouteAnnouncer: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/route-announcer')['useRouteAnnouncer']>
@@ -1319,6 +1320,7 @@ declare module 'vue' {
     readonly useScript: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScript']>
     readonly useScriptClarity: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptClarity']>
     readonly useScriptCloudflareWebAnalytics: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptCloudflareWebAnalytics']>
+    readonly useScriptCrisp: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptCrisp']>
     readonly useScriptFathomAnalytics: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptFathomAnalytics']>
     readonly useScriptGoogleAdsense: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptGoogleAdsense']>
     readonly useScriptGoogleAnalytics: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptGoogleAnalytics']>
@@ -1566,7 +1568,7 @@ declare module '@vue/runtime-core' {
     readonly defineReadAction: UnwrapRef<typeof import('../../node_modules/@unhead/schema-org/vue')['defineReadAction']>
     readonly defineRecipe: UnwrapRef<typeof import('../../node_modules/@unhead/schema-org/vue')['defineRecipe']>
     readonly defineReview: UnwrapRef<typeof import('../../node_modules/@unhead/schema-org/vue')['defineReview']>
-    readonly defineRobotMeta: UnwrapRef<typeof import('../../node_modules/nuxt-simple-robots/dist/runtime/nuxt/composables/defineRobotMeta')['defineRobotMeta']>
+    readonly defineRobotMeta: UnwrapRef<typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/defineRobotMeta')['defineRobotMeta']>
     readonly defineSearchAction: UnwrapRef<typeof import('../../node_modules/@unhead/schema-org/vue')['defineSearchAction']>
     readonly defineShortcuts: UnwrapRef<typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/defineShortcuts')['defineShortcuts']>
     readonly defineSlots: UnwrapRef<typeof import('../../node_modules/vue')['defineSlots']>
@@ -1732,8 +1734,8 @@ declare module '@vue/runtime-core' {
     readonly nextTick: UnwrapRef<typeof import('../../node_modules/vue')['nextTick']>
     readonly onActivated: UnwrapRef<typeof import('../../node_modules/vue')['onActivated']>
     readonly onBeforeMount: UnwrapRef<typeof import('../../node_modules/vue')['onBeforeMount']>
-    readonly onBeforeRouteLeave: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['onBeforeRouteLeave']>
-    readonly onBeforeRouteUpdate: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['onBeforeRouteUpdate']>
+    readonly onBeforeRouteLeave: UnwrapRef<typeof import('../../node_modules/vue-router/auto-routes')['onBeforeRouteLeave']>
+    readonly onBeforeRouteUpdate: UnwrapRef<typeof import('../../node_modules/vue-router/auto-routes')['onBeforeRouteUpdate']>
     readonly onBeforeUnmount: UnwrapRef<typeof import('../../node_modules/vue')['onBeforeUnmount']>
     readonly onBeforeUpdate: UnwrapRef<typeof import('../../node_modules/vue')['onBeforeUpdate']>
     readonly onClickOutside: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['onClickOutside']>
@@ -2001,7 +2003,6 @@ declare module '@vue/runtime-core' {
     readonly usePermission: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['usePermission']>
     readonly usePinia: UnwrapRef<typeof import('../../node_modules/@pinia/nuxt/dist/runtime/composables')['usePinia']>
     readonly usePointer: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['usePointer']>
-    readonly usePointerEventHandler: UnwrapRef<typeof import('../../node_modules/@tresjs/core')['usePointerEventHandler']>
     readonly usePointerLock: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['usePointerLock']>
     readonly usePointerSwipe: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['usePointerSwipe']>
     readonly usePopper: UnwrapRef<typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/usePopper')['usePopper']>
@@ -2027,6 +2028,7 @@ declare module '@vue/runtime-core' {
     readonly useRequestURL: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/url')['useRequestURL']>
     readonly useResizeObserver: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useResizeObserver']>
     readonly useRestCountriesApiData: UnwrapRef<typeof import('../module/nuxt-api-party')['useRestCountriesApiData']>
+    readonly useRobotsRule: UnwrapRef<typeof import('../../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/useRobotsRule')['useRobotsRule']>
     readonly useRound: UnwrapRef<typeof import('../../node_modules/@vueuse/math')['useRound']>
     readonly useRoute: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['useRoute']>
     readonly useRouteAnnouncer: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/route-announcer')['useRouteAnnouncer']>
@@ -2038,6 +2040,7 @@ declare module '@vue/runtime-core' {
     readonly useScript: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScript']>
     readonly useScriptClarity: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptClarity']>
     readonly useScriptCloudflareWebAnalytics: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptCloudflareWebAnalytics']>
+    readonly useScriptCrisp: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptCrisp']>
     readonly useScriptFathomAnalytics: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptFathomAnalytics']>
     readonly useScriptGoogleAdsense: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptGoogleAdsense']>
     readonly useScriptGoogleAnalytics: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptGoogleAnalytics']>
