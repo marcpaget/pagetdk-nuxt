@@ -131,9 +131,6 @@
       "#ui-colors": [
         "./ui.colors"
       ],
-      "#icon-collections": [
-        "./icon-collections"
-      ],
       "#color-mode-options": [
         "./color-mode-options.mjs"
       ],
@@ -231,12 +228,12 @@
     "../node_modules/@nuxtjs/seo/runtime",
     "../node_modules/nuxt-particles/runtime",
     "../node_modules/@oku-ui/motion-nuxt/runtime",
-    "../node_modules/nuxt-icon/runtime",
+    "../node_modules/@nuxt/icon/runtime",
     "../node_modules/@nuxtjs/color-mode/runtime",
     "../node_modules/@nuxtjs/tailwindcss/runtime",
     "../node_modules/@nuxt/ui/runtime",
-    "../node_modules/@nuxt/eslint/runtime",
     "../node_modules/usemods-nuxt/runtime",
+    "../node_modules/@nuxt/eslint/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
@@ -285,12 +282,12 @@
     "../node_modules/@nuxtjs/seo/runtime/server",
     "../node_modules/nuxt-particles/runtime/server",
     "../node_modules/@oku-ui/motion-nuxt/runtime/server",
-    "../node_modules/nuxt-icon/runtime/server",
+    "../node_modules/@nuxt/icon/runtime/server",
     "../node_modules/@nuxtjs/color-mode/runtime/server",
     "../node_modules/@nuxtjs/tailwindcss/runtime/server",
     "../node_modules/@nuxt/ui/runtime/server",
-    "../node_modules/@nuxt/eslint/runtime/server",
     "../node_modules/usemods-nuxt/runtime/server",
+    "../node_modules/@nuxt/eslint/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../.output"
   ]
