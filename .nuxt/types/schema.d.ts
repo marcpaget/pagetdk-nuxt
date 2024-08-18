@@ -252,6 +252,8 @@ declare module 'nuxt/schema' {
 
       discoverVideos: boolean,
 
+      sitemapsPathPrefix: string,
+
       isNuxtContentDocumentDriven: boolean,
 
       xsl: string,
@@ -722,6 +724,10 @@ declare module 'nuxt/schema' {
       showLiveInspections: boolean,
 
       fetchRemoteUrls: boolean,
+   },
+
+   "nuxt-seo": {
+      canonicalQueryWhitelist: Array<string>,
    },
 
    cookieControl: {
