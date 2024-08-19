@@ -172,6 +172,7 @@ declare global {
   const formatList: typeof import('../../node_modules/usemods/dist/index')['formatList']
   const formatNumber: typeof import('../../node_modules/usemods/dist/index')['formatNumber']
   const formatNumberToWords: typeof import('../../node_modules/usemods/dist/index')['formatNumberToWords']
+  const formatParagraphs: typeof import('../../node_modules/usemods/dist/index')['formatParagraphs']
   const formatPercentage: typeof import('../../node_modules/usemods/dist/index')['formatPercentage']
   const formatSentenceCase: typeof import('../../node_modules/usemods/dist/index')['formatSentenceCase']
   const formatTemperature: typeof import('../../node_modules/usemods/dist/index')['formatTemperature']
@@ -902,6 +903,7 @@ declare module 'vue' {
     readonly formatList: UnwrapRef<typeof import('../../node_modules/usemods/dist/index')['formatList']>
     readonly formatNumber: UnwrapRef<typeof import('../../node_modules/usemods/dist/index')['formatNumber']>
     readonly formatNumberToWords: UnwrapRef<typeof import('../../node_modules/usemods/dist/index')['formatNumberToWords']>
+    readonly formatParagraphs: UnwrapRef<typeof import('../../node_modules/usemods/dist/index')['formatParagraphs']>
     readonly formatPercentage: UnwrapRef<typeof import('../../node_modules/usemods/dist/index')['formatPercentage']>
     readonly formatSentenceCase: UnwrapRef<typeof import('../../node_modules/usemods/dist/index')['formatSentenceCase']>
     readonly formatTemperature: UnwrapRef<typeof import('../../node_modules/usemods/dist/index')['formatTemperature']>
