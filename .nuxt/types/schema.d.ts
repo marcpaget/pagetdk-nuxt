@@ -244,6 +244,8 @@ declare module 'nuxt/schema' {
 
       defaultSitemapsChunkSize: number,
 
+      minify: boolean,
+
       sortEntries: boolean,
 
       debug: boolean,
@@ -314,6 +316,8 @@ declare module 'nuxt/schema' {
 
       sitemap: Array<string>,
 
+      header: boolean,
+
       robotsEnabledValue: string,
 
       robotsDisabledValue: string,
@@ -335,6 +339,8 @@ declare module 'nuxt/schema' {
       }>,
 
       sitemap: Array<string>,
+
+      header: boolean,
 
       robotsEnabledValue: string,
 
