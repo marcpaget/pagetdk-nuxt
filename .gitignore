@@ -16,3 +16,6 @@ images/*
 .vercel
 netlify.toml
 .DS_Store
+
+# Local Netlify folder
+.netlify

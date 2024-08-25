@@ -157,6 +157,16 @@
               "default": "/api/_nuxt_icon",
               "type": "string"
             },
+            "fetchTimeout": {
+              "title": "Fetch Timeout",
+              "description": "Set the timeout for fetching icons.",
+              "tags": [
+                "@studioIcon material-symbols:timer"
+              ],
+              "id": "#appConfig/icon/fetchTimeout",
+              "default": 500,
+              "type": "number"
+            },
             "customize": {
               "title": "Customize callback",
               "description": "Customize icon content (replace stroke-width, colors, etc...).",
@@ -185,6 +195,7 @@
             "iconifyApiEndpoint": "https://api.iconify.design",
             "fallbackToApi": true,
             "localApiEndpoint": "/api/_nuxt_icon",
+            "fetchTimeout": 500,
             "customize": {}
           }
         }
@@ -207,6 +218,7 @@
           "iconifyApiEndpoint": "https://api.iconify.design",
           "fallbackToApi": true,
           "localApiEndpoint": "/api/_nuxt_icon",
+          "fetchTimeout": 500,
           "customize": {}
         }
       }
@@ -231,6 +243,7 @@
         "iconifyApiEndpoint": "https://api.iconify.design",
         "fallbackToApi": true,
         "localApiEndpoint": "/api/_nuxt_icon",
+        "fetchTimeout": 500,
         "customize": {}
       }
     }

@@ -194,7 +194,8 @@ const inlineConfig = {
       "wpf",
       "zmdi",
       "zondicons"
-    ]
+    ],
+    "fetchTimeout": 500
   },
   "ui": {
     "primary": "green",

@@ -161,6 +161,17 @@ export interface NuxtCustomSchema {
    localApiEndpoint?: string,
 
    /**
+    * Fetch Timeout
+    * 
+    * Set the timeout for fetching icons.
+    * 
+    * @default 500
+    * 
+    * @studioIcon material-symbols:timer
+   */
+   fetchTimeout?: number,
+
+   /**
     * Customize callback
     * 
     * Customize icon content (replace stroke-width, colors, etc...).

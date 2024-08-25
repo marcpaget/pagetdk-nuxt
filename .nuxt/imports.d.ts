@@ -90,9 +90,9 @@ export { useTrackEvent } from '../node_modules/nuxt-gtag/dist/runtime/composable
 export { useImage } from '../node_modules/@nuxt/image/dist/runtime/composables';
 export { defineRobotMeta } from '../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/defineRobotMeta';
 export { useRobotsRule } from '../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/useRobotsRule';
-export { defineOgImage } from '../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/composables/defineOgImage';
-export { defineOgImageComponent } from '../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/composables/defineOgImageComponent';
-export { defineOgImageScreenshot } from '../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/composables/defineOgImageScreenshot';
+export { defineOgImage } from '../node_modules/nuxt-og-image/dist/runtime/nuxt/composables/defineOgImage';
+export { defineOgImageComponent } from '../node_modules/nuxt-og-image/dist/runtime/nuxt/composables/defineOgImageComponent';
+export { defineOgImageScreenshot } from '../node_modules/nuxt-og-image/dist/runtime/nuxt/composables/defineOgImageScreenshot';
 export { useSchemaOrg } from '../node_modules/nuxt-schema-org/dist/runtime/nuxt/imports/useSchemaOrg';
 export { useI18n } from '../node_modules/@nuxtjs/seo/dist/runtime/nuxt/composables/polyfills';
 export { useBreadcrumbItems } from '../node_modules/@nuxtjs/seo/dist/runtime/nuxt/composables/useBreadcrumbItems';
