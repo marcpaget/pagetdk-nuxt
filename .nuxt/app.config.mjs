@@ -121,6 +121,7 @@ const inlineConfig = {
       "logos",
       "ls",
       "lucide",
+      "lucide-lab",
       "mage",
       "majesticons",
       "maki",

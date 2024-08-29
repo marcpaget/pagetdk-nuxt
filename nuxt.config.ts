@@ -26,7 +26,10 @@ export default defineNuxtConfig({
     redirect: false,
     // https://www.reddit.com/r/Nuxt/comments/17a3p7r/nuxt_app_keeps_redirecting_to_login/
   },
-
+  sourcemap: {
+    server: true,
+    client: true,
+  },
   eslint: {
     config: {
       stylistic: {

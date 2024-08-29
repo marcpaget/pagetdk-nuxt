@@ -380,7 +380,9 @@ declare module 'nuxt/schema' {
 
       baseCacheKey: string,
 
-      fonts: Array<any>,
+      fonts: Array<{
+
+      }>,
 
       hasNuxtIcon: boolean,
 

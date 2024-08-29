@@ -149,7 +149,8 @@
         "vite": "^5.4.2",
         "vue3-carousel-nuxt": "^1.1.2",
         "vuefire": "^3.2.0",
-        "vuetify": "^3.7.0"
+        "vuetify": "^3.7.0",
+        "yaml": "^2.5.0"
     },
     "engines": {
         "node": "^20.0.0"
