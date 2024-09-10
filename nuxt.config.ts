@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   modules:
 [// '@nuxtjs/tailwindcss', disabled because of nuxt-ui
   '@nuxt/content', // '@nuxtjs/prismic',
-  '@formkit/nuxt', '@vueuse/nuxt', // '@nuxtjs/color-mode', disabled because of nuxt-ui
+  // '@formkit/nuxt', '@vueuse/nuxt', // '@nuxtjs/color-mode', disabled because of nuxt-ui
   '@nuxtjs/supabase', // 'nuxt-icon', disabled because of nuxt-ui
   // '@nuxtjs/partytown',
   // '@inkline/nuxt',
@@ -26,10 +26,10 @@ export default defineNuxtConfig({
     redirect: false,
     // https://www.reddit.com/r/Nuxt/comments/17a3p7r/nuxt_app_keeps_redirecting_to_login/
   },
-  sourcemap: {
-    server: true,
-    client: true,
-  },
+  // sourcemap: {
+  //   server: true,
+  //   client: true,
+  // },
   eslint: {
     config: {
       stylistic: {
@@ -195,11 +195,20 @@ export default defineNuxtConfig({
 
   build: {
     transpile:
-																																																																								process.env.NODE_ENV === 'production' ? ['vueuc', '@css-render/vue3-ssr', '@juggle/resize-observer', 'vuetify', 'primevue'] : ['@juggle/resize-observer', 'vuetify', 'primevue'],
+																																																																								process.env.NODE_ENV === 'production' ? ['vueuc', '@css-render/vue3-ssr', '@juggle/resize-observer', 'primevue'] : ['@juggle/resize-observer', 'primevue'],
   },
 
   vite: {
     logLevel: 'info',
+    // build: {
+    //   rollupOptions: {
+    //     output: {
+    //       chunkFileNames: 'chunk/[hash].js',
+    //       entryFileNames: 'entry/[hash].js',
+    //       assetFileNames: '[ext]/[hash].[ext]',
+    //     },
+    //   },
+    // },
     optimizeDeps: {
       include: [
         '@headlessui/vue',

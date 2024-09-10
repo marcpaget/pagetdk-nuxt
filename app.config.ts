@@ -1,16 +1,16 @@
 // app.config.ts
 export default defineAppConfig({
-    vercelAnalytics: {
-        mode: 'auto',
-        debug: true,
-        beforeSend: (event) => {
-            if (event.url.includes('/private')) return null
+  vercelAnalytics: {
+    mode: 'auto',
+    debug: true,
+    beforeSend: (event) => {
+      if (event.url.includes('/private')) return null;
 
-            return event
-        },
+      return event;
     },
-    ui: {
-        primary: 'green',
-        gray: 'cool',
-    },
-})
+  },
+  ui: {
+    primary: 'green',
+    gray: 'cool',
+  },
+});

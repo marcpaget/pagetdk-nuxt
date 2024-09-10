@@ -96,7 +96,7 @@
                         <li><nuxt-link to="/form">Form</nuxt-link></li>
                         <li><nuxt-link to="/text">Text</nuxt-link></li>
                     </ul>
-                
+
                 <li tabindex="0">
                     <details>
                         <summary>Games</summary>
@@ -321,7 +321,7 @@
         <div class="navbar-end">
             <ul>
                 <ColorModeSwitch />
-                TODO: Move login button to hamburgermenu when site is responsive 
+                TODO: Move login button to hamburgermenu when site is responsive
                 <button v-if="user" class="btn" @click="doSignOut">Log out</button>
                 <button v-else class="btn">
                     <nuxt-link to="/login">Log in</nuxt-link>

@@ -1,9 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 // eslint-disable-next-line vue/multi-word-component-names // eslint-disable-next-line vue/multi-word-component-names
 <template>
-    <div>
-        <slot />
-    </div>
+  <div>
+    <slot />
+  </div>
 </template>
 
 <!-- <style>

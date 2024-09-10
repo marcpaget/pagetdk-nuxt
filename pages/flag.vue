@@ -1,5 +1,5 @@
 <template>
-    <div>
-        <FlagQuizComponent />
-    </div>
+  <div>
+    <FlagQuizComponent />
+  </div>
 </template>

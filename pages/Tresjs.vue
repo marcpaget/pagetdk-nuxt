@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { TresCanvas } from '@tresjs/core'
+import { TresCanvas } from '@tresjs/core';
 </script>
+
 <template>
-    <TresCanvas>
-        <!-- Your scene here -->
-    </TresCanvas>
+  <TresCanvas>
+    <!-- Your scene here -->
+  </TresCanvas>
 </template>

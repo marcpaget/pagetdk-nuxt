@@ -1,27 +1,30 @@
 <script lang="ts" setup>
-const { page: post } = useContent()
+const { page: post } = useContent();
 defineOgImageScreenshot({
-    delay: 1000,
-})
+  delay: 1000,
+});
 </script>
 
 <template>
-    <DocsPageLayout>
-        <SchemaOrgArticle />
-        <div class="mb-3 flex items-center">
-            <TopBreadcrumbs v-if="post.breadcrumbs !== false" class="mb-0" />
-            <TagList :tags="post.tags" />
-        </div>
-        <PageTitle :post="post" />
-        <PostMeta :post="post" />
-        <article>
-            <div class="prose-wrap max-w-85ch">
-                <Prose>
-                    <ContentRenderer :value="post" />
-                </Prose>
-            </div>
-        </article>
-    </DocsPageLayout>
+  <DocsPageLayout>
+    <SchemaOrgArticle />
+    <div class="mb-3 flex items-center">
+      <TopBreadcrumbs
+        v-if="post.breadcrumbs !== false"
+        class="mb-0"
+      />
+      <TagList :tags="post.tags" />
+    </div>
+    <PageTitle :post="post" />
+    <PostMeta :post="post" />
+    <article>
+      <div class="prose-wrap max-w-85ch">
+        <Prose>
+          <ContentRenderer :value="post" />
+        </Prose>
+      </div>
+    </article>
+  </DocsPageLayout>
 </template>
 
 <style>

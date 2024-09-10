@@ -1,5 +1,5 @@
 <template>
-	<div>
-		<GeoComponent />
-	</div>
+  <div>
+    <GeoComponent />
+  </div>
 </template>
