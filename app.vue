@@ -1,4 +1,6 @@
 <template>
+  <NuxtLayout>
+   
   <div class="w-screen scrollbar-thin scrollbar-track-blue-300 scrollbar-thumb-blue-700 dark:bg-slate-100">
     <CookieControl>
       <template #bar>
@@ -18,6 +20,7 @@
     <scrollToTop />
   </div>
   <AppFooter />
+  </NuxtLayout>
 </template>
 
 <!------------------------------------------------------
