@@ -1,10 +1,13 @@
 <template>
-    <div>
-        <section>
-            <MainQuizComponent />
-        </section>
-        <!-- <section>
+  <div>
+    <section v-if="totalQuestions > 10">
+      <QuizComponentEnd />
+    </section>
+    <section v-else>
+      <QuizComponentMain />
+    </section>
+    <!-- <section>
             <EndQuizComponent :score="score" :wrong="wrong" />
         </section> -->
-    </div>
+  </div>
 </template>

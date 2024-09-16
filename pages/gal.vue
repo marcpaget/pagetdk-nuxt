@@ -1,5 +1,5 @@
 <template>
-    <div />
+  <div />
 </template>
 <!-- <template>
     <div class="card md:flex md:justify-content-center">
@@ -10,7 +10,7 @@
             container-style="max-width: 640px"
         >
                 <img :src="https://ik.imagekit.io/paget/3" />
-      
+
                 <img :src="https://ik.imagekit.io/paget/1" />
         </Galleria>
     </div>

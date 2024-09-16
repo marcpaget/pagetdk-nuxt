@@ -1,5 +1,5 @@
 <template>
-    <div>
-        <CloudinaryGalleryComponent />
-    </div>
+  <div>
+    <CloudinaryGalleryComponent />
+  </div>
 </template>

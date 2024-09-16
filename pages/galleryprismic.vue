@@ -1,10 +1,11 @@
 <template>
-    <div>
-        <PrismicGallery />
-    </div>
+  <div>
+    <PrismicGallery />
+  </div>
 </template>
 
 <script>
-import PrismicGallery from '~~/components/PrismicGallery.vue'
-export default {}
+import PrismicGallery from '~~/components/PrismicGallery.vue';
+
+export default {};
 </script>
