@@ -96,7 +96,7 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "tailwindCSS.experimental.configFile": "tailwind.config.js",
     "tailwindCSS.codeActions": true,
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "always",
     },
