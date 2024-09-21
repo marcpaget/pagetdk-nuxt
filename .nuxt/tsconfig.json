@@ -66,13 +66,13 @@
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#mdc-imports": [
-        "./mdc-imports"
+        "./mdc-imports.mjs"
       ],
       "#color-mode-options": [
         "./color-mode-options.mjs"
       ],
       "#icon-collections": [
-        "./icon-collections"
+        "./icon-collections.mjs"
       ],
       "pinia": [
         "../node_modules/pinia/dist/pinia"
@@ -139,7 +139,7 @@
     "../node_modules/@hypernym/nuxt-anime/runtime",
     "../node_modules/@nuxtjs/strapi/runtime",
     "../node_modules/@tresjs/nuxt/runtime",
-    "../node_modules/@nuxtjs/eslint-module/runtime",
+    "../node_modules/@nuxt/eslint/runtime",
     "../node_modules/vue3-carousel-nuxt/runtime",
     "../node_modules/nuxt-api-party/runtime",
     "../node_modules/@morev/vue-transitions/nuxt/runtime",
@@ -192,7 +192,7 @@
     "../node_modules/@hypernym/nuxt-anime/runtime/server",
     "../node_modules/@nuxtjs/strapi/runtime/server",
     "../node_modules/@tresjs/nuxt/runtime/server",
-    "../node_modules/@nuxtjs/eslint-module/runtime/server",
+    "../node_modules/@nuxt/eslint/runtime/server",
     "../node_modules/vue3-carousel-nuxt/runtime/server",
     "../node_modules/nuxt-api-party/runtime/server",
     "../node_modules/@morev/vue-transitions/nuxt/runtime/server",

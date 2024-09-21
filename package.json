@@ -19,13 +19,13 @@
         "@iconify/vue": "^4.1.1",
         "@nuxt/content": "^2.10.0",
         "@nuxt/devtools": "^1.0.6",
+        "@nuxt/eslint": "^0.5.7",
         "@nuxt/image": "^1.1.0",
         "@nuxt/image-edge": "1.1.0-28408112.572f502",
         "@nuxt/test-utils-edge": "^3.8.0-28284309.b3d3d7f4",
         "@nuxt/types": "2.17.2",
         "@nuxt/typescript-build": "^3.0.2",
         "@nuxtjs/color-mode": "^3.3.2",
-        "@nuxtjs/eslint-module": "^4.1.0",
         "@nuxtjs/i18n": "next",
         "@nuxtjs/seo": "^2.0.0-rc.3",
         "@nuxtjs/strapi": "^1.10.1",
@@ -83,6 +83,7 @@
         "unplugin-auto-import": "^0.17.3",
         "unplugin-icons": "^0.18.1",
         "unplugin-vue-components": "^0.26.0",
+        "vite-plugin-eslint2": "^4.4.1",
         "vue-tsc": "^1.8.27"
     },
     "dependencies": {

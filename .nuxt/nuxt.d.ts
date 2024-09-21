@@ -16,7 +16,7 @@
 /// <reference types="@hypernym/nuxt-anime" />
 /// <reference types="@nuxtjs/strapi" />
 /// <reference types="@tresjs/nuxt" />
-/// <reference types="@nuxtjs/eslint-module" />
+/// <reference types="@nuxt/eslint" />
 /// <reference types="vue3-carousel-nuxt" />
 /// <reference types="nuxt-api-party" />
 /// <reference types="@morev/vue-modals-nuxt" />
@@ -60,5 +60,6 @@
 /// <reference path="imports.d.ts" />
 /// <reference path="schema/nuxt.schema.d.ts" />
 /// <reference path="types/nitro.d.ts" />
+/// <reference path="./eslint-typegen.d.ts" />
 
 export {}

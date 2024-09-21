@@ -5,7 +5,7 @@ import cfg0 from "/Users/marcpaget/Kodeprojekter/pagetdk-nuxt/app.config"
 
 declare const inlineConfig = {
   "nuxt": {
-    "buildId": "dev"
+    "buildId": "141b2764-69c5-4c8f-a772-f6d1960fea37"
   }
 }
 type ResolvedAppConfig = Defu<typeof inlineConfig, [typeof cfg0]>

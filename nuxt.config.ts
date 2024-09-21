@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         //'nuxt-purgecss',
         '@nuxtjs/strapi',
         '@tresjs/nuxt',
-        '@nuxtjs/eslint-module', //'nuxt-vuefire',
+        '@nuxt/eslint', //'nuxt-vuefire',
         'vue3-carousel-nuxt',
         'nuxt-api-party',
         '@morev/vue-transitions/nuxt',
