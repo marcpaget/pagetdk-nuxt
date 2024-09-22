@@ -308,20 +308,6 @@ declare module 'nuxt/schema' {
       },
    },
 
-   "nuxt-schema-org": {
-      reactive: boolean,
-
-      minify: boolean,
-
-      scriptAttributes: {
-         id: string,
-      },
-
-      identity: any,
-
-      version: string,
-   },
-
    "nuxt-site-config": {
       stack: Array<{
 
@@ -498,7 +484,7 @@ declare module 'nuxt/schema' {
 
       defaultLocale: any,
 
-      integrity: number,
+      integrity: any,
 
       experimental: {
          stripQueryParameters: boolean,
@@ -693,6 +679,20 @@ declare module 'nuxt/schema' {
       injectStylesAsString: Array<any>,
 
       injectStylesAsStringToTop: Array<string>,
+   },
+
+   "nuxt-schema-org": {
+      reactive: boolean,
+
+      minify: boolean,
+
+      scriptAttributes: {
+         id: string,
+      },
+
+      identity: any,
+
+      version: string,
    },
   }
 }
