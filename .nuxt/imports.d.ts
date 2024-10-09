@@ -32,6 +32,9 @@ export { createGenericProjection, createProjection, logicAnd, logicNot, logicOr,
 export { $restCountriesApi, useRestCountriesApiData } from './module/nuxt-api-party';
 export { injectHead, useHead, useSeoMeta, useHeadSafe, useServerHead, useServerSeoMeta, useServerHeadSafe } from '@unhead/vue';
 export { default as useFetchCountries } from '../composables/useFetchCountries';
+export { useSupabaseClient } from '../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseClient';
+export { useSupabaseSession } from '../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseSession';
+export { useSupabaseUser } from '../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser';
 export { default as useSession } from '../node_modules/@sidebase/nuxt-session/dist/runtime/composables/useSession';
 export { useStrapiAuth } from '../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiAuth';
 export { useStrapiClient } from '../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiClient';

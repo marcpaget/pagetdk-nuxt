@@ -45,6 +45,8 @@
                             <li><NuxtLink to="/gallery">Gallery</NuxtLink></li>
                             <li><NuxtLink to="/form">Form</NuxtLink></li>
                             <li><NuxtLink to="/text">Text</NuxtLink></li>
+                            <li><NuxtLink to="/github">Github Projects</NuxtLink></li>
+
                         </ul>
                     </li>
                     <li>
@@ -95,10 +97,10 @@
                             <li><NuxtLink to="/gallery">Gallery</NuxtLink></li>
                             <li><NuxtLink to="/form">Form</NuxtLink></li>
                             <li><NuxtLink to="/text">Text</NuxtLink></li>
+                            <li><NuxtLink to="/github">Github Projects</NuxtLink></li>
                         </ul>
                     </details>
                 </li>
-
                 <li tabindex="0">
                     <details>
                         <summary>Games</summary>

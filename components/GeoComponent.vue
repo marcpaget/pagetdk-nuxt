@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed } from 'vue'
 
 // const options = {
 //     enableHighAccuracy: true,
@@ -15,59 +15,59 @@ import { computed } from 'vue';
 // Lav mulighed for holde skærm tændt under sessionen.
 // Fix UI
 
-const { coords, locatedAt, error, resume, pause } = useGeolocation();
+const { coords, locatedAt, error, resume, pause } = useGeolocation()
 const speedkmh = computed(() => {
   if (coords.value.speed) {
-    return (coords.value.speed * 3.6).toFixed(2);
+    return (coords.value.speed * 3.6).toFixed(2)
   }
-  return 0;
-});
+  return 0
+})
 const altitude = computed(() => {
   if (coords.value.altitude) {
-    return coords.value.altitude.toFixed(2);
+    return coords.value.altitude.toFixed(2)
   }
-  return 0;
-});
+  return 0
+})
 const accurateAltitude = computed(() => {
   if (coords.value.altitude) {
-    return coords.value.altitude.toFixed(2);
+    return coords.value.altitude.toFixed(2)
   }
-  return 0;
-});
+  return 0
+})
 const accuracy = computed(() => {
   if (coords.value.accuracy) {
-    return coords.value.accuracy.toFixed(2);
+    return coords.value.accuracy.toFixed(2)
   }
-  return 0;
-});
+  return 0
+})
 const heading = computed(() => {
   if (coords.value.heading) {
-    return coords.value.heading.toFixed(2);
+    return coords.value.heading.toFixed(2)
   }
-  return 0;
-});
+  return 0
+})
 
 // create a function to show maximum speed in km/h during the session
-let maxSpeed = 0;
+let maxSpeed = 0
 const maxSpeedkmh = computed(() => {
   if (coords.value.speed) {
     if (coords.value.speed > maxSpeed) {
-      maxSpeed = coords.value.speed;
+      maxSpeed = coords.value.speed
     }
-    return (maxSpeed * 3.6).toFixed(2);
+    return (maxSpeed * 3.6).toFixed(2)
   }
-  return 0;
-});
+  return 0
+})
 
 // create function to show how many kilometers have been traveled during the session
-let distance = 0;
+let distance = 0
 const distancekm = computed(() => {
   if (coords.value.speed) {
-    distance = distance + coords.value.speed;
-    return (distance / 1000).toFixed(2);
+    distance = distance + coords.value.speed
+    return (distance / 1000).toFixed(2)
   }
-  return 0;
-});
+  return 0
+})
 </script>
 
 <template>
