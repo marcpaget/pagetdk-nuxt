@@ -119,9 +119,6 @@
       "#nuxt-api-party": [
         "./module/nuxt-api-party"
       ],
-      "#primevue-style": [
-        "./primevue-style.mjs"
-      ],
       "#image": [
         "../node_modules/@nuxt/image/dist/runtime"
       ],
@@ -130,6 +127,15 @@
       ],
       "#sitemap": [
         "../node_modules/@nuxtjs/sitemap/dist/runtime/types"
+      ],
+      "#nuxt-og-image-utils": [
+        "../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/shared"
+      ],
+      "#nuxt-og-image-cache": [
+        "../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nitro/og-image/cache/lru"
+      ],
+      "#primevue-style": [
+        "./primevue-style.mjs"
       ],
       "#vue-router": [
         "../node_modules/vue-router"
@@ -180,6 +186,7 @@
     "../node_modules/@nuxtjs/tailwindcss/runtime",
     "../node_modules/@formkit/nuxt/runtime",
     "../node_modules/@vueuse/nuxt/runtime",
+    "../node_modules/@nuxtjs/supabase/runtime",
     "../node_modules/@nuxtjs/color-mode/runtime",
     "../node_modules/nuxt-icon/runtime",
     "../../../K/runtime",
@@ -202,8 +209,6 @@
     "../node_modules/nuxt-anchorscroll/runtime",
     "../node_modules/nuxt-gtag/runtime",
     "../node_modules/@nuxtjs/cloudinary/runtime",
-    "../node_modules/nuxt-ark-ui/runtime",
-    "../node_modules/nuxt-primevue/runtime",
     "../node_modules/@nuxt/image/runtime",
     "../node_modules/nuxt-site-config/dist/runtime",
     "../node_modules/@nuxtjs/robots/dist/runtime",
@@ -215,6 +220,7 @@
     "../node_modules/@nuxtjs/seo/runtime",
     "../node_modules/nuxt-particles/runtime",
     "../node_modules/@oku-ui/motion-nuxt/runtime",
+    "../node_modules/@primevue/nuxt-module/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
@@ -233,6 +239,7 @@
     "../node_modules/@nuxtjs/tailwindcss/runtime/server",
     "../node_modules/@formkit/nuxt/runtime/server",
     "../node_modules/@vueuse/nuxt/runtime/server",
+    "../node_modules/@nuxtjs/supabase/runtime/server",
     "../node_modules/@nuxtjs/color-mode/runtime/server",
     "../node_modules/nuxt-icon/runtime/server",
     "../../../K/runtime/server",
@@ -255,8 +262,6 @@
     "../node_modules/nuxt-anchorscroll/runtime/server",
     "../node_modules/nuxt-gtag/runtime/server",
     "../node_modules/@nuxtjs/cloudinary/runtime/server",
-    "../node_modules/nuxt-ark-ui/runtime/server",
-    "../node_modules/nuxt-primevue/runtime/server",
     "../node_modules/@nuxt/image/runtime/server",
     "../node_modules/nuxt-site-config/dist/runtime/server",
     "../node_modules/@nuxtjs/robots/dist/runtime/server",
@@ -268,6 +273,7 @@
     "../node_modules/@nuxtjs/seo/runtime/server",
     "../node_modules/nuxt-particles/runtime/server",
     "../node_modules/@oku-ui/motion-nuxt/runtime/server",
+    "../node_modules/@primevue/nuxt-module/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"

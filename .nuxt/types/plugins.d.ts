@@ -11,6 +11,8 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/nuxt/dist/head/runtime/plugins/unhead.js").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/router.js").default> &
   InjectionType<typeof import("../../node_modules/nuxt-site-config/dist/runtime/nuxt/plugins/0.siteConfig.js").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/supabase/dist/runtime/plugins/supabase.server.js").default> &
+  InjectionType<typeof import("../../node_modules/@nuxtjs/supabase/dist/runtime/plugins/supabase.client.js").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/navigation-repaint.client.js").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/check-outdated-build.client.js").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/app/plugins/revive-payload.server.js").default> &
@@ -18,6 +20,7 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/@pinia/nuxt/dist/runtime/plugin.vue3.js").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/prefetch.client.js").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/plugins/check-if-page-unused.js").default> &
+  InjectionType<typeof import("../../node_modules/@primevue/nuxt-module/dist/runtime/plugin.client.js").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/seo/dist/runtime/nuxt/plugin/titles.js").default> &
   InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/nuxt/plugins/siteConfig.js").default> &
   InjectionType<typeof import("../../node_modules/nuxt-seo-experiments/dist/runtime/nuxt/plugins/inferSeoMetaPlugin.js").default> &
@@ -26,7 +29,6 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/plugins/og-image-canonical-urls.server.js").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nuxt/plugins/route-rule-og-image.server.js").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/robots/dist/runtime/nuxt/plugins/robot-meta.server.js").default> &
-  InjectionType<typeof import("../../node_modules/nuxt-primevue/dist/runtime/plugin.client.js").default> &
   InjectionType<typeof import("../../node_modules/nuxt-gtag/dist/runtime/plugin.client.js").default> &
   InjectionType<typeof import("../../node_modules/nuxt-anchorscroll/dist/runtime/anchorscroll-plugin.js").default> &
   InjectionType<typeof import("../gsapPlugin.js").default> &
@@ -53,7 +55,7 @@ declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }
 
   interface NuxtAppLiterals {
-    pluginName: 'nuxt:revive-payload:client' | 'nuxt:head' | 'nuxt:router' | 'nuxt-site-config:init' | 'nuxt:revive-payload:server' | 'nuxt:chunk-reload' | 'pinia' | 'nuxt:global-components' | 'nuxt:prefetch' | 'nuxt:checkIfPageUnused' | 'nuxt-seo:fallback-titles' | 'nuxt-schema-org:defaults' | 'nuxt-schema-org:init' | 'nuxt:checkIfLayoutUsed' | 'nuxt-seo:defaults'
+    pluginName: 'nuxt:revive-payload:client' | 'nuxt:head' | 'nuxt:router' | 'nuxt-site-config:init' | 'supabase' | 'supabase' | 'nuxt:revive-payload:server' | 'nuxt:chunk-reload' | 'pinia' | 'nuxt:global-components' | 'nuxt:prefetch' | 'nuxt:checkIfPageUnused' | 'nuxt-seo:fallback-titles' | 'nuxt-schema-org:defaults' | 'nuxt-schema-org:init' | 'nuxt:checkIfLayoutUsed' | 'nuxt-seo:defaults'
   }
 }
 

@@ -24,40 +24,40 @@ import { ref } from 'vue'
 const router = useRouter()
 
 const items = ref([
-    {
-        label: 'Games',
-        icon: 'pi pi-palette',
-        items: [
-            {
-                label: 'Flagquiz',
-                route: '/theming',
-            },
-            {
-                label: 'Unstyled',
-                route: '/unstyled',
-            },
-        ],
+  {
+    label: 'Games',
+    icon: 'pi pi-palette',
+    items: [
+      {
+        label: 'Flagquiz',
+        route: '/theming',
+      },
+      {
+        label: 'Unstyled',
+        route: '/unstyled',
+      },
+    ],
+  },
+  {
+    label: 'Programmatic',
+    icon: 'pi pi-link',
+    command: () => {
+      router.push('/introduction')
     },
-    {
-        label: 'Programmatic',
-        icon: 'pi pi-link',
-        command: () => {
-            router.push('/introduction')
-        },
-    },
-    {
-        label: 'External',
-        icon: 'pi pi-home',
-        items: [
-            {
-                label: 'Vue.js',
-                url: 'https://vuejs.org/',
-            },
-            {
-                label: 'Vite.js',
-                url: 'https://vuejs.org/',
-            },
-        ],
-    },
+  },
+  {
+    label: 'External',
+    icon: 'pi pi-home',
+    items: [
+      {
+        label: 'Vue.js',
+        url: 'https://vuejs.org/',
+      },
+      {
+        label: 'Vite.js',
+        url: 'https://vuejs.org/',
+      },
+    ],
+  },
 ])
 </script>

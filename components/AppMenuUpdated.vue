@@ -59,7 +59,7 @@
                             <li>
                                 <NuxtLink to="/restcountries">Restcountries</NuxtLink>
                             </li>
-                        </ul>
+                        </ul>restcountries
                     </li>
                     <li><a>Item 3</a></li>
                 </ul>
@@ -138,7 +138,7 @@
                         type="checkbox"
                         value="synthwave"
                         class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
-                    />
+                    >
                     <svg
                         class="col-start-1 row-start-1 stroke-base-100 fill-base-100"
                         xmlns="http://www.w3.org/2000/svg"

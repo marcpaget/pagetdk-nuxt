@@ -470,6 +470,9 @@ declare global {
   const useStyle: typeof import('primevue/usestyle')['useStyle']
   const useStyleTag: typeof import('../../node_modules/@vueuse/core')['useStyleTag']
   const useSum: typeof import('../../node_modules/@vueuse/math')['useSum']
+  const useSupabaseClient: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseClient')['useSupabaseClient']
+  const useSupabaseSession: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseSession')['useSupabaseSession']
+  const useSupabaseUser: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser')['useSupabaseUser']
   const useSupported: typeof import('../../node_modules/@vueuse/core')['useSupported']
   const useSwipe: typeof import('../../node_modules/@vueuse/core')['useSwipe']
   const useSwiper: typeof import('../../node_modules/swiper/vue')['useSwiper']
@@ -1024,6 +1027,9 @@ declare module 'vue' {
     readonly useStyle: UnwrapRef<typeof import('primevue/usestyle')['useStyle']>
     readonly useStyleTag: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useStyleTag']>
     readonly useSum: UnwrapRef<typeof import('../../node_modules/@vueuse/math')['useSum']>
+    readonly useSupabaseClient: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseClient')['useSupabaseClient']>
+    readonly useSupabaseSession: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseSession')['useSupabaseSession']>
+    readonly useSupabaseUser: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser')['useSupabaseUser']>
     readonly useSupported: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useSupported']>
     readonly useSwipe: UnwrapRef<typeof import('../../node_modules/@vueuse/core')['useSwipe']>
     readonly useSwiper: UnwrapRef<typeof import('../../node_modules/swiper/vue')['useSwiper']>

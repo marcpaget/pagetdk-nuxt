@@ -128,11 +128,10 @@
           ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
           ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
         ],
-      
-    "github.copilot.inlineSuggest.enable": true,
     "indentRainbow.excludedLanguages": [
         
         "plaintext"
     ],
-    "tailwindCSS.emmetCompletions": true
+    "tailwindCSS.emmetCompletions": true,
+    "github.copilot.editor.enableAutoCompletions": true
 }

@@ -51,6 +51,9 @@ declare module 'nitropack' {
     '/__og-image__/image/**': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nitro/routes/image').default>>>>
     }
+    '/__og-image__/static/**': {
+      'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/seo/node_modules/nuxt-og-image/dist/runtime/nitro/routes/image').default>>>>
+    }
     '/__schema-org__/debug.json': {
       'default': Simplify<Serialize<Awaited<ReturnType<typeof import('../../node_modules/nuxt-schema-org/dist/runtime/nitro/routes/__schema-org__/debug').default>>>>
     }

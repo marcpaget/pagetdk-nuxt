@@ -32,6 +32,9 @@ export { createGenericProjection, createProjection, logicAnd, logicNot, logicOr,
 export { $restCountriesApi, useRestCountriesApiData } from './module/nuxt-api-party';
 export { injectHead, useHead, useSeoMeta, useHeadSafe, useServerHead, useServerSeoMeta, useServerHeadSafe } from '@unhead/vue';
 export { default as useFetchCountries } from '../composables/useFetchCountries';
+export { useSupabaseClient } from '../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseClient';
+export { useSupabaseSession } from '../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseSession';
+export { useSupabaseUser } from '../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser';
 export { default as useSession } from '../node_modules/@sidebase/nuxt-session/dist/runtime/composables/useSession';
 export { useStrapiAuth } from '../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiAuth';
 export { useStrapiClient } from '../node_modules/@nuxtjs/strapi/dist/runtime/composables/useStrapiClient';
@@ -71,11 +74,6 @@ export { useCamera, useLoader, useLogger, usePointerEventHandler, useRaycaster, 
 export { track as vercelTrack } from '@vercel/analytics';
 export { useGtag } from '../node_modules/nuxt-gtag/dist/runtime/composables/useGtag';
 export { useTrackEvent } from '../node_modules/nuxt-gtag/dist/runtime/composables/useTrackEvent';
-export { usePrimeVue } from 'primevue/config';
-export { useStyle } from 'primevue/usestyle';
-export { useConfirm } from 'primevue/useconfirm';
-export { useToast } from 'primevue/usetoast';
-export { useDialog } from 'primevue/usedialog';
 export { useImage } from '../node_modules/@nuxt/image/dist/runtime/composables';
 export { defineRobotMeta } from '../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/defineRobotMeta';
 export { useRobotsRule } from '../node_modules/@nuxtjs/robots/dist/runtime/nuxt/composables/useRobotsRule';
@@ -86,4 +84,9 @@ export { useSchemaOrg } from '../node_modules/nuxt-schema-org/dist/runtime/nuxt/
 export { useI18n } from '../node_modules/@nuxtjs/seo/dist/runtime/nuxt/composables/polyfills';
 export { useBreadcrumbItems } from '../node_modules/@nuxtjs/seo/dist/runtime/nuxt/composables/useBreadcrumbItems';
 export { animate, timeline, stagger, spring, glide, inView, scroll } from '@oku-ui/motion';
+export { usePrimeVue } from 'primevue/config';
+export { useStyle } from 'primevue/usestyle';
+export { useConfirm } from 'primevue/useconfirm';
+export { useToast } from 'primevue/usetoast';
+export { useDialog } from 'primevue/usedialog';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';
